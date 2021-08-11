@@ -59,7 +59,17 @@ export default defineComponent({
       () => route.query.page,
       (newVal) => {
         
-        const { data: response, getData } = useAxios('getActivities', { offset: newVal ? ((parseInt(newVal as string) - 1) * 6) : 0, limit: 6, venue_in: '164' });
+        const {
+          data: response,
+          getData
+        } = useAxios(
+          'getActivities',
+          {
+            offset: newVal ? ((parseInt(newVal as string) - 1) * 6) : 0,
+            limit: 6,
+            venue_in: '164'
+          }
+        );
         getData().then(() => {      
           store.dispatch(ROOT_STORE.ACTIONS.ITEM_LISTS, response.value.data.map((item: ItemData) => {
             const {
