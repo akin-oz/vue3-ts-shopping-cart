@@ -38,16 +38,16 @@ export function usePagination(options: PaginationOptions): PaginationResult {
 
   const lastPage = computed(() => Math.ceil(state.total / state.pageSize));
 
-  const prev = () => (--state.currentPage);
-  const next = () => (++state.currentPage);
-  const first = () => (state.currentPage = 1);
-  const last = () => (state.currentPage = lastPage.value);
   const goTo = (page:number) => {
     if(typeof page === "number") {
       state.currentPage = page
       router.push({...route, query: {...route.query, page}})
     }
   };
+  const prev = () => (goTo(state.currentPage - 1));
+  const next = () => (goTo(state.currentPage + 1));
+  const first = () => (goTo(1));
+  const last = () => (goTo(lastPage.value));
 
   const visiblePages = computed(() => {
     const firstPage = state.currentPage > 3 ? 1 : null;

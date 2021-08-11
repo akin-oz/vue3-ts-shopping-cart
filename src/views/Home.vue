@@ -108,7 +108,7 @@ export default defineComponent({
 
   &__image {
     max-width: 100%;
-    height: auto;
+    height: 222.22px;
     &-wrapper {
       padding: 20px;
       position: relative;
@@ -139,7 +139,7 @@ export default defineComponent({
 
   &__title {
     padding-bottom: 10px; 
-    
+    height: 58px;
     font-family: 'Lato-Bold', sans-serif;
     font-size: 14px;
     letter-spacing: 1.37px;
@@ -148,7 +148,7 @@ export default defineComponent({
 
   &__subtitle {
     padding-bottom: 10px; 
-
+    height: 86px;
     font-size: 12px;
     line-height: 19px;
     letter-spacing: 0.43px;
