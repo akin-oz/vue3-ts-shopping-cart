@@ -1,9 +1,12 @@
-import VenueService from '@/services/venue.service';
+import ActivitiesService from '@/services/activities.service';
+import { AllFilterParams, FilterQueryParams } from '@/types';
+import { AxiosResponse } from 'axios'
 
 interface ApiTypes {
-  [fn: string]: Function;
+  [fn: string]: ((params: FilterQueryParams | AllFilterParams) => Promise<AxiosResponse>);
 }
 
 export default {
-  getActivities: VenueService.getActivities,
+  getVenueActivities: ActivitiesService.getVenueActivities,
+  getActivities: ActivitiesService.getActivities,
 } as ApiTypes

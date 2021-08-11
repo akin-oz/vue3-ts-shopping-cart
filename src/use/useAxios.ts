@@ -1,26 +1,33 @@
 
-import { ref } from "vue";
+import { reactive, toRefs } from "vue";
 import api from '@/services';
+import { ActivitiesResponse, AllFilterParams, ApiErrorTypes, FilterQueryParams, useAxiosTypes } from "@/types";
 
-export default function useAxios(fn: string, params: any) {
-  const data = ref([]);
-  const loading = ref(false);
-  const error = ref(null);
+
+export function useAxios(fn: string, params: FilterQueryParams | AllFilterParams): useAxiosTypes {
+  const state = reactive({
+    data: {} as ActivitiesResponse,
+    loading: false as boolean,
+    error: {} as ApiErrorTypes,
+  });
 
   const getData = async () => {
-    loading.value = true;
-    data.value = [];
-    error.value = null;
+    state.loading = true;
+    state.error = {} as ApiErrorTypes;
+    state.data = {} as ActivitiesResponse;
+
     try {
       const response = await api[fn](params)
-      data.value = response.data;
+      state.data = response.data;
+      
     } catch (err) {
-      error.value = err;
+      state.error = err;
     }
-    loading.value = false;
+    state.loading = false;
   };
 
   return {
-    data, loading, error, getData
+    ...toRefs(state),
+    getData
   };
 }

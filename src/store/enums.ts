@@ -8,11 +8,13 @@ export enum RootMutations {
   BAG_CHECK = "BAG_CHECK",
   SET_ROOT_DISPATCH = "SET_ROOT_DISPATCH",
   ITEM_LISTS = "ITEM_LISTS",
+  ITEM_COUNT = "ITEM_COUNT",
 }
 export enum RootActions {
   UPDATE_VERSION = "UPDATE_VERSION",
   BAG_CHECK = "BAG_CHECK",
   ITEM_LISTS = 'ITEM_LISTS',
+  ITEM_COUNT = 'ITEM_COUNT',
 }
 export enum BagGetters {
   TOTAL_PRICE = "TOTAL_PRICE",

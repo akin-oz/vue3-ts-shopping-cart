@@ -18,7 +18,6 @@ export default defineComponent({
   setup () {
     const store = useStore();
     const itemCount = computed(() => store.getters[WISHLIST_STORE.GETTERS.WISHLIST_ITEM_COUNT]);
-    console.log(store.getters);
     
     return {
       itemCount,

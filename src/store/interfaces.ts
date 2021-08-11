@@ -15,6 +15,7 @@ export interface IRootState {
   root: boolean;
   version: string;
   itemLists: ItemData[];
+  itemCount: number;
 }
 
 export interface IMergedState extends IRootState {
@@ -29,6 +30,7 @@ export interface IRootGettersTypes {
 export type RootMutationsTypes<S = IRootState> = {
   [ROOT_STORE.MUTATIONS.UPDATE_VERSION](state: S, payload: string): void;
   [ROOT_STORE.MUTATIONS.ITEM_LISTS](state: S, payload: ItemData[]): void;
+  [ROOT_STORE.MUTATIONS.ITEM_COUNT](state: S, payload: number): void;
 };
 
 type AugmentedActionContextRoot = {
@@ -53,6 +55,10 @@ export interface RootActionsTypes {
     { dispatch }: AugmentedActionContextRoot,
     payload: ItemData[]
   ): void;
+  [ROOT_STORE.ACTIONS.ITEM_COUNT](
+    { dispatch }: AugmentedActionContextRoot,
+    payload: number
+  ): void;
 }
 /*********************** BAG MODULE TYPES  ***********************/
 export interface ItemPrice {
@@ -75,7 +81,7 @@ export interface BagGettersTypes {
   [BAG_STORE.GETTERS.TOTAL_PRICE](state: BagStateTypes): number;
   [BAG_STORE.GETTERS.BAG_ITEM_COUNT](state: BagStateTypes): number;
 }
-/*********************** BAG MODULE TYPES  ***********************/
+/*********************** WISHLIST MODULE TYPES  ***********************/
 
 export interface WishlistStateTypes {
   wishlistItems?: Item[];

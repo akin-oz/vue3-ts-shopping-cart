@@ -10,4 +10,7 @@ export const actions: ActionTree<IRootState, IRootState> & RootActionsTypes = {
   [ROOT_STORE.ACTIONS.ITEM_LISTS]({ commit }, payload: ItemData[]) {
     commit(ROOT_STORE.MUTATIONS.ITEM_LISTS, payload);
   },
+  [ROOT_STORE.ACTIONS.ITEM_COUNT]({ commit }, payload: number) {
+    commit(ROOT_STORE.MUTATIONS.ITEM_COUNT, payload);
+  },
 };

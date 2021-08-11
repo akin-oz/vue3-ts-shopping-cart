@@ -9,4 +9,7 @@ export const mutations: MutationTree<IRootState> & RootMutationsTypes = {
   [ROOT_STORE.MUTATIONS.ITEM_LISTS](state: IRootState, payload: ItemData[]) {
     state.itemLists = payload;
   },
+  [ROOT_STORE.MUTATIONS.ITEM_COUNT](state: IRootState, payload: number) {
+    state.itemCount = payload;
+  },
 };

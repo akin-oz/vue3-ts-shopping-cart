@@ -8,7 +8,7 @@
         >
           <div class="product">
             <figure class="product__image-wrapper">
-              <img class="product__image" :src="item.cover_image_url" :alt="item.title" itemprop="image"/>
+              <img class="product__image" :src="`${item.cover_image_url}&ar=3:2&fit=crop`" :alt="item.title" itemprop="image"/>
               <button class="product__wishlist-button button button--round button--wishlist">
               <IconWishlist />
               </button>
@@ -28,16 +28,19 @@
           </div>
         </li>
       </ul>
+      <Pagination :page="page" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent } from 'vue';
+import { computed, defineComponent, watch } from 'vue';
 import { useStore } from 'vuex';
-import useAxios from '@/use/useAxios';
+import { useRoute } from 'vue-router';
+import { useAxios } from '@/use/useAxios';
 
 import IconWishlist from '@/components/icons/IconWishlist.vue';
+import Pagination from '@/components/ThePagination.vue';
 
 import { ROOT_STORE } from "@/store/constants";
 import { ItemData } from "@/store/interfaces";
@@ -46,37 +49,51 @@ export default defineComponent({
   name: 'Home',
   components: {
     IconWishlist,
+    Pagination,
   },
   setup () {
     const store = useStore();
-    const { data, loading, error, getData } = useAxios('getActivities', { id: '164', params: { offset: 0, limit: 6 }});
-    getData().then(() => {
-      store.dispatch(ROOT_STORE.ACTIONS.ITEM_LISTS, data.value.map((item) => {
-        const {
-          uuid,
-          cover_image_url,
-          title,
-          description,
-          retail_price,
-          original_retail_price,
-          discount,
-        } = item;
-
-        return {
-          uuid,
-          cover_image_url,
-          title,
-          description,
-          retail_price,
-          original_retail_price,
-          discount,
-        }
-      }));
-    });
+    const route = useRoute();
+    const page = route.query.page || 1;
+    watch(
+      () => route.query.page,
+      (newVal) => {
+        
+        const { data: response, getData } = useAxios('getActivities', { offset: newVal ? ((parseInt(newVal as string) - 1) * 6) : 0, limit: 6, venue_in: '164' });
+        getData().then(() => {      
+          store.dispatch(ROOT_STORE.ACTIONS.ITEM_LISTS, response.value.data.map((item: ItemData) => {
+            const {
+              uuid,
+              cover_image_url,
+              title,
+              description,
+              retail_price,
+              original_retail_price,
+              discount,
+            } = item;
+    
+            return {
+              uuid,
+              cover_image_url,
+              title,
+              description,
+              retail_price,
+              original_retail_price,
+              discount,
+            }
+          }) ?? [] as ItemData[]);
+          store.dispatch(ROOT_STORE.ACTIONS.ITEM_COUNT, response.value.meta.count ?? 0)
+        });
+      },
+      {
+        immediate: true,
+        deep: true,
+      }
+    )
 
     const items = computed(() => store.state.itemLists as ItemData[]);
 
-    return { items, loading, error }
+    return { items, page }
     
   }
 });
