@@ -108,16 +108,40 @@ export interface BagActionsTypes {
 /*********************** WISHLIST MODULE TYPES  ***********************/
 
 export interface WishlistStateTypes {
-  wishlistItems?: Item[];
+  wishlistItems: Item[];
 }
 
 export interface WishlistGettersTypes {
   [WISHLIST_STORE.GETTERS.WISHLIST_ITEM_COUNT](state: WishlistStateTypes): number;
 }
 
+export type WishlistMutationsTypes<S = WishlistStateTypes> = {
+  [WISHLIST_STORE.MUTATIONS.ADD_WISHLIST_ITEM](state: S, payload: ItemData): void;
+  [WISHLIST_STORE.MUTATIONS.REMOVE_WISHLIST_ITEM](state: S, payload: ItemData): void;
+};
+
+export type AugmentedActionContextWishlist = {
+  commit<K extends keyof WishlistMutationsTypes>(
+    key: K,
+    payload: Parameters<WishlistMutationsTypes[K]>[1]
+  ): ReturnType<WishlistMutationsTypes[K]>;
+} & Omit<ActionContext<WishlistStateTypes, IRootState>, "commit">;
+
+export interface WishlistActionsTypes {
+  [WISHLIST_STORE.ACTIONS.ADD_WISHLIST_ITEM](
+    { commit }: AugmentedActionContextWishlist,
+    payload: ItemData
+  ): void;
+  [WISHLIST_STORE.ACTIONS.REMOVE_WISHLIST_ITEM](
+    { commit }: AugmentedActionContextWishlist,
+    payload: ItemData
+  ): void;
+}
+
 export interface StoreActions
   extends RootActionsTypes,
-    BagActionsTypes {}
+    BagActionsTypes,
+    WishlistActionsTypes {}
 
 export interface StoreGetters
   extends IRootGettersTypes,

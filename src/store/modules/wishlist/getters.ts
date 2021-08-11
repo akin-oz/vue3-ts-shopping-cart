@@ -9,6 +9,6 @@ import {
 export const getters: GetterTree<WishlistStateTypes, IRootState> &
   WishlistGettersTypes = {
   [WISHLIST_STORE.GETTERS.WISHLIST_ITEM_COUNT]: (state: WishlistStateTypes) => {
-    return state.wishlistItems?.length ?? 0;
+    return state.wishlistItems.length;
   },
 };

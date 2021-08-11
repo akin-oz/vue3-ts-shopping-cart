@@ -9,6 +9,6 @@ import {
 export const getters: GetterTree<BagStateTypes, IRootState> &
   BagGettersTypes = {
   [BAG_STORE.GETTERS.BAG_ITEM_COUNT]: (state: BagStateTypes) => {
-    return state.bagItems?.length ?? 0;
+    return state.bagItems.length;
   },
 };

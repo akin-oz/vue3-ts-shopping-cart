@@ -9,8 +9,8 @@
           <div class="product">
             <figure class="product__image-wrapper">
               <img class="product__image" :src="`${item.cover_image_url}&ar=3:2&fit=crop`" :alt="item.title" itemprop="image"/>
-              <button class="product__wishlist-button button button--round button--wishlist">
-              <IconWishlist />
+              <button class="product__wishlist-button button button--round button--wishlist" @click="handleClickStar(item)">
+              <IconWishlist :style="isInWishlist(item.uuid) ? 'fill: orange;' : ''" />
               </button>
             </figure>
             <div class="product__details">
@@ -23,8 +23,8 @@
               <div class="product__price" itemscope itemtype="http://schema.org/Offer" v-else>
                 <span class="product__price" itemprop="price">{{ item.retail_price.formatted_value }}</span>
               </div>
-              <button v-if="isInCard(item.uuid)" class="product__add-to-cart button button--primary button--in-cart">In Cart</button>
-              <button v-else class="product__add-to-cart button button--primary" @click="handleAddItem(item)">Add to Cart</button>
+              <button v-if="isInBag(item.uuid)" class="product__add-to-cart button button--primary button--in-cart">In Cart</button>
+              <button v-else class="product__add-to-cart button button--primary" @click="handleAddBagItem(item)">Add to Cart</button>
             </div>
           </div>
         </li>
@@ -43,8 +43,8 @@ import { useAxios } from '@/use/useAxios';
 import IconWishlist from '@/components/icons/IconWishlist.vue';
 import Pagination from '@/components/ThePagination.vue';
 
-import { BAG_STORE, ROOT_STORE } from "@/store/constants";
-import { BagStateTypes, ItemData } from "@/store/interfaces";
+import { BAG_STORE, ROOT_STORE, WISHLIST_STORE } from "@/store/constants";
+import { BagStateTypes, ItemData, WishlistStateTypes } from "@/store/interfaces";
 
 export default defineComponent({
   name: 'Home',
@@ -102,7 +102,7 @@ export default defineComponent({
       }
     )
 
-    const handleAddItem = (item: ItemData) => {
+    const handleAddBagItem = (item: ItemData) => {
       store.dispatch(BAG_STORE.ACTIONS.ADD_BAG_ITEM, item)
     }
 
@@ -112,13 +112,27 @@ export default defineComponent({
       () =>
         ((store.state.bagModule as unknown) as BagStateTypes).bagItems
     );
-    const isInCard = (uuid:string) => bagItems.value.some(item => item.uuid === uuid);
+    const wishlistItems = computed(
+      () =>
+        ((store.state.wishlistModule as unknown) as WishlistStateTypes).wishlistItems
+    );
+    const isInBag = (uuid: string) => bagItems.value.some(item => item.uuid === uuid);
+    const isInWishlist = (uuid: string) => wishlistItems.value.some(item => item.uuid === uuid)
+    const handleClickStar = (item: ItemData) => {
+      if(isInWishlist(item.uuid)) {
+        store.dispatch(WISHLIST_STORE.ACTIONS.REMOVE_WISHLIST_ITEM, item)
+      } else {
+        store.dispatch(WISHLIST_STORE.ACTIONS.ADD_WISHLIST_ITEM, item)
+      }
+    }
 
     return {
       items,
       page,
-      handleAddItem,
-      isInCard,
+      handleAddBagItem,
+      handleClickStar,
+      isInBag,
+      isInWishlist,
     }
   }
 });
