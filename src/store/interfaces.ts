@@ -67,19 +67,43 @@ export interface ItemPrice {
   formatted_value?: string;
 }
 export interface Item {
+  uuid?: string;
   title?: string;
   description?: string;
   netPrice?: ItemPrice;
-  retailPrice?: ItemPrice;
+  retail_price?: ItemPrice;
   discount?: number;
 }
 export interface BagStateTypes {
-  bagItems?: Item[];
+  bagItems: Item[];
+  totalPrice: number;
 }
 
 export interface BagGettersTypes {
-  [BAG_STORE.GETTERS.TOTAL_PRICE](state: BagStateTypes): number;
   [BAG_STORE.GETTERS.BAG_ITEM_COUNT](state: BagStateTypes): number;
+}
+
+export type BagMutationsTypes<S = BagStateTypes> = {
+  [BAG_STORE.MUTATIONS.ADD_BAG_ITEM](state: S, payload: ItemData): void;
+  [BAG_STORE.MUTATIONS.REMOVE_BAG_ITEM](state: S, payload: ItemData): void;
+};
+
+export type AugmentedActionContext = {
+  commit<K extends keyof BagMutationsTypes>(
+    key: K,
+    payload: Parameters<BagMutationsTypes[K]>[1]
+  ): ReturnType<BagMutationsTypes[K]>;
+} & Omit<ActionContext<BagStateTypes, IRootState>, "commit">;
+
+export interface BagActionsTypes {
+  [BAG_STORE.ACTIONS.ADD_BAG_ITEM](
+    { commit }: AugmentedActionContext,
+    payload: ItemData
+  ): void;
+  [BAG_STORE.ACTIONS.REMOVE_BAG_ITEM](
+    { commit }: AugmentedActionContext,
+    payload: ItemData
+  ): void;
 }
 /*********************** WISHLIST MODULE TYPES  ***********************/
 
@@ -92,7 +116,8 @@ export interface WishlistGettersTypes {
 }
 
 export interface StoreActions
-  extends RootActionsTypes {}
+  extends RootActionsTypes,
+    BagActionsTypes {}
 
 export interface StoreGetters
   extends IRootGettersTypes,

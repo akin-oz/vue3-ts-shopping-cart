@@ -16,9 +16,25 @@ export enum RootActions {
   ITEM_LISTS = 'ITEM_LISTS',
   ITEM_COUNT = 'ITEM_COUNT',
 }
+export enum BagMutations {
+  ADD_BAG_ITEM = 'ADD_BAG_ITEM',
+  REMOVE_BAG_ITEM = 'REMOVE_BAG_ITEM',
+}
+export enum BagActions {
+  ADD_BAG_ITEM = 'ADD_BAG_ITEM',
+  REMOVE_BAG_ITEM = 'REMOVE_BAG_ITEM',
+}
 export enum BagGetters {
   TOTAL_PRICE = "TOTAL_PRICE",
   BAG_ITEM_COUNT = "BAG_ITEM_COUNT",
+}
+export enum WishlistMutations {
+  ADD_WISHLIST_ITEM = 'ADD_WISHLIST_ITEM',
+  REMOVE_WISHLIST_ITEM = 'REMOVE_WISHLIST_ITEM',
+}
+export enum WishlistActions {
+  ADD_WISHLIST_ITEM = 'ADD_WISHLIST_ITEM',
+  REMOVE_WISHLIST_ITEM = 'REMOVE_WISHLIST_ITEM',
 }
 export enum WishlistGetters {
   WISHLIST_ITEM_COUNT = "WISHLIST_ITEM_COUNT",

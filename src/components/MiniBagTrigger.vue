@@ -13,6 +13,7 @@ import { computed, defineComponent } from 'vue'
 import { useStore } from '@/use/useStore';
 import { BAG_STORE } from "@/store/constants";
 import IconBag from '@/components/icons/IconBag.vue'
+import { BagStateTypes } from '@/store/interfaces';
 
 export default defineComponent({
   components: {
@@ -21,9 +22,15 @@ export default defineComponent({
   setup () {
     const store = useStore();
     const itemCount = computed(() => store.getters[BAG_STORE.GETTERS.BAG_ITEM_COUNT]);
-    const totalPrice = computed(() => store.getters[BAG_STORE.GETTERS.TOTAL_PRICE]);
+    const totalPrice = computed(
+      () => {
+        const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;
+        return price ? `€ ${price}` : ''
+      }
+    );
+    
     return {
-      totalPrice: `€ ${totalPrice.value}`,
+      totalPrice,
       itemCount,
     }
   }

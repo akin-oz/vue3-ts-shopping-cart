@@ -23,7 +23,8 @@
               <div class="product__price" itemscope itemtype="http://schema.org/Offer" v-else>
                 <span class="product__price" itemprop="price">{{ item.retail_price.formatted_value }}</span>
               </div>
-              <button class="product__add-to-cart button button--primary">Add to Cart</button>
+              <button v-if="isInCard(item.uuid)" class="product__add-to-cart button button--primary button--in-cart">In Cart</button>
+              <button v-else class="product__add-to-cart button button--primary" @click="handleAddItem(item)">Add to Cart</button>
             </div>
           </div>
         </li>
@@ -42,8 +43,8 @@ import { useAxios } from '@/use/useAxios';
 import IconWishlist from '@/components/icons/IconWishlist.vue';
 import Pagination from '@/components/ThePagination.vue';
 
-import { ROOT_STORE } from "@/store/constants";
-import { ItemData } from "@/store/interfaces";
+import { BAG_STORE, ROOT_STORE } from "@/store/constants";
+import { BagStateTypes, ItemData } from "@/store/interfaces";
 
 export default defineComponent({
   name: 'Home',
@@ -101,10 +102,24 @@ export default defineComponent({
       }
     )
 
+    const handleAddItem = (item: ItemData) => {
+      store.dispatch(BAG_STORE.ACTIONS.ADD_BAG_ITEM, item)
+    }
+
     const items = computed(() => store.state.itemLists as ItemData[]);
 
-    return { items, page }
-    
+    const bagItems = computed(
+      () =>
+        ((store.state.bagModule as unknown) as BagStateTypes).bagItems
+    );
+    const isInCard = (uuid:string) => bagItems.value.some(item => item.uuid === uuid);
+
+    return {
+      items,
+      page,
+      handleAddItem,
+      isInCard,
+    }
   }
 });
 </script>
