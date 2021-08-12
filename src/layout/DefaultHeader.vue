@@ -4,34 +4,44 @@
     <div class="default-header__spacer"></div>
     <div class="default-header__actions">
       <div class="default-header__action-item">
-        <MiniBagTrigger></MiniBagTrigger>
+        <MiniBagTrigger @mouseenter="toggleMiniBag"></MiniBagTrigger>
       </div>
       <div class="default-header__action-item">
         <WishlistTrigger></WishlistTrigger>
       </div>
     </div>
+    <MiniBag v-if="isMiniBagActive" @mouseleave="toggleMiniBag" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref, Ref } from 'vue'
+import MiniBag from '@/components/MiniBag.vue'
 import MiniBagTrigger from '@/components/MiniBagTrigger.vue'
 import WishlistTrigger from '@/components/WishlistTrigger.vue'
 
 export default defineComponent({
   components: {
+    MiniBag,
     MiniBagTrigger,
     WishlistTrigger,
   },
   setup () {
-    
+    const isMiniBagActive: Ref<boolean> = ref(false)
+    const toggleMiniBag = () => {
+      isMiniBagActive.value = !isMiniBagActive.value
+    }
 
-    return {}
+    return {
+      toggleMiniBag,
+      isMiniBagActive,
+    }
   }
 })
 </script>
 <style lang="scss">
   .default-header {
+    position: relative;
     &__title {
       font-size: 20px;
     }
