@@ -53,11 +53,7 @@ export function usePagination(options: PaginationOptions): PaginationResult {
     const firstPage = state.currentPage > 3 ? 1 : null;
     const prevPage = state.currentPage >= 2 ? state.currentPage - 1 : null;
     const nextPage = state.currentPage >= lastPage.value ? null : state.currentPage + 1;
-    const finalPage = nextPage
-      ? nextPage >= lastPage.value
-        ? null
-        : lastPage.value
-      : null;
+    const finalPage = nextPage && nextPage < lastPage.value ? lastPage.value : null;
 
     return [
       firstPage,

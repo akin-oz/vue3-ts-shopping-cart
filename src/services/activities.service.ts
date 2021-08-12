@@ -1,13 +1,13 @@
-import http from "@/services/http";
+import apiClient from "@/services/apiClient";
 import { AxiosResponse } from 'axios'
 import { AllFilterParams, FilterQueryParams } from '@/types';
 
 
 export default {
   getVenueActivities: (props:AllFilterParams): Promise<AxiosResponse> =>  {
-    return http.get(`venues/${props.id}/activities`, { params: props.params });
+    return apiClient.get(`venues/${props.id}/activities`, { params: props.params });
   },
   getActivities: (params: FilterQueryParams): Promise<AxiosResponse> => {
-    return http.get(`activities`, { params })
+    return apiClient.get(`activities`, { params })
   }
 };

@@ -1,10 +1,10 @@
 
 import { reactive, toRefs } from "vue";
 import api from '@/services';
-import { ActivitiesResponse, AllFilterParams, ApiErrorTypes, FilterQueryParams, useAxiosTypes } from "@/types";
+import { ActivitiesResponse, AllFilterParams, ApiErrorTypes, FilterQueryParams, UseAxiosTypes } from "@/types";
 
 
-export function useAxios(fn: string, params: FilterQueryParams | AllFilterParams): useAxiosTypes {
+export function useAxios(fn: string, params: FilterQueryParams | AllFilterParams): UseAxiosTypes {
   const state = reactive({
     data: {} as ActivitiesResponse,
     loading: false as boolean,

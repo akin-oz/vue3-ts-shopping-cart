@@ -1,4 +1,4 @@
-import { Item, ItemData } from "@/store/interfaces";
+import { ItemData } from "@/store/interfaces";
 import { Ref } from "vue";
 
 export interface FilterQueryParams {
@@ -28,7 +28,7 @@ export interface ApiErrorTypes {
   message: string;
 }
 
-export interface useAxiosTypes {
+export interface UseAxiosTypes {
   data: Ref<ActivitiesResponse>;
   loading: Ref<boolean>;
   error: Ref<ApiErrorTypes>;
