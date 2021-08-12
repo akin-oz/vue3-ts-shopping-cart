@@ -25,12 +25,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style lang="scss">
-  .wishlist-trigger__count {
-    height: 25px;
-    display: flex;
-    align-items: flex-end;
-    margin-left: 10px;
-  }
-</style>

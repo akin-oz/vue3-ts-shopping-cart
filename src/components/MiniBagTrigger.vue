@@ -36,23 +36,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style lang="scss">
-  .minibag-trigger {
-    &__count {
-      margin-left: 10px;
-      height: 25px;
-      display: flex;
-      align-items: flex-end;
-      .icon {
-        width: 17px;
-      }
-    }
-    &__price {
-      margin-right: 5px;
-      font-size: 12px;
-      line-height: 12px;
-    }
-
-  }
-</style>

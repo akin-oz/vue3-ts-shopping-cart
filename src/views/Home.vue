@@ -1,8 +1,8 @@
 <template>
   <div class="product-page">
-    <div class="container">
-      <ul class="product-list">
-        <li class="product-list__item"
+    <div class="container" style="padding: 0">
+      <ul class="product-list row">
+        <li class="product-list__item col-md-4 col-sm-6 col-xs-12"
           v-for="item in items"
           :key="item.uuid"
         >
@@ -137,98 +137,3 @@ export default defineComponent({
   }
 });
 </script>
-<style lang="scss">
-.product {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  background-color: #ffffff;
-
-  &__image {
-    max-width: 100%;
-    height: 222.22px;
-    &-wrapper {
-      padding: 20px;
-      position: relative;
-      text-align: center;
-    }
-  }
-
-  &__wishlist-button {
-    width: 35px;
-    height: 35px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-
-  &__details {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-    padding: 10px 20px 20px;
-    text-align: center;
-  }
-
-  &__title {
-    padding-bottom: 10px; 
-    height: 58px;
-    font-family: 'Lato-Bold', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1.37px;
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    padding-bottom: 10px; 
-    height: 86px;
-    font-size: 12px;
-    line-height: 19px;
-    letter-spacing: 0.43px;
-
-    color: #808080;
-  }
-
-  &__price {
-    padding-bottom: 20px;
-    
-    font-family: 'Lato-Bold', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2.33px;
-
-    &--strike {
-      margin-right: 10px;
-      text-decoration: line-through;
-    }
-
-    &--discounted {
-      color: #F54B5E;
-    }
-  }
-
-
-  &-page {
-    display: flex;
-    flex-direction: row;
-    flex: 1 0 auto;
-    margin: 30px 0 20px;
-  }
-  &-list {
-    display: flex;
-    flex: 0 1 auto;
-    flex-flow: row wrap;
-    margin: 0 -10px;
-    &__item {
-    padding: 10px;
-    flex: 1 0 33.3333%;
-    max-width: 33.3333%;
-}
-  }
-}
-</style>

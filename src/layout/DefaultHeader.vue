@@ -27,7 +27,7 @@ export default defineComponent({
     WishlistTrigger,
   },
   setup () {
-    const isMiniBagActive: Ref<boolean> = ref(false)
+    const isMiniBagActive: Ref<boolean> = ref(true)
     const toggleMiniBag = () => {
       isMiniBagActive.value = !isMiniBagActive.value
     }
@@ -39,28 +39,3 @@ export default defineComponent({
   }
 })
 </script>
-<style lang="scss">
-  .default-header {
-    position: relative;
-    &__title {
-      font-size: 20px;
-    }
-    &__spacer {
-      flex-grow: 1;
-    }
-    &__actions {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-    }
-    &__action-item {
-      height: 25px;
-      display: flex;
-      align-items: flex-end;
-      .icon {
-        height: auto;
-        fill: #444A59;
-      }
-    }
-  }
-</style>

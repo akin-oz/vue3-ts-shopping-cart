@@ -1,4 +1,9 @@
-@import "variables/main.scss";
-@import "mixins/main.scss";
+@import "variables";
+@import "mixins";
+
 @import "grid";
 @import "visibility";
+
+@import "common";
+@import "components";
+@import "layouts";

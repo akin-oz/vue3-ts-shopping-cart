@@ -23,18 +23,3 @@ export default defineComponent({
   }
 })
 </script>
-<style lang="scss">
-.default {
-  &-header,
-  &-footer {
-    height: 60px;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    text-transform: uppercase;
-    background-color: #ffffff;
-  }
-}
-</style>
