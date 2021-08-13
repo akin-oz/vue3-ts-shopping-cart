@@ -1,5 +1,4 @@
 import { watch, Ref, computed, reactive, toRefs } from "vue";
-import { useRouter, useRoute } from 'vue-router'
 
 export type PaginationControl = () => void;
 
@@ -27,8 +26,6 @@ export interface PaginationOptions {
 
 export function usePagination(options: PaginationOptions): PaginationResult {
 
-  const router = useRouter();
-  const route = useRoute();
   const state = reactive({
     currentPage: options.currentPage,
     pageSize: options.pageSize,
@@ -36,13 +33,22 @@ export function usePagination(options: PaginationOptions): PaginationResult {
     offset: options.offset,
   })
 
+  watch(
+    () => state.currentPage,
+    (newVal) => {
+      if (newVal < 1) {
+        state.currentPage = 1;
+      }
+    },
+    {
+      immediate: true,
+    }
+  )
+
   const lastPage = computed(() => Math.ceil(state.total / state.pageSize));
 
   const goTo = (page:number) => {
-    if(typeof page === "number") {
-      state.currentPage = page
-      router.push({...route, query: {...route.query, page}})
-    }
+    state.currentPage = page
   };
   const prev = () => (goTo(state.currentPage - 1));
   const next = () => (goTo(state.currentPage + 1));

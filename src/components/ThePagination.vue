@@ -11,7 +11,7 @@
         v-for="(p,i) in visiblePages"
         :key="i"
       >
-        <a @click="goTo(p)" :class="`pagination__link${p === '...' ? ' disabled' : ''}${currentPage === p ? ' current' : ''}`">
+        <a @click="handlePageChange(p)" :class="`pagination__link${p === '...' ? ' disabled' : ''}${currentPage === p ? ' current' : ''}`">
           {{ p }}
         </a>
       </li>
@@ -27,6 +27,7 @@
 <script>
 import { computed, defineComponent } from 'vue'
 import { useStore } from 'vuex'
+import { useRouter, useRoute } from 'vue-router'
 import { usePagination } from '@/use/usePagination'
 import IconArrowRight from '@/components/icons/IconArrowRight.vue'
 import IconArrowLeft from '@/components/icons/IconArrowLeft.vue'
@@ -43,6 +44,8 @@ export default defineComponent({
   },
   setup (props) {
     const store = useStore();
+    const router = useRouter();
+    const route = useRoute();
     const total = computed(() => store.state.itemCount);
 
     const {
@@ -62,6 +65,11 @@ export default defineComponent({
       offset: ((parseInt(props.page) - 1) * 6),
     })
 
+    const handlePageChange = (page) => {
+      goTo(page)
+      router.push({...route, query: {...route.query, page}})
+    }
+
     return {
       total,
       offset,
@@ -69,7 +77,7 @@ export default defineComponent({
       prev,
       first,
       last,
-      goTo,
+      handlePageChange,
       currentPage,
       lastPage,
       visiblePages,

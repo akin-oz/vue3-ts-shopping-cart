@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/usePagination.spec.ts">
+        <testCase name="pagination should return pagination" duration="4"/>
+        <testCase name="pagination should update pages" duration="1"/>
+        <testCase name="pagination should update total" duration="1"/>
+        <testCase name="pagination should update currentPage to last" duration="1"/>
+        <testCase name="pagination navigation should `next`" duration="0"/>
+        <testCase name="pagination navigation should `prev`" duration="1"/>
+        <testCase name="pagination navigation should `first`" duration="1"/>
+        <testCase name="pagination navigation should `last`" duration="0"/>
+        <testCase name="pagination currentPage should currentPage should be `1` if `0` is passed" duration="0"/>
+        <testCase name="pagination currentPage should not go below page 1" duration="0"/>
+        <testCase name="pagination currentPage should allow setting the page through currentPage" duration="1"/>
+        <testCase name="pagination when changing the pageSize offset shouldn&apos;t change" duration="1"/>
+    </file>
+</testExecutions>
