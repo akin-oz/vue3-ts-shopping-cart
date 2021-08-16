@@ -51,8 +51,8 @@ export default defineComponent({
   setup() {
     const store = useStore();
     const bagItems = computed(
-    () => ((store.state.bagModule as unknown) as BagStateTypes).bagItems
-    );    
+      () => ((store.state.bagModule as unknown) as BagStateTypes).bagItems
+    );
     const totalPrice = computed(
       () => {
         const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;
@@ -61,7 +61,7 @@ export default defineComponent({
     );
     const handleRemoveItem = (item: ItemData) => {
       store.dispatch(BAG_STORE.ACTIONS.REMOVE_BAG_ITEM, item)
-    }
+    };
     return {
       bagItems,
       totalPrice,

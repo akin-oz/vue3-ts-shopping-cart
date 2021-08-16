@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.67% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -79,43 +79,43 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { MutationTree } from "vuex";
 import { BagMutationsTypes, BagStateTypes, ItemData } from "@/store/interfaces";
-<span class="cstat-no" title="statement not covered" >import { BAG_STORE } from "@/store/constants";</span>
+import { BAG_STORE } from "@/store/constants";
 &nbsp;
 export const mutations: MutationTree&lt;BagStateTypes&gt; &amp;
-  BagMutationsTypes = <span class="cstat-no" title="statement not covered" >{</span>
-<span class="fstat-no" title="function not covered" >  [B</span>AG_STORE.MUTATIONS.ADD_BAG_ITEM](state: BagStateTypes, payload: ItemData) {
-    const alreadyAdded = <span class="cstat-no" title="statement not covered" >state.</span>bagItems.some(<span class="fstat-no" title="function not covered" >item </span>=&gt; <span class="cstat-no" title="statement not covered" >item.uuid === payload.uuid);</span>
-<span class="cstat-no" title="statement not covered" >    if(!alreadyAdded) {</span>
-<span class="cstat-no" title="statement not covered" >      state.</span>bagItems = [
+  BagMutationsTypes = {
+  [BAG_STORE.MUTATIONS.ADD_BAG_ITEM](state: BagStateTypes, payload: ItemData) {
+    const alreadyAdded = state.bagItems.some(item =&gt; item.uuid === payload.uuid);
+    if(!alreadyAdded) {
+      state.bagItems = [
         ...state.bagItems,
         payload
       ];
-<span class="cstat-no" title="statement not covered" >      state.</span>totalPrice = state.totalPrice + (payload.retail_price?.value ?? 0);
+      state.totalPrice = state.totalPrice + (payload.retail_price?.value ?? <span class="branch-1 cbranch-no" title="branch not covered" >0);</span>
     }
   },
-<span class="fstat-no" title="function not covered" >  [B</span>AG_STORE.MUTATIONS.REMOVE_BAG_ITEM](state: BagStateTypes, payload) {
-<span class="cstat-no" title="statement not covered" >    state.</span>bagItems = state.bagItems.filter(<span class="fstat-no" title="function not covered" >item </span>=&gt; <span class="cstat-no" title="statement not covered" >item.uuid !== payload.uuid)</span>
-<span class="cstat-no" title="statement not covered" >    state.</span>totalPrice = state.totalPrice - (payload.retail_price?.value ?? 0);
+  [BAG_STORE.MUTATIONS.REMOVE_BAG_ITEM](state: BagStateTypes, payload) {
+    state.bagItems = state.bagItems.filter(item =&gt; item.uuid !== payload.uuid)
+    state.totalPrice = state.totalPrice - (payload.retail_price?.value ?? <span class="branch-1 cbranch-no" title="branch not covered" >0);</span>
   },
 };</pre></td></tr></table></pre>
 
@@ -124,7 +124,7 @@ export const mutations: MutationTree&lt;BagStateTypes&gt; &amp;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Aug 13 2021 12:41:37 GMT+0300 (GMT+03:00)
+                at Mon Aug 16 2021 13:25:33 GMT+0300 (GMT+03:00)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

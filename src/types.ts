@@ -2,9 +2,9 @@ import { ItemData } from "@/store/interfaces";
 import { Ref } from "vue";
 
 export interface FilterQueryParams {
-  limit?: string | number;
-  offset?: string | number;
-  venue_in?: string;
+  limit: string | number;
+  offset: string | number;
+  venue_in: string;
 }
 
 export interface AllFilterParams {

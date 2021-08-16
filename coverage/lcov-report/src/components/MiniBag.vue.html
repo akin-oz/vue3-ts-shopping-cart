@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -169,31 +169,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -241,31 +241,31 @@
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-<span class="cstat-no" title="statement not covered" >import { BAG_STORE } from "@/store/constants";</span>
+import { BAG_STORE } from "@/store/constants";
 import { BagStateTypes, ItemData } from "@/store/interfaces";
-<span class="cstat-no" title="statement not covered" >import { computed, defineComponent } from "vue";</span>
-<span class="cstat-no" title="statement not covered" >import { useStore } from "vuex";</span>
-<span class="cstat-no" title="statement not covered" >import IconDelete from '@/components/icons/IconDelete.vue'</span>
+import { computed, defineComponent } from "vue";
+import { useStore } from "vuex";
+import IconDelete from '@/components/icons/IconDelete.vue'
 &nbsp;
-export default <span class="cstat-no" title="statement not covered" >defineComponent({</span>
+export default defineComponent({
   components: {
     IconDelete,
   },
-<span class="fstat-no" title="function not covered" >  setup(</span>) {
-    const store = <span class="cstat-no" title="statement not covered" >useStore();</span>
-    const bagItems = <span class="cstat-no" title="statement not covered" >computed(</span>
-<span class="fstat-no" title="function not covered" >    () =&gt; <span class="cstat-no" title="statement not covered" >(</span>(s</span>tore.state.bagModule as unknown) as BagStateTypes).bagItems
-    );    
-    const totalPrice = <span class="cstat-no" title="statement not covered" >computed(</span>
-<span class="fstat-no" title="function not covered" >      () =&gt; {</span>
-        const price = ((<span class="cstat-no" title="statement not covered" >store.state.bagModule as unknown) as BagStateTypes).totalPrice;</span>
-<span class="cstat-no" title="statement not covered" >        return p</span>rice ? `€ ${price}` : ''
+  setup() {
+    const store = useStore();
+    const bagItems = computed(
+      () =&gt; ((store.state.bagModule as unknown) as BagStateTypes).bagItems
+    );
+    const totalPrice = computed(
+      () =&gt; {
+        const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;
+        return price ? `€ ${price}` : <span class="branch-1 cbranch-no" title="branch not covered" >''</span>
       }
     );
-    const handleRemoveItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>tem: ItemData) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      store.</span>dispatch(BAG_STORE.ACTIONS.REMOVE_BAG_ITEM, item)
-    }
-<span class="cstat-no" title="statement not covered" >    return {</span>
+    const handleRemoveItem = (item: ItemData) =&gt; {
+      store.dispatch(BAG_STORE.ACTIONS.REMOVE_BAG_ITEM, item)
+    };
+    return {
       bagItems,
       totalPrice,
       handleRemoveItem,
@@ -280,7 +280,7 @@ export default <span class="cstat-no" title="statement not covered" >defineCompo
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Aug 13 2021 12:41:37 GMT+0300 (GMT+03:00)
+                at Mon Aug 16 2021 13:25:33 GMT+0300 (GMT+03:00)
             </div>
         </div>
         <script src="../../prettify.js"></script>

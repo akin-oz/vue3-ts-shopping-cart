@@ -2,7 +2,7 @@
   <nav class="pagination">
     <ul class="pagination__list">
       <li class="pagination__item">
-        <a v-if="currentPage !== 1" @click="prev" class="pagination__link">
+        <a v-if="currentPage !== 1" @click="handlePageChange(currentPage - 1)" class="pagination__link">
           <IconArrowLeft />
         </a>
       </li>
@@ -16,7 +16,7 @@
         </a>
       </li>
       <li class="pagination__item">
-        <a v-if="currentPage < lastPage" @click="next" class="pagination__link">
+        <a v-if="currentPage < lastPage" @click="handlePageChange(currentPage + 1)" class="pagination__link">
           <IconArrowRight />
         </a>
       </li>
@@ -39,7 +39,7 @@ export default defineComponent({
   },
   props: {
     page: {
-      type: String,
+      type: Number,
     },
   },
   setup (props) {
@@ -51,18 +51,14 @@ export default defineComponent({
     const {
       lastPage,
       offset,
-      next,
-      prev,
-      first,
-      last,
       goTo,
       visiblePages,
       currentPage,
     } = usePagination({
       pageSize: 6,
       total: computed(() => store.state.itemCount),
-      currentPage: parseInt(props.page),
-      offset: ((parseInt(props.page) - 1) * 6),
+      currentPage: props.page,
+      offset: ((props.page - 1) * 6),
     })
 
     const handlePageChange = (page) => {
@@ -73,10 +69,6 @@ export default defineComponent({
     return {
       total,
       offset,
-      next,
-      prev,
-      first,
-      last,
       handlePageChange,
       currentPage,
       lastPage,

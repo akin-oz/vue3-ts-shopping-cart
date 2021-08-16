@@ -2,7 +2,7 @@ import ActivitiesService from '@/services/activities.service';
 import { AllFilterParams, FilterQueryParams } from '@/types';
 import { AxiosResponse } from 'axios'
 
-interface ApiTypes {
+export interface ApiTypes {
   [fn: string]: ((params: FilterQueryParams | AllFilterParams) => Promise<AxiosResponse>);
 }
 

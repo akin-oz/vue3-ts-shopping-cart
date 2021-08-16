@@ -15,7 +15,6 @@ export function useAxios(fn: string, params: FilterQueryParams | AllFilterParams
     state.loading = true;
     state.error = {} as ApiErrorTypes;
     state.data = {} as ActivitiesResponse;
-
     try {
       const response = await api[fn](params)
       state.data = response.data;

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,68 +88,65 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-<span class="cstat-no" title="statement not covered" >import { reactive, toRefs } from "vue";</span>
-<span class="cstat-no" title="statement not covered" >import api from '@/services';</span>
+import { reactive, toRefs } from "vue";
+import api from '@/services';
 import { ActivitiesResponse, AllFilterParams, ApiErrorTypes, FilterQueryParams, UseAxiosTypes } from "@/types";
 &nbsp;
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >useAxios(f</span>n: string, params: FilterQueryParams | AllFilterParams): UseAxiosTypes {
-  const state = <span class="cstat-no" title="statement not covered" >reactive({</span>
+export function useAxios(fn: string, params: FilterQueryParams | AllFilterParams): UseAxiosTypes {
+  const state = reactive({
     data: {} as ActivitiesResponse,
     loading: false as boolean,
     error: {} as ApiErrorTypes,
   });
 &nbsp;
-  const getData = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async () =&gt; </span>{</span>
-<span class="cstat-no" title="statement not covered" >    state.</span>loading = true;
-<span class="cstat-no" title="statement not covered" >    state.</span>error = {} as ApiErrorTypes;
-<span class="cstat-no" title="statement not covered" >    state.</span>data = {} as ActivitiesResponse;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const response = <span class="cstat-no" title="statement not covered" >await api[f</span>n](params)
-<span class="cstat-no" title="statement not covered" >      state.</span>data = response.data;
+  const getData = async () =&gt; {
+    state.loading = true;
+    state.error = {} as ApiErrorTypes;
+    state.data = {} as ActivitiesResponse;
+    try {
+      const response = await api[fn](params)
+      state.data = response.data;
       
     } catch (err) {
-<span class="cstat-no" title="statement not covered" >      state.</span>error = err;
+      state.error = err;
     }
-<span class="cstat-no" title="statement not covered" >    state.</span>loading = false;
+    state.loading = false;
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return {</span>
+  return {
     ...toRefs(state),
     getData
   };
@@ -160,7 +157,7 @@ export function <span class="fstat-no" title="function not covered" >useAxios(f<
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Aug 13 2021 12:41:37 GMT+0300 (GMT+03:00)
+                at Mon Aug 16 2021 13:25:33 GMT+0300 (GMT+03:00)
             </div>
         </div>
         <script src="../../prettify.js"></script>
