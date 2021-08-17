@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629199505289" clover="3.2.0">
-  <project timestamp="1629199505289" name="All files">
-    <metrics statements="232" coveredstatements="195" conditionals="56" coveredconditionals="44" methods="83" coveredmethods="67" elements="371" coveredelements="306" complexity="0" loc="232" ncloc="232" packages="11" files="37" classes="37"/>
+<coverage generated="1629208546635" clover="3.2.0">
+  <project timestamp="1629208546636" name="All files">
+    <metrics statements="247" coveredstatements="198" conditionals="68" coveredconditionals="47" methods="89" coveredmethods="68" elements="404" coveredelements="313" complexity="0" loc="247" ncloc="247" packages="11" files="37" classes="37"/>
     <package name="src">
-      <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="15" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="App.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="9" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
       </file>
       <file name="main.ts" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="42" coveredstatements="40" conditionals="6" coveredconditionals="4" methods="22" coveredmethods="21"/>
+      <metrics statements="44" coveredstatements="42" conditionals="6" coveredconditionals="4" methods="22" coveredmethods="21"/>
       <file name="MiniBag.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
-        <line num="13" count="2" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
       </file>
       <file name="MiniBagTrigger.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
@@ -42,22 +51,23 @@
         <line num="22" count="1" type="stmt"/>
       </file>
       <file name="ProductList.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue">
-        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10"/>
-        <line num="14" count="5" type="stmt"/>
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10"/>
         <line num="15" count="5" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="21" count="5" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="29" count="24" type="stmt"/>
-        <line num="30" count="43" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="31" count="24" type="stmt"/>
+        <line num="32" count="43" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="1" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
       </file>
       <file name="ThePagination.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ThePagination.vue">
         <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
@@ -79,10 +89,14 @@
       </file>
     </package>
     <package name="src.layout">
-      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="DefaultFooter.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="8" count="0" type="stmt"/>
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
       </file>
       <file name="DefaultHeader.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -109,19 +123,18 @@
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="2"/>
       <file name="activities.service.ts" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="2"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="apiClient.ts" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="6" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -358,24 +371,26 @@
       </file>
     </package>
     <package name="src.views">
-      <metrics statements="15" coveredstatements="11" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="5"/>
+      <metrics statements="17" coveredstatements="13" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="5"/>
       <file name="Home.vue" path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue">
-        <metrics statements="15" coveredstatements="11" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="5"/>
-        <line num="19" count="1" type="stmt"/>
+        <metrics statements="17" coveredstatements="13" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="5"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="65" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="73" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="77" count="1" type="stmt"/>
       </file>
     </package>
   </project>

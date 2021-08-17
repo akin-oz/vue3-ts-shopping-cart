@@ -1,6 +1,7 @@
 import { nextTick } from "vue";
 import { createRouter, createWebHistory } from 'vue-router'
 import { createStore } from 'vuex'
+import i18n from '@/plugins/i18n'
 import { mount } from "@vue/test-utils";
 import Home from '@/views/Home.vue';
 import ProductList from '@/components/ProductList.vue';
@@ -37,7 +38,7 @@ describe("Home.vue", () => {
     await router.isReady()
     const wrapper = mount(Home, {
       global: {
-        plugins: [router],
+        plugins: [router, i18n],
         provide: {
           store
         },

@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/ComposablePagination.spec.ts">
-        <testCase name="pagination should return pagination" duration="14"/>
-        <testCase name="pagination should update pages" duration="2"/>
+        <testCase name="pagination should return pagination" duration="4"/>
+        <testCase name="pagination should update pages" duration="1"/>
         <testCase name="pagination should update total" duration="1"/>
         <testCase name="pagination should update currentPage to last" duration="1"/>
-        <testCase name="pagination navigation should `next`" duration="0"/>
-        <testCase name="pagination navigation should `prev`" duration="1"/>
-        <testCase name="pagination navigation should `first`" duration="0"/>
-        <testCase name="pagination navigation should `last`" duration="1"/>
+        <testCase name="pagination navigation should `next`" duration="1"/>
+        <testCase name="pagination navigation should `prev`" duration="0"/>
+        <testCase name="pagination navigation should `first`" duration="1"/>
+        <testCase name="pagination navigation should `last`" duration="28"/>
         <testCase name="pagination currentPage should currentPage should be `1` if `0` is passed" duration="1"/>
         <testCase name="pagination currentPage should not go below page 1" duration="0"/>
-        <testCase name="pagination currentPage should allow setting the page through currentPage" duration="2"/>
-        <testCase name="pagination when changing the pageSize offset shouldn&apos;t change" duration="0"/>
+        <testCase name="pagination currentPage should allow setting the page through currentPage" duration="3"/>
+        <testCase name="pagination when changing the pageSize offset shouldn&apos;t change" duration="4"/>
     </file>
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/ComposableAxios.spec.ts">
-        <testCase name="axios should return data" duration="4"/>
+        <testCase name="axios should return data" duration="27"/>
         <testCase name="axios should call getData and get correct data" duration="2"/>
-        <testCase name="axios should call getData and throw error" duration="4"/>
-    </file>
-    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/StoreBag.spec.ts">
-        <testCase name="MUTATIONS should render bag module correctly" duration="1"/>
-        <testCase name="MUTATIONS should mutate state correctly" duration="0"/>
-        <testCase name="MUTATIONS should return getter correctly" duration="1"/>
+        <testCase name="axios should call getData and throw error" duration="1"/>
     </file>
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/StoreRoot.spec.ts">
         <testCase name="MUTATIONS should render root module correctly" duration="0"/>
         <testCase name="MUTATIONS should mutate state correctly" duration="1"/>
         <testCase name="MUTATIONS should return getter correctly" duration="0"/>
     </file>
-    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/StoreWishlist.spec.ts">
-        <testCase name="wishlist should render wishlist module correctly" duration="0"/>
-        <testCase name="wishlist should mutate state correctly" duration="0"/>
-        <testCase name="wishlist should return getter correctly" duration="1"/>
-    </file>
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/ComposableStore.spec.ts">
         <testCase name="store should return store" duration="1"/>
     </file>
+    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/StoreWishlist.spec.ts">
+        <testCase name="wishlist should render wishlist module correctly" duration="1"/>
+        <testCase name="wishlist should mutate state correctly" duration="0"/>
+        <testCase name="wishlist should return getter correctly" duration="0"/>
+    </file>
+    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/StoreBag.spec.ts">
+        <testCase name="MUTATIONS should render bag module correctly" duration="0"/>
+        <testCase name="MUTATIONS should mutate state correctly" duration="1"/>
+        <testCase name="MUTATIONS should return getter correctly" duration="0"/>
+    </file>
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/WishlistTrigger.spec.ts">
-        <testCase name="WishlistTrigger.vue should render correctly" duration="59"/>
-    </file>
-    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/ProductList.spec.ts">
-        <testCase name="ProductList.vue should render correctly" duration="114"/>
-        <testCase name="ProductList.vue should add bag item correctly" duration="42"/>
-        <testCase name="ProductList.vue should add wishlist item correctly" duration="32"/>
-        <testCase name="ProductList.vue should remove wishlist item correctly" duration="41"/>
-    </file>
-    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/Home.spec.ts">
-        <testCase name="Home.vue should render correctly" duration="255"/>
+        <testCase name="WishlistTrigger.vue should render correctly" duration="83"/>
     </file>
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/MiniBagTrigger.spec.ts">
-        <testCase name="MiniBagTrigger.vue should render correctly" duration="47"/>
+        <testCase name="MiniBagTrigger.vue should render correctly" duration="87"/>
     </file>
     <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/MiniBag.spec.ts">
-        <testCase name="MiniBag.vue should render correctly" duration="35"/>
-        <testCase name="MiniBag.vue should remove item correctly" duration="19"/>
+        <testCase name="MiniBag.vue should render correctly" duration="48"/>
+        <testCase name="MiniBag.vue should remove item correctly" duration="23"/>
+    </file>
+    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/Home.spec.ts">
+        <testCase name="Home.vue should render correctly" duration="99"/>
+    </file>
+    <file path="/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/tests/unit/ProductList.spec.ts">
+        <testCase name="ProductList.vue should render correctly" duration="57"/>
+        <testCase name="ProductList.vue should add bag item correctly" duration="30"/>
+        <testCase name="ProductList.vue should add wishlist item correctly" duration="17"/>
+        <testCase name="ProductList.vue should remove wishlist item correctly" duration="20"/>
     </file>
 </testExecutions>

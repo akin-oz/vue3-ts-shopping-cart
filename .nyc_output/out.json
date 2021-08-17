@@ -4,199 +4,371 @@
     "statementMap": {
       "0": {
         "start": {
-          "line": 4,
-          "column": 33
+          "line": 11,
+          "column": 22
         },
         "end": {
-          "line": 4,
-          "column": 65
+          "line": 11,
+          "column": 32
         }
       },
       "1": {
         "start": {
-          "line": 5,
-          "column": 35
+          "line": 12,
+          "column": 22
         },
         "end": {
-          "line": 5,
-          "column": 69
+          "line": 12,
+          "column": 59
         }
       },
       "2": {
         "start": {
-          "line": 7,
-          "column": 2
+          "line": 12,
+          "column": 37
         },
         "end": {
           "line": 12,
-          "column": 5
+          "column": 58
         }
       },
       "3": {
         "start": {
-          "line": 8,
+          "line": 13,
+          "column": 22
+        },
+        "end": {
+          "line": 13,
+          "column": 59
+        }
+      },
+      "4": {
+        "start": {
+          "line": 13,
+          "column": 37
+        },
+        "end": {
+          "line": 13,
+          "column": 58
+        }
+      },
+      "5": {
+        "start": {
+          "line": 14,
+          "column": 8
+        },
+        "end": {
+          "line": 40,
+          "column": 11
+        }
+      },
+      "6": {
+        "start": {
+          "line": 27,
           "column": 28
         },
         "end": {
-          "line": 10,
-          "column": 5
+          "line": 36,
+          "column": 30
+        }
+      },
+      "7": {
+        "start": {
+          "line": 41,
+          "column": 23
+        },
+        "end": {
+          "line": 41,
+          "column": 77
+        }
+      },
+      "8": {
+        "start": {
+          "line": 41,
+          "column": 38
+        },
+        "end": {
+          "line": 41,
+          "column": 76
+        }
+      },
+      "9": {
+        "start": {
+          "line": 42,
+          "column": 42
+        },
+        "end": {
+          "line": 42,
+          "column": 51
+        }
+      },
+      "10": {
+        "start": {
+          "line": 43,
+          "column": 8
+        },
+        "end": {
+          "line": 43,
+          "column": 43
+        }
+      },
+      "11": {
+        "start": {
+          "line": 44,
+          "column": 8
+        },
+        "end": {
+          "line": 44,
+          "column": 18
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 3,
-            "column": 16
-          },
-          "end": {
-            "line": 3,
-            "column": 22
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 3,
-            "column": 70
-          },
-          "end": {
-            "line": 13,
-            "column": 1
-          }
-        },
-        "line": 3
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 8,
-            "column": 22
-          },
-          "end": {
-            "line": 8,
-            "column": 23
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 8,
-            "column": 28
+            "line": 10,
+            "column": 4
           },
           "end": {
             "line": 10,
             "column": 5
           }
         },
-        "line": 8
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 12
+          },
+          "end": {
+            "line": 45,
+            "column": 5
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 31
+          },
+          "end": {
+            "line": 12,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 37
+          },
+          "end": {
+            "line": 12,
+            "column": 58
+          }
+        },
+        "line": 12
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 31
+          },
+          "end": {
+            "line": 13,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 37
+          },
+          "end": {
+            "line": 13,
+            "column": 58
+          }
+        },
+        "line": 13
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 26,
+            "column": 57
+          },
+          "end": {
+            "line": 26,
+            "column": 58
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 65
+          },
+          "end": {
+            "line": 37,
+            "column": 25
+          }
+        },
+        "line": 26
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 41,
+            "column": 32
+          },
+          "end": {
+            "line": 41,
+            "column": 33
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 41,
+            "column": 38
+          },
+          "end": {
+            "line": 41,
+            "column": 76
+          }
+        },
+        "line": 41
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 41,
+            "column": 38
+          },
+          "end": {
+            "line": 41,
+            "column": 76
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 41,
+              "column": 38
+            },
+            "end": {
+              "line": 41,
+              "column": 68
+            }
+          },
+          {
+            "start": {
+              "line": 41,
+              "column": 72
+            },
+            "end": {
+              "line": 41,
+              "column": 76
+            }
+          }
+        ],
+        "line": 41
+      }
+    },
     "s": {
       "0": 24,
       "1": 24,
       "2": 24,
-      "3": 24
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 0,
+      "7": 24,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 24
     },
     "f": {
       "0": 24,
-      "1": 24
+      "1": 24,
+      "2": 24,
+      "3": 0,
+      "4": 24
     },
-    "b": {},
+    "b": {
+      "0": [
+        24,
+        24
+      ]
+    },
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue"
       ],
       "names": [],
-      "mappings": ";;;;;;wBACE,aAA6C;sBAA9B,CAAc;MAAd,aAAc",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAA;AAC/B,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAA;AAClC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAA;AAClC,OAAO,aAAa,MAAM,4BAA4B,CAAA;AAGtD,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,aAAa;KACd;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAA;QACxB,MAAM,KAAK,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,KAAK,CAAC,SAAuB,CAAC,CAAC;QAClE,MAAM,KAAK,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,KAAK,CAAC,SAAS,CAAC,CAAC;QACpD,OAAO,CAAC;YACN,KAAK,EAAE,uCAAuC;YAC9C,SAAS,EAAE;gBACT,IAAI,EAAE,IAAI;gBACV,GAAG,EAAE,IAAI;aACV;YACD,MAAM,EAAE,CAAC;oBACP,IAAI,EAAE,qBAAqB;oBAC3B,IAAI,EAAE;wBACJ,UAAU,EAAE,mBAAmB;wBAC/B,OAAO,EAAE,UAAU;wBACnB,aAAa,EAAE,KAAK,CAAC,KAAK;wBAC1B,eAAe,EAAE,KAAK,CAAC,KAAK,CAAC,GAAG,CAAC,IAAI,CAAC,EAAE;4BACtC,OAAO;gCACL,OAAO,EAAE,SAAS;gCAClB,KAAK,EAAE,IAAI,CAAC,eAAe;gCAC3B,IAAI,EAAE,IAAI,CAAC,KAAK;gCAChB,WAAW,EAAE,IAAI,CAAC,WAAW;gCAC7B,MAAM,EAAE;oCACN,OAAO,EAAE,OAAO;oCAChB,OAAO,EAAE,IAAI,CAAC,YAAY,EAAE,eAAe;iCAC5C;6BACF,CAAA;wBACH,CAAC,CAAC;qBACH;iBACF,CAAC;SACH,CAAC,CAAA;QAEF,MAAM,MAAM,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,YAAY,CAAC,OAAO,CAAC,QAAQ,CAAC,IAAI,IAAI,CAAC,CAAC;QACtE,MAAM,EAAE,MAAM,EAAE,aAAa,EAAE,GAAG,OAAO,EAAE,CAAC;QAC5C,aAAa,CAAC,KAAK,GAAG,MAAM,CAAC,KAAK,CAAA;QAElC,OAAO,EAAE,CAAA;IACX,CAAC;CACF,CAAC,CAAA",
       "sourcesContent": [
-        "<template>\n  <DefaultLayout><router-view/></DefaultLayout>\n</template>\n<script lang=\"ts\">\nimport { defineComponent } from 'vue'\nimport DefaultLayout from '@/layout/DefaultLayout.vue'\n\nexport default defineComponent({\n  components: {\n    DefaultLayout,\n  },\n  setup() {\n    return {}\n  },\n})\n</script>"
+        "\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from 'vuex'\nimport { useMeta } from 'vue-meta'\nimport { useI18n } from 'vue-i18n'\nimport DefaultLayout from '@/layout/DefaultLayout.vue'\nimport { ItemData } from '@/store/interfaces'\n\nexport default defineComponent({\n  components: {\n    DefaultLayout,\n  },\n  setup() {\n    const store = useStore()\n    const items = computed(() => store.state.itemLists as ItemData[]);\n    const count = computed(() => store.state.itemCount);\n    useMeta({\n      title: 'JS Challange - Jagaard - Zeki Oztorun',\n      htmlAttrs: {\n        lang: 'en',\n        amp: true\n      },\n      script: [{\n        type: 'application/ld+json',\n        json: {\n          '@context': 'http://schema.org',\n          '@type': 'ItemList',\n          numberOfItems: count.value,\n          itemListElement: items.value.map(item => {\n            return {\n              \"@type\": \"Product\",\n              image: item.cover_image_url,\n              name: item.title,\n              description: item.description,\n              offers: {\n                \"@type\": \"Offer\",\n                \"price\": item.retail_price?.formatted_value\n              }\n            }\n          })\n        }\n      }]\n    })\n\n    const locale = computed(() => localStorage.getItem('locale') ?? 'it');\n    const { locale: currentLocale } = useI18n();\n    currentLocale.value = locale.value\n\n    return {}\n  },\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "7b1debac547606c6c3cd2894211de7b946d9707a"
+    "hash": "d5b34e8945e40b594a44ad5ff430fb381ecb92c9"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue",
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 10,
+          "column": 8
         },
         "end": {
-          "line": 3,
-          "column": 39
-        }
-      },
-      "1": {
-        "start": {
-          "line": 6,
-          "column": 35
-        },
-        "end": {
-          "line": 6,
-          "column": 69
-        }
-      },
-      "2": {
-        "start": {
-          "line": 7,
-          "column": 35
-        },
-        "end": {
-          "line": 7,
-          "column": 69
-        }
-      },
-      "3": {
-        "start": {
-          "line": 9,
-          "column": 2
-        },
-        "end": {
-          "line": 13,
-          "column": 5
+          "line": 10,
+          "column": 18
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 5,
-            "column": 16
+            "line": 9,
+            "column": 4
           },
           "end": {
-            "line": 5,
-            "column": 22
+            "line": 9,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 5,
-            "column": 70
+            "line": 9,
+            "column": 12
           },
           "end": {
-            "line": 14,
-            "column": 1
+            "line": 11,
+            "column": 5
           }
         },
-        "line": 5
+        "line": 9
       }
     },
     "branchMap": {},
     "s": {
-      "0": 24,
-      "1": 24,
-      "2": 24,
-      "3": 24
+      "0": 24
     },
     "f": {
       "0": 24
@@ -204,470 +376,421 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue"
       ],
       "names": [],
-      "mappings": ";;qBACO,KAAK,EAAC,SAAS;;;;;;wBAApB,aAIM,OAJN,UAIM;IAHJ,aAA+B;IAC/B,YAAa;IACb,aAA+B",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AACrC,OAAO,aAAa,MAAM,4BAA4B,CAAA;AACtD,OAAO,aAAa,MAAM,4BAA4B,CAAA;AAEtD,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,aAAa;QACb,aAAa;KACd;IACD,KAAK;QAGH,OAAO,EAAE,CAAA;IACX,CAAC;CACF,CAAC,CAAA",
       "sourcesContent": [
-        "<template>\n  <div class=\"default\">\n    <DefaultHeader></DefaultHeader>\n    <slot></slot>\n    <DefaultFooter></DefaultFooter>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue'\nimport DefaultHeader from '@/layout/DefaultHeader.vue'\nimport DefaultFooter from '@/layout/DefaultFooter.vue'\n\nexport default defineComponent({\n  components: {\n    DefaultHeader,\n    DefaultFooter,\n  },\n  setup () {\n    \n\n    return {}\n  }\n})\n</script>"
+        "\nimport { defineComponent } from 'vue'\nimport DefaultHeader from '@/layout/DefaultHeader.vue'\nimport DefaultFooter from '@/layout/DefaultFooter.vue'\n\nexport default defineComponent({\n  components: {\n    DefaultHeader,\n    DefaultFooter,\n  },\n  setup () {\n    \n\n    return {}\n  }\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "1b7674aacbced1542d1fc2c4b1af52d098d46592"
+    "hash": "a086f18c8edf3ecf95b8ace00bc01fa9db850f0d"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue",
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 12,
+          "column": 32
         },
         "end": {
-          "line": 3,
-          "column": 56
+          "line": 12,
+          "column": 42
         }
       },
       "1": {
         "start": {
-          "line": 4,
-          "column": 32
-        },
-        "end": {
-          "line": 4,
-          "column": 99
-        }
-      },
-      "2": {
-        "start": {
-          "line": 5,
-          "column": 32
-        },
-        "end": {
-          "line": 5,
-          "column": 98
-        }
-      },
-      "3": {
-        "start": {
-          "line": 6,
-          "column": 19
-        },
-        "end": {
-          "line": 6,
-          "column": 55
-        }
-      },
-      "4": {
-        "start": {
-          "line": 7,
-          "column": 19
-        },
-        "end": {
-          "line": 7,
-          "column": 59
-        }
-      },
-      "5": {
-        "start": {
-          "line": 8,
-          "column": 19
-        },
-        "end": {
-          "line": 8,
-          "column": 59
-        }
-      },
-      "6": {
-        "start": {
-          "line": 11,
-          "column": 36
-        },
-        "end": {
-          "line": 11,
-          "column": 71
-        }
-      },
-      "7": {
-        "start": {
-          "line": 12,
-          "column": 37
-        },
-        "end": {
-          "line": 12,
-          "column": 73
-        }
-      },
-      "8": {
-        "start": {
           "line": 13,
-          "column": 29
-        },
-        "end": {
-          "line": 13,
-          "column": 57
-        }
-      },
-      "9": {
-        "start": {
-          "line": 15,
-          "column": 2
-        },
-        "end": {
-          "line": 35,
-          "column": 5
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "render",
-        "decl": {
-          "start": {
-            "line": 10,
-            "column": 16
-          },
-          "end": {
-            "line": 10,
-            "column": 22
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 10,
-            "column": 70
-          },
-          "end": {
-            "line": 36,
-            "column": 1
-          }
-        },
-        "line": 10
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 29,
-            "column": 4
-          },
-          "end": {
-            "line": 34,
-            "column": 37
-          }
-        },
-        "type": "cond-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 30,
-              "column": 9
-            },
-            "end": {
-              "line": 33,
-              "column": 37
-            }
-          },
-          {
-            "start": {
-              "line": 34,
-              "column": 8
-            },
-            "end": {
-              "line": 34,
-              "column": 37
-            }
-          }
-        ],
-        "line": 29
-      }
-    },
-    "s": {
-      "0": 24,
-      "1": 24,
-      "2": 24,
-      "3": 24,
-      "4": 24,
-      "5": 24,
-      "6": 26,
-      "7": 26,
-      "8": 26,
-      "9": 26
-    },
-    "f": {
-      "0": 26
-    },
-    "b": {
-      "0": [
-        2,
-        24
-      ]
-    },
-    "inputSourceMap": {
-      "version": 3,
-      "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue"
-      ],
-      "names": [],
-      "mappings": ";;qBACO,KAAK,EAAC,0BAA0B;gCACnC,aAA4C,QAAxC,KAAK,EAAC,uBAAuB,IAAC,OAAK;gCACvC,aAA0C,SAArC,KAAK,EAAC,wBAAwB;qBAC9B,KAAK,EAAC,yBAAyB;qBAC7B,KAAK,EAAC,6BAA6B;qBAGnC,KAAK,EAAC,6BAA6B;;;;;;;wBAP5C,aAYM,OAZN,UAYM;IAXJ,UAA4C;IAC5C,UAA0C;IAC1C,aAOM,OAPN,UAOM;MANJ,aAEM,OAFN,UAEM;QADJ,aAAwF;UAAvE,YAAU,EAAE,kBAAa;UAAE,QAAQ,EAAC,iBAAiB;;;MAExE,aAEM,OAFN,UAEM;QADJ,aAAmC;;;KAGxB,oBAAe;uBAA9B,aAA8D;;UAA7B,YAAU,EAAE,kBAAa",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue",
-      "sourceRoot": "",
-      "sourcesContent": [
-        "<template>\n  <div class=\"default-header container\">\n    <h1 class=\"default-header__title\">BRAND</h1>\n    <div class=\"default-header__spacer\"></div>\n    <div class=\"default-header__actions\">\n      <div class=\"default-header__action-item\">\n        <MiniBagTrigger @mouseenter=\"toggleMiniBag\" itemprop=\"minibag-trigger\"></MiniBagTrigger>\n      </div>\n      <div class=\"default-header__action-item\">\n        <WishlistTrigger></WishlistTrigger>\n      </div>\n    </div>\n    <MiniBag v-if=\"isMiniBagActive\" @mouseleave=\"toggleMiniBag\" />\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent, ref, Ref } from 'vue'\nimport MiniBag from '@/components/MiniBag.vue'\nimport MiniBagTrigger from '@/components/MiniBagTrigger.vue'\nimport WishlistTrigger from '@/components/WishlistTrigger.vue'\n\nexport default defineComponent({\n  components: {\n    MiniBag,\n    MiniBagTrigger,\n    WishlistTrigger,\n  },\n  setup () {\n    const isMiniBagActive: Ref<boolean> = ref(false)\n    const toggleMiniBag = () => {\n      isMiniBagActive.value = !isMiniBagActive.value\n    }\n\n    return {\n      toggleMiniBag,\n      isMiniBagActive,\n    }\n  }\n})\n</script>\n"
-      ]
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "93a1341453034d6cea83c659fce940c373466a2b"
-  },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 3,
-          "column": 19
-        },
-        "end": {
-          "line": 6,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 7,
-          "column": 19
-        },
-        "end": {
-          "line": 7,
-          "column": 63
-        }
-      },
-      "2": {
-        "start": {
-          "line": 8,
-          "column": 19
-        },
-        "end": {
-          "line": 8,
-          "column": 51
-        }
-      },
-      "3": {
-        "start": {
-          "line": 9,
-          "column": 19
-        },
-        "end": {
-          "line": 9,
-          "column": 61
-        }
-      },
-      "4": {
-        "start": {
-          "line": 10,
-          "column": 32
-        },
-        "end": {
-          "line": 10,
-          "column": 90
-        }
-      },
-      "5": {
-        "start": {
-          "line": 11,
-          "column": 19
-        },
-        "end": {
-          "line": 11,
-          "column": 53
-        }
-      },
-      "6": {
-        "start": {
-          "line": 12,
-          "column": 19
+          "column": 30
         },
         "end": {
           "line": 15,
-          "column": 1
-        }
-      },
-      "7": {
-        "start": {
-          "line": 16,
-          "column": 32
-        },
-        "end": {
-          "line": 16,
-          "column": 79
-        }
-      },
-      "8": {
-        "start": {
-          "line": 17,
-          "column": 19
-        },
-        "end": {
-          "line": 17,
-          "column": 52
-        }
-      },
-      "9": {
-        "start": {
-          "line": 20,
-          "column": 32
-        },
-        "end": {
-          "line": 20,
-          "column": 63
-        }
-      },
-      "10": {
-        "start": {
-          "line": 22,
-          "column": 2
-        },
-        "end": {
-          "line": 59,
-          "column": 4
-        }
-      },
-      "11": {
-        "start": {
-          "line": 24,
-          "column": 6
-        },
-        "end": {
-          "line": 48,
           "column": 9
         }
       },
-      "12": {
+      "2": {
         "start": {
-          "line": 40,
-          "column": 32
+          "line": 14,
+          "column": 12
         },
         "end": {
-          "line": 40,
+          "line": 14,
           "column": 59
+        }
+      },
+      "3": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 19,
+          "column": 10
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 19,
-            "column": 16
+            "line": 11,
+            "column": 4
           },
           "end": {
-            "line": 19,
-            "column": 22
+            "line": 11,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 19,
-            "column": 70
+            "line": 11,
+            "column": 12
           },
           "end": {
-            "line": 60,
-            "column": 1
+            "line": 20,
+            "column": 5
           }
         },
-        "line": 19
+        "line": 11
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 23,
-            "column": 80
+            "line": 13,
+            "column": 30
           },
           "end": {
-            "line": 23,
-            "column": 81
+            "line": 13,
+            "column": 31
           }
         },
         "loc": {
           "start": {
-            "line": 23,
-            "column": 90
+            "line": 13,
+            "column": 36
           },
           "end": {
-            "line": 49,
-            "column": 5
+            "line": 15,
+            "column": 9
           }
         },
-        "line": 23
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 40,
-            "column": 21
-          },
-          "end": {
-            "line": 40,
-            "column": 22
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 40,
-            "column": 32
-          },
-          "end": {
-            "line": 40,
-            "column": 59
-          }
-        },
-        "line": 40
+        "line": 13
       }
     },
     "branchMap": {},
     "s": {
       "0": 24,
       "1": 24,
-      "2": 24,
-      "3": 24,
-      "4": 24,
-      "5": 24,
-      "6": 24,
-      "7": 24,
-      "8": 24,
-      "9": 4,
-      "10": 4,
-      "11": 2,
-      "12": 2
+      "2": 2,
+      "3": 24
     },
     "f": {
-      "0": 4,
-      "1": 2,
-      "2": 2
+      "0": 24,
+      "1": 2
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue.ts",
+      "sourceRoot": "",
+      "sources": [
+        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue"
+      ],
+      "names": [],
+      "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,GAAG,EAAO,MAAM,KAAK,CAAA;AAC/C,OAAO,OAAO,MAAM,0BAA0B,CAAA;AAC9C,OAAO,cAAc,MAAM,iCAAiC,CAAA;AAC5D,OAAO,eAAe,MAAM,kCAAkC,CAAA;AAE9D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,OAAO;QACP,cAAc;QACd,eAAe;KAChB;IACD,KAAK;QACH,MAAM,eAAe,GAAiB,GAAG,CAAC,KAAK,CAAC,CAAA;QAChD,MAAM,aAAa,GAAG,GAAG,EAAE;YACzB,eAAe,CAAC,KAAK,GAAG,CAAC,eAAe,CAAC,KAAK,CAAA;QAChD,CAAC,CAAA;QAED,OAAO;YACL,aAAa;YACb,eAAe;SAChB,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
+      "sourcesContent": [
+        "\nimport { defineComponent, ref, Ref } from 'vue'\nimport MiniBag from '@/components/MiniBag.vue'\nimport MiniBagTrigger from '@/components/MiniBagTrigger.vue'\nimport WishlistTrigger from '@/components/WishlistTrigger.vue'\n\nexport default defineComponent({\n  components: {\n    MiniBag,\n    MiniBagTrigger,\n    WishlistTrigger,\n  },\n  setup () {\n    const isMiniBagActive: Ref<boolean> = ref(false)\n    const toggleMiniBag = () => {\n      isMiniBagActive.value = !isMiniBagActive.value\n    }\n\n    return {\n      toggleMiniBag,\n      isMiniBagActive,\n    }\n  }\n})\n"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "91674977bfe82f8170f2e05574103b6e7ccbfb47"
+  },
+  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 11,
+          "column": 22
+        },
+        "end": {
+          "line": 11,
+          "column": 32
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 22
+        },
+        "end": {
+          "line": 12,
+          "column": 31
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 25
+        },
+        "end": {
+          "line": 13,
+          "column": 71
+        }
+      },
+      "3": {
+        "start": {
+          "line": 13,
+          "column": 40
+        },
+        "end": {
+          "line": 13,
+          "column": 70
+        }
+      },
+      "4": {
+        "start": {
+          "line": 14,
+          "column": 27
+        },
+        "end": {
+          "line": 17,
+          "column": 10
+        }
+      },
+      "5": {
+        "start": {
+          "line": 15,
+          "column": 26
+        },
+        "end": {
+          "line": 15,
+          "column": 58
+        }
+      },
+      "6": {
+        "start": {
+          "line": 16,
+          "column": 12
+        },
+        "end": {
+          "line": 16,
+          "column": 45
+        }
+      },
+      "7": {
+        "start": {
+          "line": 18,
+          "column": 33
+        },
+        "end": {
+          "line": 20,
+          "column": 9
+        }
+      },
+      "8": {
+        "start": {
+          "line": 19,
+          "column": 12
+        },
+        "end": {
+          "line": 19,
+          "column": 68
+        }
+      },
+      "9": {
+        "start": {
+          "line": 21,
+          "column": 8
+        },
+        "end": {
+          "line": 26,
+          "column": 10
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 4
+          },
+          "end": {
+            "line": 10,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 12
+          },
+          "end": {
+            "line": 27,
+            "column": 5
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 34
+          },
+          "end": {
+            "line": 13,
+            "column": 35
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 40
+          },
+          "end": {
+            "line": 13,
+            "column": 70
+          }
+        },
+        "line": 13
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 36
+          },
+          "end": {
+            "line": 14,
+            "column": 37
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 42
+          },
+          "end": {
+            "line": 17,
+            "column": 9
+          }
+        },
+        "line": 14
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 33
+          },
+          "end": {
+            "line": 18,
+            "column": 34
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 43
+          },
+          "end": {
+            "line": 20,
+            "column": 9
+          }
+        },
+        "line": 18
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 19
+          },
+          "end": {
+            "line": 16,
+            "column": 44
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 16,
+              "column": 27
+            },
+            "end": {
+              "line": 16,
+              "column": 39
+            }
+          },
+          {
+            "start": {
+              "line": 16,
+              "column": 42
+            },
+            "end": {
+              "line": 16,
+              "column": 44
+            }
+          }
+        ],
+        "line": 16
+      }
+    },
+    "s": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 4,
+      "4": 2,
+      "5": 4,
+      "6": 4,
+      "7": 2,
+      "8": 2,
+      "9": 2
+    },
+    "f": {
+      "0": 2,
+      "1": 4,
+      "2": 4,
+      "3": 2
+    },
+    "b": {
+      "0": [
+        2,
+        2
+      ]
+    },
+    "inputSourceMap": {
+      "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue"
       ],
       "names": [],
-      "mappings": ";;;EAEI,KAAK,EAAC,iBAAiB;EACvB,QAAQ,EAAC,SAAS;;qBAQX,KAAK,EAAC,iCAAiC;qBAErC,KAAK,EAAC,qBAAqB;qBAO7B,KAAK,EAAC,+BAA+B;gCAW5C,aAA4B,QAAxB,KAAK,EAAC,iBAAiB;qBACtB,KAAK,EAAC,uBAAuB;;EAC3B,KAAK,EAAC,uBAAuB;EAAC,KAAoD,EAApD,kDAAoD;;gCACrF,aAAyB,aAApB,gBAAc;qBACd,KAA0B,EAA1B,sBAA0B;;;;;wCAlCrC,aAqCM,OArCN,UAqCM;uBAhCJ,aAwBM,6BAtBW,aAAQ,GAAhB,IAAI;4BAFb,aAwBM;QAvBJ,KAAK,EAAC,kBAAkB;QAEvB,GAAG,EAAE,IAAI,CAAC,IAAI;;QAEf,aAQM,OARN,UAQM;UAPJ,aAAiF;YAA3E,GAAG,KAAK,IAAI,CAAC,eAAe,CAAC,KAAK;YAAkC,GAAG,EAAC,EAAE;;UAChF,aAKM,OALN,UAKM;8CAJD,IAAI,CAAC,KAAK,IAAG,GAChB;YAAA,aAEM,8BADH,IAAI,CAAC,YAAY,CAAC,eAAe;;;QAIxC,aASM,OATN,UASM;UARJ,aAOS;YANN,OAAK,aAAE,qBAAgB,CAAC,IAAI;YAC7B,IAAI,EAAC,QAAQ;YACb,KAAK,EAAC,sBAAsB;YAC5B,QAAQ,EAAC,eAAe;;YAE1B,aAAc;;;;;IAIlB,UAA4B;IAC5B,aAKM,OALN,UAKM;MAJJ,aAGM,OAHN,UAGM;QAFJ,UAAyB;QACzB,aAAsD,OAAtD,UAAsD,mBAAnB,eAAU;;;;aA/BzC,aAAQ,CAAC,MAAM",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAE9C,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAC;AAChD,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAC;AAChC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AACnC,OAAO,UAAU,MAAM,mCAAmC,CAAA;AAE1D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,UAAU;KACX;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,EAAE,CAAC,EAAE,GAAG,OAAO,EAAE,CAAA;QACvB,MAAM,QAAQ,GAAG,QAAQ,CACvB,GAAG,EAAE,CAAG,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,QAAQ,CACrE,CAAC;QACF,MAAM,UAAU,GAAG,QAAQ,CACzB,GAAG,EAAE;YACH,MAAM,KAAK,GAAK,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,UAAU,CAAC;YAC/E,OAAO,KAAK,CAAC,CAAC,CAAC,KAAK,KAAK,EAAE,CAAC,CAAC,CAAC,EAAE,CAAA;QAClC,CAAC,CACF,CAAC;QACF,MAAM,gBAAgB,GAAG,CAAC,IAAc,EAAE,EAAE;YAC1C,KAAK,CAAC,QAAQ,CAAC,SAAS,CAAC,OAAO,CAAC,eAAe,EAAE,IAAI,CAAC,CAAA;QACzD,CAAC,CAAC;QACF,OAAO;YACL,QAAQ;YACR,UAAU;YACV,gBAAgB;YAChB,CAAC;SACF,CAAC;IACJ,CAAC;CACF,CAAC,CAAC",
       "sourcesContent": [
-        "<template>\n  <div\n    class=\"minibag-wrapper\"\n    itemprop=\"minibag\"\n    v-show=\"bagItems.length\"\n  >\n    <div\n      class=\"minibag-item row\"\n      v-for=\"item in bagItems\"\n      :key=\"item.uuid\"\n    >\n      <div class=\"minibag-item__content col-xs-11\">\n        <img :src=\"`${item.cover_image_url.split('?')[0]}?w=100&ar=3:2&fit=crop`\" alt=\"\">\n        <div class=\"minibag-item__title\">\n          {{ item.title }}\n          <div>\n          {{ item.retail_price.formatted_value }}\n          </div>\n        </div>\n      </div>\n      <div class=\"minibag-item__action col-xs-1\">\n        <button\n          @click=\"handleRemoveItem(item)\"\n          type=\"button\"\n          class=\"minibag-item__button\"\n          itemprop=\"remove-button\"\n        >\n        <IconDelete />\n        </button>\n      </div>\n    </div>\n    <hr class=\"minibag-divider\">\n    <div class=\"minibag-item subtotal\">\n      <div class=\"minibag-item__content\" style=\"justify-content: space-between; width: 100%;\">\n        <div>Cart Subtotal:</div>\n        <div style=\"margin-left: 1rem;\">{{ totalPrice }}</div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { BAG_STORE } from \"@/store/constants\";\nimport { BagStateTypes, ItemData } from \"@/store/interfaces\";\nimport { computed, defineComponent } from \"vue\";\nimport { useStore } from \"vuex\";\nimport IconDelete from '@/components/icons/IconDelete.vue'\n\nexport default defineComponent({\n  components: {\n    IconDelete,\n  },\n  setup() {\n    const store = useStore();\n    const bagItems = computed(\n      () => ((store.state.bagModule as unknown) as BagStateTypes).bagItems\n    );\n    const totalPrice = computed(\n      () => {\n        const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;\n        return price ? `€ ${price}` : ''\n      }\n    );\n    const handleRemoveItem = (item: ItemData) => {\n      store.dispatch(BAG_STORE.ACTIONS.REMOVE_BAG_ITEM, item)\n    };\n    return {\n      bagItems,\n      totalPrice,\n      handleRemoveItem,\n    };\n  },\n});\n</script>\n"
+        "\nimport { BAG_STORE } from \"@/store/constants\";\nimport { BagStateTypes, ItemData } from \"@/store/interfaces\";\nimport { computed, defineComponent } from \"vue\";\nimport { useStore } from \"vuex\";\nimport { useI18n } from 'vue-i18n';\nimport IconDelete from '@/components/icons/IconDelete.vue'\n\nexport default defineComponent({\n  components: {\n    IconDelete,\n  },\n  setup() {\n    const store = useStore();\n    const { t } = useI18n()\n    const bagItems = computed(\n      () => ((store.state.bagModule as unknown) as BagStateTypes).bagItems\n    );\n    const totalPrice = computed(\n      () => {\n        const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;\n        return price ? `€ ${price}` : ''\n      }\n    );\n    const handleRemoveItem = (item: ItemData) => {\n      store.dispatch(BAG_STORE.ACTIONS.REMOVE_BAG_ITEM, item)\n    };\n    return {\n      bagItems,\n      totalPrice,\n      handleRemoveItem,\n      t,\n    };\n  },\n});\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b86a2e53c01f7ac65c4728d0844e1848f776b06f"
+    "hash": "6cbd6f88d4cadc7f7e93c2ec9e81e2a817136557"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/enums.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/enums.ts",
@@ -1786,108 +1909,222 @@
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 10,
+          "column": 22
         },
         "end": {
-          "line": 3,
-          "column": 54
+          "line": 10,
+          "column": 32
         }
       },
       "1": {
         "start": {
-          "line": 4,
-          "column": 19
+          "line": 11,
+          "column": 26
         },
         "end": {
-          "line": 4,
-          "column": 54
+          "line": 11,
+          "column": 89
         }
       },
       "2": {
         "start": {
-          "line": 5,
-          "column": 19
+          "line": 11,
+          "column": 41
         },
         "end": {
-          "line": 5,
-          "column": 39
+          "line": 11,
+          "column": 88
         }
       },
       "3": {
         "start": {
-          "line": 8,
-          "column": 29
+          "line": 12,
+          "column": 27
         },
         "end": {
-          "line": 8,
-          "column": 57
+          "line": 15,
+          "column": 10
         }
       },
       "4": {
         "start": {
-          "line": 10,
-          "column": 2
+          "line": 13,
+          "column": 26
+        },
+        "end": {
+          "line": 13,
+          "column": 58
+        }
+      },
+      "5": {
+        "start": {
+          "line": 14,
+          "column": 12
         },
         "end": {
           "line": 14,
-          "column": 5
+          "column": 45
+        }
+      },
+      "6": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 19,
+          "column": 10
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 7,
-            "column": 16
+            "line": 9,
+            "column": 4
           },
           "end": {
-            "line": 7,
-            "column": 22
+            "line": 9,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 7,
-            "column": 70
+            "line": 9,
+            "column": 12
+          },
+          "end": {
+            "line": 20,
+            "column": 5
+          }
+        },
+        "line": 9
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 35
+          },
+          "end": {
+            "line": 11,
+            "column": 36
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 41
+          },
+          "end": {
+            "line": 11,
+            "column": 88
+          }
+        },
+        "line": 11
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 36
+          },
+          "end": {
+            "line": 12,
+            "column": 37
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 42
           },
           "end": {
             "line": 15,
-            "column": 1
+            "column": 9
           }
         },
-        "line": 7
+        "line": 12
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 19
+          },
+          "end": {
+            "line": 14,
+            "column": 44
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 14,
+              "column": 27
+            },
+            "end": {
+              "line": 14,
+              "column": 39
+            }
+          },
+          {
+            "start": {
+              "line": 14,
+              "column": 42
+            },
+            "end": {
+              "line": 14,
+              "column": 44
+            }
+          }
+        ],
+        "line": 14
+      }
+    },
     "s": {
       "0": 24,
       "1": 24,
-      "2": 24,
-      "3": 28,
-      "4": 28
+      "2": 28,
+      "3": 24,
+      "4": 28,
+      "5": 28,
+      "6": 24
     },
     "f": {
-      "0": 28
+      "0": 24,
+      "1": 28,
+      "2": 28
     },
-    "b": {},
+    "b": {
+      "0": [
+        2,
+        26
+      ]
+    },
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue"
       ],
       "names": [],
-      "mappings": ";;qBACO,KAAK,EAAC,wBAAwB;qBAC5B,KAAK,EAAC,wBAAwB;qBAI7B,KAAK,EAAC,SAAS;;;;;wBALvB,aAMM,OANN,UAMM;IALJ,aAEM,OAFN,UAEM,mBADH,eAAU;IAEb,aAAwB,sBAAf,KAAK,EAAC,MAAM;IACrB,aAA4C,QAA5C,UAA4C,mBAAnB,cAAS",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAC1C,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAC9C,OAAO,OAAO,MAAM,gCAAgC,CAAA;AAGpD,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,OAAO;KACR;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,SAAS,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC,SAAS,CAAC,OAAO,CAAC,cAAc,CAAC,CAAC,CAAC;QAClF,MAAM,UAAU,GAAG,QAAQ,CACzB,GAAG,EAAE;YACH,MAAM,KAAK,GAAK,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,UAAU,CAAC;YAC/E,OAAO,KAAK,CAAC,CAAC,CAAC,KAAK,KAAK,EAAE,CAAC,CAAC,CAAC,EAAE,CAAA;QAClC,CAAC,CACF,CAAC;QAEF,OAAO;YACL,UAAU;YACV,SAAS;SACV,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
       "sourcesContent": [
-        "<template>\n  <div class=\"minibag-trigger__count\">\n    <div class=\"minibag-trigger__price\">\n    {{ totalPrice }}\n    </div>\n    <IconBag class=\"icon\" />\n    <span class=\"j-badge\">{{ itemCount }}</span>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from '@/use/useStore';\nimport { BAG_STORE } from \"@/store/constants\";\nimport IconBag from '@/components/icons/IconBag.vue'\nimport { BagStateTypes } from '@/store/interfaces';\n\nexport default defineComponent({\n  components: {\n    IconBag,\n  },\n  setup () {\n    const store = useStore();\n    const itemCount = computed(() => store.getters[BAG_STORE.GETTERS.BAG_ITEM_COUNT]);\n    const totalPrice = computed(\n      () => {\n        const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;\n        return price ? `€ ${price}` : ''\n      }\n    );\n    \n    return {\n      totalPrice,\n      itemCount,\n    }\n  }\n})\n</script>\n"
+        "\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from '@/use/useStore';\nimport { BAG_STORE } from \"@/store/constants\";\nimport IconBag from '@/components/icons/IconBag.vue'\nimport { BagStateTypes } from '@/store/interfaces';\n\nexport default defineComponent({\n  components: {\n    IconBag,\n  },\n  setup () {\n    const store = useStore();\n    const itemCount = computed(() => store.getters[BAG_STORE.GETTERS.BAG_ITEM_COUNT]);\n    const totalPrice = computed(\n      () => {\n        const price = ((store.state.bagModule as unknown) as BagStateTypes).totalPrice;\n        return price ? `€ ${price}` : ''\n      }\n    );\n    \n    return {\n      totalPrice,\n      itemCount,\n    }\n  }\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b4d37fa092c8cf4cc570a9cb8794832f12e1b1ad"
+    "hash": "b64b8ddebfe019a384a8b30e00c4d538ec836eed"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useStore.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useStore.ts",
@@ -2055,69 +2292,93 @@
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 10,
+          "column": 22
         },
         "end": {
-          "line": 3,
-          "column": 55
+          "line": 10,
+          "column": 32
         }
       },
       "1": {
         "start": {
-          "line": 4,
-          "column": 19
+          "line": 11,
+          "column": 26
         },
         "end": {
-          "line": 7,
-          "column": 1
+          "line": 11,
+          "column": 99
         }
       },
       "2": {
         "start": {
-          "line": 10,
-          "column": 34
+          "line": 11,
+          "column": 41
         },
         "end": {
-          "line": 10,
-          "column": 67
+          "line": 11,
+          "column": 98
         }
       },
       "3": {
         "start": {
           "line": 12,
-          "column": 2
+          "column": 8
         },
         "end": {
-          "line": 15,
-          "column": 5
+          "line": 14,
+          "column": 10
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
             "line": 9,
-            "column": 16
+            "column": 4
           },
           "end": {
             "line": 9,
-            "column": 22
+            "column": 5
           }
         },
         "loc": {
           "start": {
             "line": 9,
-            "column": 70
+            "column": 12
           },
           "end": {
-            "line": 16,
-            "column": 1
+            "line": 15,
+            "column": 5
           }
         },
         "line": 9
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 35
+          },
+          "end": {
+            "line": 11,
+            "column": 36
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 41
+          },
+          "end": {
+            "line": 11,
+            "column": 98
+          }
+        },
+        "line": 11
       }
     },
     "branchMap": {},
@@ -2125,27 +2386,28 @@
       "0": 24,
       "1": 24,
       "2": 28,
-      "3": 28
+      "3": 24
     },
     "f": {
-      "0": 28
+      "0": 24,
+      "1": 28
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue"
       ],
       "names": [],
-      "mappings": ";;qBACO,KAAK,EAAC,yBAAyB;;EAE5B,KAAK,EAAC,SAAS;EAAC,QAAQ,EAAC,gBAAgB;;;;;;wBAFjD,aAGM,OAHN,UAGM;IAFJ,aAA6B,2BAAf,KAAK,EAAC,MAAM;IAC1B,aAAsE,QAAtE,UAAsE,mBAAnB,cAAS",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAC1C,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AACnD,OAAO,YAAY,MAAM,qCAAqC,CAAA;AAE9D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,YAAY;KACb;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,SAAS,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC,cAAc,CAAC,OAAO,CAAC,mBAAmB,CAAC,CAAC,CAAC;QAE5F,OAAO;YACL,SAAS;SACV,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
       "sourcesContent": [
-        "<template>\n  <div class=\"wishlist-trigger__count\">\n    <IconWishlist class=\"icon\" />\n    <span class=\"j-badge\" itemprop=\"wishlist-count\">{{ itemCount }}</span>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from '@/use/useStore';\nimport { WISHLIST_STORE } from \"@/store/constants\";\nimport IconWishlist from '@/components/icons/IconWishlist.vue'\n\nexport default defineComponent({\n  components: {\n    IconWishlist,\n  },\n  setup () {\n    const store = useStore();\n    const itemCount = computed(() => store.getters[WISHLIST_STORE.GETTERS.WISHLIST_ITEM_COUNT]);\n    \n    return {\n      itemCount,\n    }\n  }\n})\n</script>\n"
+        "\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from '@/use/useStore';\nimport { WISHLIST_STORE } from \"@/store/constants\";\nimport IconWishlist from '@/components/icons/IconWishlist.vue'\n\nexport default defineComponent({\n  components: {\n    IconWishlist,\n  },\n  setup () {\n    const store = useStore();\n    const itemCount = computed(() => store.getters[WISHLIST_STORE.GETTERS.WISHLIST_ITEM_COUNT]);\n    \n    return {\n      itemCount,\n    }\n  }\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c31eddd10a2774dd12df5f975a160c223a0affd0"
+    "hash": "35a9fcc8c2100428871ff527df4e9de7f50875f1"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconWishlist.vue": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconWishlist.vue",
@@ -2249,56 +2511,100 @@
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 5,
+          "column": 60
         },
         "end": {
-          "line": 3,
-          "column": 56
+          "line": 5,
+          "column": 91
         }
       },
       "1": {
         "start": {
-          "line": 4,
-          "column": 32
+          "line": 6,
+          "column": 35
         },
         "end": {
-          "line": 4,
-          "column": 102
+          "line": 9,
+          "column": 9
         }
       },
       "2": {
         "start": {
           "line": 7,
-          "column": 2
+          "column": 12
         },
         "end": {
-          "line": 9,
-          "column": 5
+          "line": 7,
+          "column": 41
+        }
+      },
+      "3": {
+        "start": {
+          "line": 8,
+          "column": 12
+        },
+        "end": {
+          "line": 8,
+          "column": 51
+        }
+      },
+      "4": {
+        "start": {
+          "line": 10,
+          "column": 8
+        },
+        "end": {
+          "line": 14,
+          "column": 10
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 4
+          },
+          "end": {
+            "line": 4,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 12
+          },
+          "end": {
+            "line": 15,
+            "column": 5
+          }
+        },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
         "decl": {
           "start": {
             "line": 6,
-            "column": 16
+            "column": 35
           },
           "end": {
             "line": 6,
-            "column": 22
+            "column": 36
           }
         },
         "loc": {
           "start": {
             "line": 6,
-            "column": 70
+            "column": 47
           },
           "end": {
-            "line": 10,
-            "column": 1
+            "line": 9,
+            "column": 9
           }
         },
         "line": 6
@@ -2308,135 +2614,477 @@
     "s": {
       "0": 24,
       "1": 24,
-      "2": 24
+      "2": 0,
+      "3": 0,
+      "4": 24
     },
     "f": {
-      "0": 24
+      "0": 24,
+      "1": 0
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue"
       ],
       "names": [],
-      "mappings": ";;qBACO,KAAK,EAAC,0BAA0B;gCACnC,aAA8C,OAA3C,KAAK,EAAC,0BAA0B,IAAC,QAAM;;;wBAD5C,aAEM,OAFN,UAEM;IADJ,UAA8C",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AACrC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAA;AAElC,eAAe,eAAe,CAAC;IAC/B,KAAK;QACH,MAAM,EAAE,MAAM,EAAE,aAAa,EAAE,gBAAgB,EAAE,GAAG,OAAO,CAAC,EAAE,QAAQ,EAAE,QAAQ,EAAE,CAAC,CAAA;QAEnF,MAAM,kBAAkB,GAAG,CAAC,MAAc,EAAE,EAAE;YAC5C,aAAa,CAAC,KAAK,GAAG,MAAM,CAAC;YAC7B,YAAY,CAAC,OAAO,CAAC,QAAQ,EAAE,MAAM,CAAC,CAAC;QACzC,CAAC,CAAA;QAED,OAAO;YACL,aAAa;YACb,gBAAgB;YAChB,kBAAkB;SACpB,CAAA;IACF,CAAC;CACA,CAAC,CAAA",
       "sourcesContent": [
-        "<template>\n  <div class=\"default-footer container\">\n    <p class=\"default-footer__sidenote\">Footer</p>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue'\n\nexport default defineComponent({\n  setup () {\n    \n\n    return {}\n  }\n})\n</script>\n"
+        "\nimport { defineComponent } from 'vue'\nimport { useI18n } from 'vue-i18n'\n\nexport default defineComponent({\nsetup() {\n  const { locale: currentLocale, availableLocales } = useI18n({ useScope: 'global' })\n\n  const handleLocaleChange = (locale: string) => {\n    currentLocale.value = locale;\n    localStorage.setItem(\"locale\", locale);\n  }\n\n  return {\n    currentLocale,\n    availableLocales,\n    handleLocaleChange,\n }\n}\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b2ae57ebd8c927f5970cf83faabd8f6b1c14e3c0"
+    "hash": "0c0df0e6a745fd74ce197baf8eda84e9fcf75ba4"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue",
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 16,
+          "column": 22
         },
         "end": {
-          "line": 3,
-          "column": 44
+          "line": 16,
+          "column": 32
         }
       },
       "1": {
         "start": {
-          "line": 4,
-          "column": 19
+          "line": 17,
+          "column": 22
         },
         "end": {
-          "line": 7,
-          "column": 1
+          "line": 17,
+          "column": 32
         }
       },
       "2": {
         "start": {
-          "line": 10,
-          "column": 33
+          "line": 18,
+          "column": 21
         },
         "end": {
-          "line": 10,
-          "column": 65
+          "line": 18,
+          "column": 72
         }
       },
       "3": {
         "start": {
-          "line": 11,
-          "column": 32
+          "line": 18,
+          "column": 36
         },
         "end": {
-          "line": 11,
-          "column": 63
+          "line": 18,
+          "column": 71
         }
       },
       "4": {
         "start": {
-          "line": 13,
-          "column": 2
+          "line": 19,
+          "column": 23
         },
         "end": {
-          "line": 18,
-          "column": 5
+          "line": 19,
+          "column": 59
+        }
+      },
+      "5": {
+        "start": {
+          "line": 19,
+          "column": 38
+        },
+        "end": {
+          "line": 19,
+          "column": 58
+        }
+      },
+      "6": {
+        "start": {
+          "line": 20,
+          "column": 27
+        },
+        "end": {
+          "line": 20,
+          "column": 36
+        }
+      },
+      "7": {
+        "start": {
+          "line": 21,
+          "column": 8
+        },
+        "end": {
+          "line": 45,
+          "column": 11
+        }
+      },
+      "8": {
+        "start": {
+          "line": 21,
+          "column": 20
+        },
+        "end": {
+          "line": 21,
+          "column": 34
+        }
+      },
+      "9": {
+        "start": {
+          "line": 22,
+          "column": 48
+        },
+        "end": {
+          "line": 26,
+          "column": 14
+        }
+      },
+      "10": {
+        "start": {
+          "line": 27,
+          "column": 12
+        },
+        "end": {
+          "line": 27,
+          "column": 29
+        }
+      },
+      "11": {
+        "start": {
+          "line": 28,
+          "column": 12
+        },
+        "end": {
+          "line": 28,
+          "column": 28
+        }
+      },
+      "12": {
+        "start": {
+          "line": 29,
+          "column": 12
+        },
+        "end": {
+          "line": 40,
+          "column": 16
+        }
+      },
+      "13": {
+        "start": {
+          "line": 30,
+          "column": 118
+        },
+        "end": {
+          "line": 30,
+          "column": 122
+        }
+      },
+      "14": {
+        "start": {
+          "line": 31,
+          "column": 16
+        },
+        "end": {
+          "line": 39,
+          "column": 18
+        }
+      },
+      "15": {
+        "start": {
+          "line": 41,
+          "column": 12
+        },
+        "end": {
+          "line": 41,
+          "column": 90
+        }
+      },
+      "16": {
+        "start": {
+          "line": 46,
+          "column": 8
+        },
+        "end": {
+          "line": 49,
+          "column": 10
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 9,
-            "column": 16
+            "line": 15,
+            "column": 4
           },
           "end": {
-            "line": 9,
-            "column": 22
+            "line": 15,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 9,
-            "column": 70
+            "line": 15,
+            "column": 12
+          },
+          "end": {
+            "line": 50,
+            "column": 5
+          }
+        },
+        "line": 15
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 30
+          },
+          "end": {
+            "line": 18,
+            "column": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 36
+          },
+          "end": {
+            "line": 18,
+            "column": 71
+          }
+        },
+        "line": 18
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 32
           },
           "end": {
             "line": 19,
-            "column": 1
+            "column": 33
           }
         },
-        "line": 9
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 38
+          },
+          "end": {
+            "line": 19,
+            "column": 58
+          }
+        },
+        "line": 19
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 14
+          },
+          "end": {
+            "line": 21,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 20
+          },
+          "end": {
+            "line": 21,
+            "column": 34
+          }
+        },
+        "line": 21
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 36
+          },
+          "end": {
+            "line": 21,
+            "column": 37
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 48
+          },
+          "end": {
+            "line": 42,
+            "column": 9
+          }
+        },
+        "line": 21
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 29,
+            "column": 82
+          },
+          "end": {
+            "line": 29,
+            "column": 83
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 92
+          },
+          "end": {
+            "line": 40,
+            "column": 13
+          }
+        },
+        "line": 29
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 36
+          },
+          "end": {
+            "line": 18,
+            "column": 71
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 18,
+              "column": 36
+            },
+            "end": {
+              "line": 18,
+              "column": 66
+            }
+          },
+          {
+            "start": {
+              "line": 18,
+              "column": 70
+            },
+            "end": {
+              "line": 18,
+              "column": 71
+            }
+          }
+        ],
+        "line": 18
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 41,
+            "column": 58
+          },
+          "end": {
+            "line": 41,
+            "column": 88
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 41,
+              "column": 58
+            },
+            "end": {
+              "line": 41,
+              "column": 83
+            }
+          },
+          {
+            "start": {
+              "line": 41,
+              "column": 87
+            },
+            "end": {
+              "line": 41,
+              "column": 88
+            }
+          }
+        ],
+        "line": 41
+      }
+    },
     "s": {
       "0": 24,
       "1": 24,
-      "2": 31,
+      "2": 24,
       "3": 31,
-      "4": 31
+      "4": 24,
+      "5": 31,
+      "6": 24,
+      "7": 24,
+      "8": 31,
+      "9": 31,
+      "10": 31,
+      "11": 31,
+      "12": 29,
+      "13": 164,
+      "14": 164,
+      "15": 29,
+      "16": 24
     },
     "f": {
-      "0": 31
+      "0": 24,
+      "1": 31,
+      "2": 31,
+      "3": 31,
+      "4": 31,
+      "5": 164
     },
-    "b": {},
+    "b": {
+      "0": [
+        31,
+        0
+      ],
+      "1": [
+        29,
+        0
+      ]
+    },
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue"
       ],
       "names": [],
-      "mappings": ";;qBACO,KAAK,EAAC,cAAc;;EAClB,KAAK,EAAC,WAAW;EAAC,KAAkB,EAAlB,eAAkB;;;;;;;wBAD3C,aAKM,OALN,UAKM;IAJJ,aAGM,OAHN,UAGM;MAFJ,aAA2B;MAC3B,aAA2B,yBAAd,IAAI,EAAE,SAAI",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,QAAQ,EAAE,KAAK,EAAE,MAAM,KAAK,CAAC;AACjE,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAC;AAChC,OAAO,EAAE,QAAQ,EAAE,MAAM,YAAY,CAAC;AACtC,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAC1C,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AAEnC,OAAO,UAAU,MAAM,gCAAgC,CAAC;AACxD,OAAO,WAAW,MAAM,8BAA8B,CAAC;AAEvD,OAAO,EAAE,UAAU,EAAC,MAAM,mBAAmB,CAAC;AAG9C,eAAe,eAAe,CAAC;IAC7B,IAAI,EAAE,MAAM;IACZ,UAAU,EAAE;QACV,UAAU;QACV,WAAW;KACZ;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,IAAI,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,QAAQ,CAAC,KAAK,CAAC,KAAK,CAAC,IAAc,EAAE,EAAE,CAAC,IAAI,CAAC,CAAC,CAAC;QAC3E,MAAM,MAAM,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,CAAC,IAAI,CAAC,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC;QACpD,MAAM,EAAE,MAAM,EAAE,GAAG,OAAO,EAAE,CAAC;QAG7B,KAAK,CACH,GAAG,EAAE,CAAC,CAAC,IAAI,EAAE,MAAM,CAAC,EACpB,KAAK,IAAI,EAAE;YACT,MAAM,EACJ,IAAI,EAAE,QAAQ,EACd,OAAO,EACR,GAAG,QAAQ,CACV,eAAe,EACf;gBACE,MAAM,EAAE,MAAM,CAAC,KAAK;gBACpB,KAAK,EAAE,CAAC;gBACR,QAAQ,EAAE,KAAK;aAChB,CACF,CAAC;YACF,MAAM,QAAQ,EAAE,CAAA;YAChB,MAAM,OAAO,EAAE,CAAC;YAEhB,KAAK,CAAC,QAAQ,CACd,UAAU,CAAC,OAAO,CAAC,UAAU,EAC7B,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAc,EAAE,EAAE;gBACzC,MAAM,EACJ,IAAI,EACJ,eAAe,EACf,KAAK,EACL,WAAW,EACX,YAAY,EACZ,qBAAqB,EACrB,QAAQ,GACT,GAAG,IAAI,CAAC;gBAET,OAAO;oBACL,IAAI;oBACJ,eAAe;oBACf,KAAK;oBACL,WAAW;oBACX,YAAY;oBACZ,qBAAqB;oBACrB,QAAQ;iBACT,CAAA;YACH,CAAC,CAAC,CACH,CAAC;YACF,KAAK,CAAC,QAAQ,CAAC,UAAU,CAAC,OAAO,CAAC,UAAU,EAAE,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,KAAK,IAAI,CAAC,CAAC,CAAA;QAC7E,CAAC,EACD;YACE,SAAS,EAAE,IAAI;YACf,IAAI,EAAE,IAAI;SACX,CACF,CAAA;QAED,OAAO;YACL,IAAI;YACJ,MAAM;SACP,CAAA;IACH,CAAC;CACF,CAAC,CAAC",
       "sourcesContent": [
-        "<template>\n  <div class=\"product-page\">\n    <div class=\"container\" style=\"padding: 0\">\n      <ProductList></ProductList>\n      <Pagination :page=\"page\" />\n    </div>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { computed, defineComponent, watch } from 'vue';\nimport { useStore } from 'vuex';\nimport { useRoute } from 'vue-router';\nimport { useAxios } from '@/use/useAxios';\n\nimport Pagination from '@/components/ThePagination.vue';\nimport ProductList from '@/components/ProductList.vue';\n\nimport { ROOT_STORE} from \"@/store/constants\";\nimport { ItemData } from \"@/store/interfaces\";\n\nexport default defineComponent({\n  name: 'Home',\n  components: {\n    Pagination,\n    ProductList,\n  },\n  setup () {\n    const store = useStore();\n    const route = useRoute();\n    const page = computed(() => parseInt(route.query.page as string, 10) || 1);\n    const offset = computed(() => (page.value - 1) * 6);\n\n    watch(\n      () => page,\n      async () => {\n        const {\n          data: response,\n          getData\n        } = useAxios(\n          'getActivities',\n          {\n            offset: offset.value,\n            limit: 6,\n            venue_in: '164'\n          },\n        );\n        await getData();    \n        \n        store.dispatch(\n        ROOT_STORE.ACTIONS.ITEM_LISTS,\n        response.value.data.map((item: ItemData) => {\n          const {\n            uuid,\n            cover_image_url,\n            title,\n            description,\n            retail_price,\n            original_retail_price,\n            discount,\n          } = item;\n\n          return {\n            uuid,\n            cover_image_url,\n            title,\n            description,\n            retail_price,\n            original_retail_price,\n            discount,\n          }\n        })\n      );\n      store.dispatch(ROOT_STORE.ACTIONS.ITEM_COUNT, response.value.meta.count ?? 0)\n      },\n      {\n        immediate: true,\n        deep: true,\n      }\n    )\n\n    return {\n      page,\n      offset,\n    }\n  }\n});\n</script>"
+        "\nimport { computed, defineComponent, nextTick, watch } from 'vue';\nimport { useStore } from 'vuex';\nimport { useRoute } from 'vue-router';\nimport { useAxios } from '@/use/useAxios';\nimport { useI18n } from 'vue-i18n';\n\nimport Pagination from '@/components/ThePagination.vue';\nimport ProductList from '@/components/ProductList.vue';\n\nimport { ROOT_STORE} from \"@/store/constants\";\nimport { ItemData } from \"@/store/interfaces\";\n\nexport default defineComponent({\n  name: 'Home',\n  components: {\n    Pagination,\n    ProductList,\n  },\n  setup () {\n    const store = useStore();\n    const route = useRoute();\n    const page = computed(() => parseInt(route.query.page as string, 10) || 1);\n    const offset = computed(() => (page.value - 1) * 6);\n    const { locale } = useI18n();\n    \n\n    watch(\n      () => [page, locale],\n      async () => {        \n        const {\n          data: response,\n          getData\n        } = useAxios(\n          'getActivities',\n          {\n            offset: offset.value,\n            limit: 6,\n            venue_in: '164'\n          },\n        );\n        await nextTick()\n        await getData();\n        \n        store.dispatch(\n        ROOT_STORE.ACTIONS.ITEM_LISTS,\n        response.value.data.map((item: ItemData) => {\n          const {\n            uuid,\n            cover_image_url,\n            title,\n            description,\n            retail_price,\n            original_retail_price,\n            discount,\n          } = item;\n\n          return {\n            uuid,\n            cover_image_url,\n            title,\n            description,\n            retail_price,\n            original_retail_price,\n            discount,\n          }\n        })\n      );\n      store.dispatch(ROOT_STORE.ACTIONS.ITEM_COUNT, response.value.meta.count ?? 0)\n      },\n      {\n        immediate: true,\n        deep: true,\n      }\n    )\n\n    return {\n      page,\n      offset,\n    }\n  }\n});\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "195cfbd3bef5a2b5ab4dddb6bcf398196a1089a0"
+    "hash": "17a8b02373cf00553504c4d398189a73696f9b12"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts",
@@ -2447,7 +3095,7 @@
           "column": 18
         },
         "end": {
-          "line": 10,
+          "line": 9,
           "column": 2
         }
       }
@@ -2467,35 +3115,65 @@
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts"
       ],
       "names": [],
-      "mappings": "AAAA,OAAO,KAAwB,MAAM,OAAO,CAAC;AAE7C,MAAM,SAAS,GAAkB,KAAK,CAAC,MAAM,CAAC;IAC5C,OAAO,EAAE,kCAAkC;IAC3C,OAAO,EAAE;QACP,cAAc,EAAE,kBAAkB;QAClC,oBAAoB,EAAE,OAAO;QAC7B,iBAAiB,EAAE,IAAI;QACvB,qBAAqB,EAAE,KAAK;KAC7B;CACF,CAAC,CAAC;AAEH,eAAe,SAAS,CAAC",
+      "mappings": "AAAA,OAAO,KAAwB,MAAM,OAAO,CAAC;AAG7C,MAAM,SAAS,GAAkB,KAAK,CAAC,MAAM,CAAC;IAC5C,OAAO,EAAE,kCAAkC;IAC3C,OAAO,EAAE;QACP,cAAc,EAAE,kBAAkB;QAClC,oBAAoB,EAAE,OAAO;QAC7B,qBAAqB,EAAE,KAAK;KAC7B;CACF,CAAC,CAAC;AAEH,eAAe,SAAS,CAAC",
       "sourcesContent": [
-        "import axios, { AxiosInstance } from \"axios\";\n\nconst apiClient: AxiosInstance = axios.create({\n  baseURL: \"https://api.musement.com/api/v3/\",\n  headers: {\n    \"Content-type\": \"application/json\",\n    'X-Musement-Version': '3.4.0',\n    'Accept-Language': 'it',\n    'X-Musement-Currency': 'EUR'\n  },\n});\n\nexport default apiClient;"
+        "import axios, { AxiosInstance } from \"axios\";\n\n\nconst apiClient: AxiosInstance = axios.create({\n  baseURL: \"https://api.musement.com/api/v3/\",\n  headers: {\n    \"Content-type\": \"application/json\",\n    'X-Musement-Version': '3.4.0',\n    'X-Musement-Currency': 'EUR'\n  },\n});\n\nexport default apiClient;"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8e89cd0009f0c88e3b18eccb4f77d33d9a4813ea"
+    "hash": "cb34659eef563c507b4de11f3b24cfccc028bb31"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts",
     "statementMap": {
       "0": {
         "start": {
-          "line": 4,
-          "column": 8
+          "line": 2,
+          "column": 16
         },
         "end": {
-          "line": 4,
-          "column": 88
+          "line": 7,
+          "column": 1
         }
       },
       "1": {
         "start": {
-          "line": 7,
+          "line": 3,
+          "column": 19
+        },
+        "end": {
+          "line": 3,
+          "column": 57
+        }
+      },
+      "2": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 6,
+          "column": 6
+        }
+      },
+      "3": {
+        "start": {
+          "line": 10,
           "column": 8
         },
         "end": {
-          "line": 7,
-          "column": 55
+          "line": 10,
+          "column": 108
+        }
+      },
+      "4": {
+        "start": {
+          "line": 13,
+          "column": 8
+        },
+        "end": {
+          "line": 13,
+          "column": 75
         }
       }
     },
@@ -2504,61 +3182,171 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 3,
-            "column": 24
+            "line": 2,
+            "column": 16
           },
           "end": {
-            "line": 3,
-            "column": 25
+            "line": 2,
+            "column": 17
           }
         },
         "loc": {
           "start": {
-            "line": 3,
-            "column": 35
+            "line": 2,
+            "column": 22
           },
           "end": {
-            "line": 5,
-            "column": 5
+            "line": 7,
+            "column": 1
           }
         },
-        "line": 3
+        "line": 2
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 6,
+            "line": 9,
+            "column": 24
+          },
+          "end": {
+            "line": 9,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 35
+          },
+          "end": {
+            "line": 11,
+            "column": 5
+          }
+        },
+        "line": 9
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 12,
             "column": 19
           },
           "end": {
-            "line": 6,
+            "line": 12,
             "column": 20
           }
         },
         "loc": {
           "start": {
-            "line": 6,
+            "line": 12,
             "column": 31
           },
           "end": {
-            "line": 8,
+            "line": 14,
             "column": 5
           }
         },
-        "line": 6
+        "line": 12
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 19
+          },
+          "end": {
+            "line": 3,
+            "column": 57
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 3,
+              "column": 19
+            },
+            "end": {
+              "line": 3,
+              "column": 49
+            }
+          },
+          {
+            "start": {
+              "line": 3,
+              "column": 53
+            },
+            "end": {
+              "line": 3,
+              "column": 57
+            }
+          }
+        ],
+        "line": 3
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 27
+          },
+          "end": {
+            "line": 5,
+            "column": 62
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 5,
+              "column": 45
+            },
+            "end": {
+              "line": 5,
+              "column": 52
+            }
+          },
+          {
+            "start": {
+              "line": 5,
+              "column": 55
+            },
+            "end": {
+              "line": 5,
+              "column": 62
+            }
+          }
+        ],
+        "line": 5
+      }
+    },
     "s": {
-      "0": 0,
-      "1": 31
+      "0": 24,
+      "1": 31,
+      "2": 31,
+      "3": 0,
+      "4": 31
     },
     "f": {
-      "0": 0,
-      "1": 31
+      "0": 31,
+      "1": 0,
+      "2": 31
     },
-    "b": {},
+    "b": {
+      "0": [
+        31,
+        31
+      ],
+      "1": [
+        31,
+        0
+      ]
+    },
     "inputSourceMap": {
       "version": 3,
       "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts",
@@ -2567,13 +3355,13 @@
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts"
       ],
       "names": [],
-      "mappings": "AAAA,OAAO,SAAS,MAAM,sBAAsB,CAAC;AAK7C,eAAe;IACb,kBAAkB,EAAE,CAAC,KAAqB,EAA0B,EAAE;QACpE,OAAO,SAAS,CAAC,GAAG,CAAC,UAAU,KAAK,CAAC,EAAE,aAAa,EAAE,EAAE,MAAM,EAAE,KAAK,CAAC,MAAM,EAAE,CAAC,CAAC;IAClF,CAAC;IACD,aAAa,EAAE,CAAC,MAAyB,EAA0B,EAAE;QACnE,OAAO,SAAS,CAAC,GAAG,CAAC,YAAY,EAAE,EAAE,MAAM,EAAE,CAAC,CAAA;IAChD,CAAC;CACF,CAAC",
+      "mappings": "AAAA,OAAO,SAAS,MAAM,sBAAsB,CAAC;AAI7C,MAAM,OAAO,GAAG,GAAG,EAAE;IACnB,MAAM,MAAM,GAAW,YAAY,CAAC,OAAO,CAAC,QAAQ,CAAC,IAAI,IAAI,CAAC;IAC9D,OAAO;QACP,iBAAiB,EAAE,MAAM,KAAK,IAAI,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,OAAO;KACvD,CAAA;AACD,CAAC,CAAA;AAED,eAAe;IACb,kBAAkB,EAAE,CAAC,KAAqB,EAA0B,EAAE;QACpE,OAAO,SAAS,CAAC,GAAG,CAAC,UAAU,KAAK,CAAC,EAAE,aAAa,EAAE,EAAE,MAAM,EAAE,KAAK,CAAC,MAAM,EAAE,OAAO,EAAE,OAAO,EAAE,EAAE,CAAC,CAAC;IACtG,CAAC;IACD,aAAa,EAAE,CAAC,MAAyB,EAA0B,EAAE;QACnE,OAAO,SAAS,CAAC,GAAG,CAAC,YAAY,EAAE,EAAE,MAAM,EAAE,OAAO,EAAE,OAAO,EAAE,EAAE,CAAC,CAAC;IACrE,CAAC;CACF,CAAC",
       "sourcesContent": [
-        "import apiClient from \"@/services/apiClient\";\nimport { AxiosResponse } from 'axios'\nimport { AllFilterParams, FilterQueryParams } from '@/types';\n\n\nexport default {\n  getVenueActivities: (props:AllFilterParams): Promise<AxiosResponse> =>  {\n    return apiClient.get(`venues/${props.id}/activities`, { params: props.params });\n  },\n  getActivities: (params: FilterQueryParams): Promise<AxiosResponse> => {\n    return apiClient.get(`activities`, { params })\n  }\n};"
+        "import apiClient from \"@/services/apiClient\";\nimport { AxiosResponse } from 'axios'\nimport { AllFilterParams, FilterQueryParams } from '@/types';\n\nconst headers = () => {\n  const locale: string = localStorage.getItem('locale') || 'it';\n  return {\n  'Accept-Language': locale === 'it' ? 'it-IT' : 'en-US',\n}\n}\n\nexport default {\n  getVenueActivities: (props:AllFilterParams): Promise<AxiosResponse> =>  {\n    return apiClient.get(`venues/${props.id}/activities`, { params: props.params, headers: headers() });\n  },\n  getActivities: (params: FilterQueryParams): Promise<AxiosResponse> => {\n    return apiClient.get(`activities`, { params, headers: headers() });\n  }\n};"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "dea789448ede9a6fb38cb973df1d164435626f11"
+    "hash": "f81b2dd523f106acef5b9e9e00f5897bfaaf10ea"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts",
@@ -4258,437 +5046,551 @@
     "statementMap": {
       "0": {
         "start": {
-          "line": 3,
-          "column": 19
+          "line": 11,
+          "column": 22
         },
         "end": {
-          "line": 3,
-          "column": 48
+          "line": 11,
+          "column": 32
         }
       },
       "1": {
         "start": {
-          "line": 4,
-          "column": 19
+          "line": 12,
+          "column": 22
         },
         "end": {
-          "line": 4,
-          "column": 39
+          "line": 12,
+          "column": 31
         }
       },
       "2": {
         "start": {
-          "line": 5,
-          "column": 19
+          "line": 13,
+          "column": 33
         },
         "end": {
-          "line": 5,
-          "column": 54
+          "line": 15,
+          "column": 9
         }
       },
       "3": {
         "start": {
-          "line": 6,
-          "column": 19
+          "line": 14,
+          "column": 12
         },
         "end": {
-          "line": 6,
-          "column": 48
+          "line": 14,
+          "column": 65
         }
       },
       "4": {
         "start": {
-          "line": 7,
-          "column": 19
+          "line": 16,
+          "column": 22
         },
         "end": {
-          "line": 10,
-          "column": 1
+          "line": 16,
+          "column": 59
         }
       },
       "5": {
         "start": {
-          "line": 11,
-          "column": 19
+          "line": 16,
+          "column": 37
         },
         "end": {
-          "line": 14,
-          "column": 1
+          "line": 16,
+          "column": 58
         }
       },
       "6": {
         "start": {
-          "line": 15,
-          "column": 19
+          "line": 17,
+          "column": 25
         },
         "end": {
-          "line": 20,
-          "column": 1
+          "line": 17,
+          "column": 71
         }
       },
       "7": {
         "start": {
-          "line": 21,
-          "column": 19
+          "line": 17,
+          "column": 40
         },
         "end": {
-          "line": 21,
-          "column": 54
+          "line": 17,
+          "column": 70
         }
       },
       "8": {
         "start": {
-          "line": 22,
-          "column": 19
+          "line": 18,
+          "column": 30
         },
         "end": {
-          "line": 25,
-          "column": 1
+          "line": 18,
+          "column": 86
         }
       },
       "9": {
         "start": {
-          "line": 26,
-          "column": 20
+          "line": 18,
+          "column": 45
         },
         "end": {
-          "line": 31,
-          "column": 1
+          "line": 18,
+          "column": 85
         }
       },
       "10": {
         "start": {
-          "line": 32,
-          "column": 20
+          "line": 19,
+          "column": 24
         },
         "end": {
-          "line": 35,
-          "column": 1
+          "line": 19,
+          "column": 81
         }
       },
       "11": {
         "start": {
-          "line": 36,
-          "column": 20
+          "line": 19,
+          "column": 34
         },
         "end": {
-          "line": 39,
-          "column": 1
+          "line": 19,
+          "column": 81
         }
       },
       "12": {
         "start": {
-          "line": 42,
-          "column": 34
+          "line": 19,
+          "column": 62
         },
         "end": {
-          "line": 42,
-          "column": 67
+          "line": 19,
+          "column": 80
         }
       },
       "13": {
         "start": {
-          "line": 44,
-          "column": 2
+          "line": 20,
+          "column": 29
         },
         "end": {
-          "line": 91,
-          "column": 5
+          "line": 20,
+          "column": 91
         }
       },
       "14": {
         "start": {
-          "line": 46,
-          "column": 6
+          "line": 20,
+          "column": 39
         },
         "end": {
-          "line": 89,
-          "column": 9
+          "line": 20,
+          "column": 91
         }
       },
       "15": {
         "start": {
-          "line": 61,
-          "column": 34
+          "line": 20,
+          "column": 72
         },
         "end": {
-          "line": 61,
-          "column": 60
+          "line": 20,
+          "column": 90
         }
       },
       "16": {
         "start": {
-          "line": 84,
-          "column": 38
+          "line": 21,
+          "column": 32
         },
         "end": {
-          "line": 84,
-          "column": 65
+          "line": 28,
+          "column": 9
+        }
+      },
+      "17": {
+        "start": {
+          "line": 22,
+          "column": 12
+        },
+        "end": {
+          "line": 27,
+          "column": 13
+        }
+      },
+      "18": {
+        "start": {
+          "line": 23,
+          "column": 16
+        },
+        "end": {
+          "line": 23,
+          "column": 82
+        }
+      },
+      "19": {
+        "start": {
+          "line": 26,
+          "column": 16
+        },
+        "end": {
+          "line": 26,
+          "column": 79
+        }
+      },
+      "20": {
+        "start": {
+          "line": 29,
+          "column": 8
+        },
+        "end": {
+          "line": 36,
+          "column": 10
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "render",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 41,
-            "column": 16
+            "line": 10,
+            "column": 4
           },
           "end": {
-            "line": 41,
-            "column": 22
+            "line": 10,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 41,
-            "column": 70
+            "line": 10,
+            "column": 12
           },
           "end": {
-            "line": 92,
-            "column": 1
+            "line": 37,
+            "column": 5
           }
         },
-        "line": 41
+        "line": 10
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 45,
-            "column": 77
+            "line": 13,
+            "column": 33
           },
           "end": {
-            "line": 45,
-            "column": 78
+            "line": 13,
+            "column": 34
           }
         },
         "loc": {
           "start": {
-            "line": 45,
-            "column": 87
+            "line": 13,
+            "column": 43
           },
           "end": {
-            "line": 90,
-            "column": 5
+            "line": 15,
+            "column": 9
           }
         },
-        "line": 45
+        "line": 13
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
           "start": {
-            "line": 61,
-            "column": 23
+            "line": 16,
+            "column": 31
           },
           "end": {
-            "line": 61,
-            "column": 24
+            "line": 16,
+            "column": 32
           }
         },
         "loc": {
           "start": {
-            "line": 61,
-            "column": 34
+            "line": 16,
+            "column": 37
           },
           "end": {
-            "line": 61,
-            "column": 60
+            "line": 16,
+            "column": 58
           }
         },
-        "line": 61
+        "line": 16
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
           "start": {
-            "line": 84,
-            "column": 27
+            "line": 17,
+            "column": 34
           },
           "end": {
-            "line": 84,
-            "column": 28
+            "line": 17,
+            "column": 35
           }
         },
         "loc": {
           "start": {
-            "line": 84,
-            "column": 38
+            "line": 17,
+            "column": 40
           },
           "end": {
-            "line": 84,
+            "line": 17,
+            "column": 70
+          }
+        },
+        "line": 17
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 39
+          },
+          "end": {
+            "line": 18,
+            "column": 40
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 45
+          },
+          "end": {
+            "line": 18,
+            "column": 85
+          }
+        },
+        "line": 18
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 24
+          },
+          "end": {
+            "line": 19,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 34
+          },
+          "end": {
+            "line": 19,
+            "column": 81
+          }
+        },
+        "line": 19
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 54
+          },
+          "end": {
+            "line": 19,
+            "column": 55
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 62
+          },
+          "end": {
+            "line": 19,
+            "column": 80
+          }
+        },
+        "line": 19
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": {
+            "line": 20,
+            "column": 29
+          },
+          "end": {
+            "line": 20,
+            "column": 30
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 39
+          },
+          "end": {
+            "line": 20,
+            "column": 91
+          }
+        },
+        "line": 20
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 20,
+            "column": 64
+          },
+          "end": {
+            "line": 20,
             "column": 65
           }
         },
-        "line": 84
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 72
+          },
+          "end": {
+            "line": 20,
+            "column": 90
+          }
+        },
+        "line": 20
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 32
+          },
+          "end": {
+            "line": 21,
+            "column": 33
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 42
+          },
+          "end": {
+            "line": 28,
+            "column": 9
+          }
+        },
+        "line": 21
       }
     },
     "branchMap": {
       "0": {
         "loc": {
           "start": {
-            "line": 64,
-            "column": 23
-          },
-          "end": {
-            "line": 64,
-            "column": 74
-          }
-        },
-        "type": "cond-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 64,
-              "column": 54
-            },
-            "end": {
-              "line": 64,
-              "column": 69
-            }
-          },
-          {
-            "start": {
-              "line": 64,
-              "column": 72
-            },
-            "end": {
-              "line": 64,
-              "column": 74
-            }
-          }
-        ],
-        "line": 64
-      },
-      "1": {
-        "loc": {
-          "start": {
-            "line": 71,
+            "line": 22,
             "column": 12
           },
           "end": {
-            "line": 78,
-            "column": 19
+            "line": 27,
+            "column": 13
           }
         },
-        "type": "cond-expr",
+        "type": "if",
         "locations": [
           {
             "start": {
-              "line": 72,
-              "column": 17
+              "line": 22,
+              "column": 12
             },
             "end": {
-              "line": 75,
-              "column": 18
+              "line": 27,
+              "column": 13
             }
           },
           {
             "start": {
-              "line": 76,
-              "column": 17
+              "line": 22,
+              "column": 12
             },
             "end": {
-              "line": 78,
-              "column": 18
+              "line": 27,
+              "column": 13
             }
           }
         ],
-        "line": 71
-      },
-      "2": {
-        "loc": {
-          "start": {
-            "line": 79,
-            "column": 12
-          },
-          "end": {
-            "line": 86,
-            "column": 50
-          }
-        },
-        "type": "cond-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 80,
-              "column": 17
-            },
-            "end": {
-              "line": 80,
-              "column": 77
-            }
-          },
-          {
-            "start": {
-              "line": 81,
-              "column": 17
-            },
-            "end": {
-              "line": 86,
-              "column": 49
-            }
-          }
-        ],
-        "line": 79
+        "line": 22
       }
     },
     "s": {
       "0": 24,
       "1": 24,
       "2": 24,
-      "3": 24,
+      "3": 2,
       "4": 24,
-      "5": 24,
+      "5": 53,
       "6": 24,
-      "7": 24,
+      "7": 26,
       "8": 24,
-      "9": 24,
+      "9": 26,
       "10": 24,
-      "11": 24,
-      "12": 61,
-      "13": 61,
-      "14": 212,
-      "15": 4,
-      "16": 2
+      "11": 212,
+      "12": 12,
+      "13": 24,
+      "14": 216,
+      "15": 14,
+      "16": 24,
+      "17": 4,
+      "18": 2,
+      "19": 2,
+      "20": 24
     },
     "f": {
-      "0": 61,
-      "1": 212,
-      "2": 4,
-      "3": 2
+      "0": 24,
+      "1": 2,
+      "2": 53,
+      "3": 26,
+      "4": 26,
+      "5": 212,
+      "6": 12,
+      "7": 216,
+      "8": 14,
+      "9": 4
     },
     "b": {
       "0": [
         2,
-        210
-      ],
-      "1": [
-        32,
-        180
-      ],
-      "2": [
-        2,
-        210
+        2
       ]
     },
     "inputSourceMap": {
       "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue.ts",
+      "sourceRoot": "",
       "sources": [
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue"
       ],
       "names": [],
-      "mappings": ";;qBACM,KAAK,EAAC,kBAAkB;qBAKf,KAAK,EAAC,SAAS;qBACV,KAAK,EAAC,wBAAwB;qBAMjC,KAAK,EAAC,kBAAkB;;EACvB,KAAK,EAAC,gBAAgB;EAAC,QAAQ,EAAC,OAAO;;;EACxC,KAAK,EAAC,mBAAmB;EAAC,QAAQ,EAAC,aAAa;;;;EAC9C,KAAK,EAAC,gBAAgB;EAAC,SAAS,EAAT,EAAS;EAAC,QAAQ,EAAC,yBAAyB;;qBAChE,KAAK,EAAC,wBAAwB;;EAC9B,KAAK,EAAC,4BAA4B;EAAC,QAAQ,EAAC,OAAO;;;;EAEtD,KAAK,EAAC,gBAAgB;EAAC,SAAS,EAAT,EAAS;EAAC,QAAQ,EAAC,yBAAyB;;;EAChE,KAAK,EAAC,gBAAgB;EAAC,QAAQ,EAAC,OAAO;;;;EAEb,KAAK,EAAC,6DAA6D;;;;;;wBAtBjH,aA2BS,MA3BT,UA2BS;uBA1BH,aAyBK,6BAxBY,UAAK,GAAb,IAAI;4BADb,aAyBK;QAzBD,KAAK,EAAC,gDAAgD;QAEvD,GAAG,EAAE,IAAI,CAAC,IAAI;;QAEf,aAoBM,OApBN,UAoBM;UAnBJ,aAKS,UALT,UAKS;YAJP,aAAiH;cAA5G,KAAK,EAAC,gBAAgB;cAAE,GAAG,KAAK,IAAI,CAAC,eAAe;cAAqB,GAAG,EAAE,IAAI,CAAC,KAAK;cAAE,QAAQ,EAAC,OAAO;;YAC/G,aAES;cAFD,QAAQ,EAAC,iBAAiB;cAAC,KAAK,EAAC,gEAAgE;cAAE,OAAK,aAAE,oBAAe,CAAC,IAAI;;cACtI,aAAwE;gBAAzD,KAAK,EAAE,iBAAY,CAAC,IAAI,CAAC,IAAI;;;;UAG9C,aAYM,OAZN,UAYM;YAXJ,aAAiE,MAAjE,UAAiE,mBAAlB,IAAI,CAAC,KAAK;YACzD,aAA8E,KAA9E,UAA8E,mBAAvB,IAAI,CAAC,WAAW;aACQ,IAAI,CAAC,QAAQ;+BAA5F,aAGM,OAHN,UAGM;kBAFJ,aAA4F,QAA5F,UAA4F,mBAApD,IAAI,CAAC,qBAAqB,CAAC,eAAe;kBAClF,aAAwG,QAAxG,UAAwG,mBAA3C,IAAI,CAAC,YAAY,CAAC,eAAe;;+BAEhG,aAEM,OAFN,WAEM;kBADJ,aAA4F,QAA5F,WAA4F,mBAA3C,IAAI,CAAC,YAAY,CAAC,eAAe;;aAEtE,YAAO,CAAC,IAAI,CAAC,IAAI;+BAA/B,aAAsH,UAAtH,WAAsH,EAAhB,SAAO;+BAC7G,aAA6I;;kBAA9H,KAAK,EAAC,6CAA6C;kBAAE,OAAK,aAAE,qBAAgB,CAAC,IAAI;kBAAG,QAAQ,EAAC,YAAY;mBAAC,aAAW",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue",
-      "sourceRoot": "",
+      "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,QAAQ,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAC;AAChC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AACnC,OAAO,YAAY,MAAM,qCAAqC,CAAC;AAE/D,OAAO,EAAE,SAAS,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAG9D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,YAAY;KACb;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,EAAE,CAAC,EAAE,GAAG,OAAO,EAAE,CAAC;QACvB,MAAM,gBAAgB,GAAG,CAAC,IAAc,EAAE,EAAE;YAC3C,KAAK,CAAC,QAAQ,CAAC,SAAS,CAAC,OAAO,CAAC,YAAY,EAAE,IAAI,CAAC,CAAA;QACtD,CAAC,CAAA;QAED,MAAM,KAAK,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,KAAK,CAAC,SAAuB,CAAC,CAAC;QAElE,MAAM,QAAQ,GAAG,QAAQ,CACvB,GAAG,EAAE,CACD,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,QAAQ,CACjE,CAAC;QACF,MAAM,aAAa,GAAG,QAAQ,CAC5B,GAAG,EAAE,CACD,KAAK,CAAC,KAAK,CAAC,cAAiD,CAAC,aAAa,CAChF,CAAC;QACF,MAAM,OAAO,GAAG,CAAC,IAAY,EAAE,EAAE,CAAC,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,IAAI,CAAC,CAAC;QAClF,MAAM,YAAY,GAAG,CAAC,IAAY,EAAE,EAAE,CAAC,aAAa,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,IAAI,CAAC,CAAC;QAC5F,MAAM,eAAe,GAAG,CAAC,IAAc,EAAE,EAAE;YACzC,IAAG,YAAY,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE;gBAC1B,KAAK,CAAC,QAAQ,CAAC,cAAc,CAAC,OAAO,CAAC,oBAAoB,EAAE,IAAI,CAAC,CAAA;aAClE;iBAAM;gBACL,KAAK,CAAC,QAAQ,CAAC,cAAc,CAAC,OAAO,CAAC,iBAAiB,EAAE,IAAI,CAAC,CAAA;aAC/D;QACH,CAAC,CAAA;QACD,OAAO;YACL,KAAK;YACL,gBAAgB;YAChB,eAAe;YACf,OAAO;YACP,YAAY;YACZ,CAAC;SACF,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
       "sourcesContent": [
-        "<template>\n  <ul class=\"product-list row\">\n        <li class=\"product-list__item col-md-4 col-sm-6 col-xs-12\"\n          v-for=\"item in items\"\n          :key=\"item.uuid\"\n        >\n          <div class=\"product\">\n            <figure class=\"product__image-wrapper\">\n              <img class=\"product__image\" :src=\"`${item.cover_image_url}&ar=3:2&fit=crop`\" :alt=\"item.title\" itemprop=\"image\"/>\n              <button itemprop=\"wishlist-button\" class=\"product__wishlist-button button button--round button--wishlist\" @click=\"handleClickStar(item)\">\n              <IconWishlist :style=\"isInWishlist(item.uuid) ? 'fill: orange;' : ''\" />\n              </button>\n            </figure>\n            <div class=\"product__details\">\n              <h1 class=\"product__title\" itemprop=\"brand\">{{ item.title }}</h1>\n              <p class=\"product__subtitle\" itemprop=\"description\">{{ item.description }}</p>\n              <div class=\"product__price\" itemscope itemtype=\"http://schema.org/Offer\" v-if=\"item.discount > 0\">\n                <span class=\"product__price--strike\">{{ item.original_retail_price.formatted_value }}</span>\n                <span class=\"product__price--discounted\" itemprop=\"price\">{{ item.retail_price.formatted_value }}</span>\n              </div>\n              <div class=\"product__price\" itemscope itemtype=\"http://schema.org/Offer\" v-else>\n                <span class=\"product__price\" itemprop=\"price\">{{ item.retail_price.formatted_value }}</span>\n              </div>\n              <button v-if=\"isInBag(item.uuid)\" class=\"product__add-to-cart button button--primary button--in-cart\">In Cart</button>\n              <button v-else class=\"product__add-to-cart button button--primary\" @click=\"handleAddBagItem(item)\" itemprop=\"add-button\">Add to Cart</button>\n            </div>\n          </div>\n        </li>\n      </ul>\n</template>\n<script lang=\"ts\">\nimport { defineComponent, computed } from 'vue'\nimport { useStore } from 'vuex';\nimport IconWishlist from '@/components/icons/IconWishlist.vue';\n\nimport { BAG_STORE, WISHLIST_STORE } from \"@/store/constants\";\nimport { BagStateTypes, ItemData, WishlistStateTypes } from \"@/store/interfaces\";\n\nexport default defineComponent({\n  components: {\n    IconWishlist,\n  },\n  setup() {\n    const store = useStore();\n     const handleAddBagItem = (item: ItemData) => {\n      store.dispatch(BAG_STORE.ACTIONS.ADD_BAG_ITEM, item)\n    }\n\n    const items = computed(() => store.state.itemLists as ItemData[]);\n\n    const bagItems = computed(\n      () =>\n        ((store.state.bagModule as unknown) as BagStateTypes).bagItems\n    );\n    const wishlistItems = computed(\n      () =>\n        ((store.state.wishlistModule as unknown) as WishlistStateTypes).wishlistItems\n    );\n    const isInBag = (uuid: string) => bagItems.value.some(item => item.uuid === uuid);\n    const isInWishlist = (uuid: string) => wishlistItems.value.some(item => item.uuid === uuid);\n    const handleClickStar = (item: ItemData) => {\n      if(isInWishlist(item.uuid)) {\n        store.dispatch(WISHLIST_STORE.ACTIONS.REMOVE_WISHLIST_ITEM, item)\n      } else {\n        store.dispatch(WISHLIST_STORE.ACTIONS.ADD_WISHLIST_ITEM, item)\n      }\n    }\n    return {\n      items,\n      handleAddBagItem,\n      handleClickStar,\n      isInBag,\n      isInWishlist,\n    }\n  },\n})\n</script>\n"
+        "\nimport { defineComponent, computed } from 'vue'\nimport { useStore } from 'vuex';\nimport { useI18n } from 'vue-i18n';\nimport IconWishlist from '@/components/icons/IconWishlist.vue';\n\nimport { BAG_STORE, WISHLIST_STORE } from \"@/store/constants\";\nimport { BagStateTypes, ItemData, WishlistStateTypes } from \"@/store/interfaces\";\n\nexport default defineComponent({\n  components: {\n    IconWishlist,\n  },\n  setup() {\n    const store = useStore();\n    const { t } = useI18n();\n     const handleAddBagItem = (item: ItemData) => {\n      store.dispatch(BAG_STORE.ACTIONS.ADD_BAG_ITEM, item)\n    }\n\n    const items = computed(() => store.state.itemLists as ItemData[]);\n\n    const bagItems = computed(\n      () =>\n        ((store.state.bagModule as unknown) as BagStateTypes).bagItems\n    );\n    const wishlistItems = computed(\n      () =>\n        ((store.state.wishlistModule as unknown) as WishlistStateTypes).wishlistItems\n    );\n    const isInBag = (uuid: string) => bagItems.value.some(item => item.uuid === uuid);\n    const isInWishlist = (uuid: string) => wishlistItems.value.some(item => item.uuid === uuid);\n    const handleClickStar = (item: ItemData) => {\n      if(isInWishlist(item.uuid)) {\n        store.dispatch(WISHLIST_STORE.ACTIONS.REMOVE_WISHLIST_ITEM, item)\n      } else {\n        store.dispatch(WISHLIST_STORE.ACTIONS.ADD_WISHLIST_ITEM, item)\n      }\n    }\n    return {\n      items,\n      handleAddBagItem,\n      handleClickStar,\n      isInBag,\n      isInWishlist,\n      t,\n    }\n  },\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "529e4e6075569de97a5fddab52f5406a1607eec6"
+    "hash": "0bd2e1f6bf0bbcc3fad0b532d6096f0d261961f8"
   },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/router/index.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/router/index.ts",
@@ -6370,24 +7272,127 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "ddbe5a0b9cba89fa5b6c22e2f546bd51c7a12a7a"
   },
+  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts",
+      "sourceRoot": "",
+      "sources": [
+        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts"
+      ],
+      "names": [],
+      "mappings": "AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,UAAU,CAAC;AACtC,OAAO,EAAE,MAAM,mBAAmB,CAAC;AACnC,OAAO,EAAE,MAAM,mBAAmB,CAAC;AAEnC,eAAe,UAAU,CAAC;IACxB,MAAM,EAAE,KAAK;IACb,MAAM,EAAE,IAAI;IACZ,cAAc,EAAE,IAAI;IACpB,QAAQ,EAAE;QACR,EAAE;QACF,EAAE;KACH;CACF,CAAC,CAAA",
+      "sourcesContent": [
+        "import { createI18n } from 'vue-i18n';\nimport en from '../locale/en.json';\nimport it from '../locale/it.json';\n\nexport default createI18n({\n  legacy: false,\n  locale: 'it',\n  fallbackLocale: 'en',\n  messages: {\n    en,\n    it,\n  }\n})"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "9098ff53d91e8adaf49692bf5f892087dc09c0a3"
+  },
+  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts",
+      "sourceRoot": "",
+      "sources": [
+        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts"
+      ],
+      "names": [],
+      "mappings": "AACA,OAAO,EAAE,iBAAiB,EAAE,MAAM,UAAU,CAAA;AAE5C,eAAe,iBAAiB,EAAE,CAAA",
+      "sourcesContent": [
+        "\nimport { createMetaManager } from 'vue-meta'\n\nexport default createMetaManager()"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a0e4b8f070a2efe9943fda7c37fbad67b6a1043f"
+  },
   "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts": {
     "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts",
     "statementMap": {
       "0": {
         "start": {
-          "line": 6,
+          "line": 8,
+          "column": 12
+        },
+        "end": {
+          "line": 8,
+          "column": 26
+        }
+      },
+      "1": {
+        "start": {
+          "line": 9,
           "column": 0
         },
         "end": {
-          "line": 6,
-          "column": 52
+          "line": 9,
+          "column": 15
+        }
+      },
+      "2": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 16
+        }
+      },
+      "3": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 14
+        }
+      },
+      "4": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 21
+        }
+      },
+      "5": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 18
         }
       }
     },
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 24
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 24
     },
     "f": {},
     "b": {},
@@ -6399,12 +7404,12 @@
         "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts"
       ],
       "names": [],
-      "mappings": "AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,KAAK,CAAA;AAC/B,OAAO,GAAG,MAAM,WAAW,CAAA;AAC3B,OAAO,MAAM,MAAM,UAAU,CAAA;AAC7B,OAAO,KAAK,MAAM,SAAS,CAAA;AAC3B,OAAO,oBAAoB,CAAC;AAE5B,SAAS,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,GAAG,CAAC,MAAM,CAAC,CAAC,KAAK,CAAC,MAAM,CAAC,CAAA",
+      "mappings": "AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,KAAK,CAAA;AAC/B,OAAO,GAAG,MAAM,WAAW,CAAA;AAC3B,OAAO,MAAM,MAAM,UAAU,CAAA;AAC7B,OAAO,KAAK,MAAM,SAAS,CAAA;AAC3B,OAAO,IAAI,MAAM,gBAAgB,CAAA;AACjC,OAAO,WAAW,MAAM,uBAAuB,CAAA;AAC/C,OAAO,oBAAoB,CAAC;AAE5B,MAAM,GAAG,GAAG,SAAS,CAAC,GAAG,CAAC,CAAA;AAC1B,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAA;AACd,GAAG,CAAC,GAAG,CAAC,MAAM,CAAC,CAAA;AACf,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,CAAA;AACb,GAAG,CAAC,GAAG,CAAC,WAAW,CAAC,CAAA;AACpB,GAAG,CAAC,KAAK,CAAC,MAAM,CAAC,CAAA",
       "sourcesContent": [
-        "import { createApp } from 'vue'\nimport App from './App.vue'\nimport router from './router'\nimport store from './store'\nimport './styles/main.scss';\n\ncreateApp(App).use(store).use(router).mount('#app')"
+        "import { createApp } from 'vue'\nimport App from './App.vue'\nimport router from './router'\nimport store from './store'\nimport i18n from './plugins/i18n'\nimport metaManager from './plugins/metaManager'\nimport './styles/main.scss';\n\nconst app = createApp(App)\napp.use(store)\napp.use(router)\napp.use(i18n)\napp.use(metaManager)\napp.mount('#app')"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c15f3ae026cdc4c6188ed6b18054573761e9c27c"
+    "hash": "4d640890f9f1490a6321f307bc7748cb996f442e"
   }
 }

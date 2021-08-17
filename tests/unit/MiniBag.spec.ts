@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { createStore } from 'vuex'
+import i18n from '@/plugins/i18n'
 import { mount } from "@vue/test-utils";
 import Home from '@/views/Home.vue';
 import MiniBag from '@/components/MiniBag.vue';
@@ -42,7 +43,7 @@ describe("MiniBag.vue", () => {
     await router.isReady()
     const wrapper = mount(MiniBag, {
       global: {
-        plugins: [router],
+        plugins: [router, i18n],
         provide: {
           store
         },
@@ -85,7 +86,7 @@ describe("MiniBag.vue", () => {
     await router.isReady()
     const wrapper = mount(MiniBag, {
       global: {
-        plugins: [router],
+        plugins: [router, i18n],
         provide: {
           store
         },
