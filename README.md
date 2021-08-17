@@ -1,4 +1,4 @@
-# JS Challange - Jagaard - Zeki Oztorun
+# JS Challenge - Jagaard - Zeki Oztorun
 
 ![Quality Gate](/public/sonarqube/quality-gate.svg "quality-gate") 
 ![Coverage](/public/sonarqube/coverage.svg "coverage") 
