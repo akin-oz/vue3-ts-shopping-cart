@@ -8,6 +8,7 @@
 import { computed, defineComponent } from 'vue'
 import { useStore } from 'vuex'
 import { useMeta } from 'vue-meta'
+import { useI18n } from 'vue-i18n'
 import DefaultLayout from '@/layout/DefaultLayout.vue'
 import { ItemData } from '@/store/interfaces'
 
@@ -46,6 +47,11 @@ export default defineComponent({
         }
       }]
     })
+
+    const locale = computed(() => localStorage.getItem('locale') ?? 'it');
+    const { locale: currentLocale } = useI18n();
+    currentLocale.value = locale.value
+
     return {}
   },
 })

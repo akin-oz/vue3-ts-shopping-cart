@@ -8,10 +8,11 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, watch } from 'vue';
+import { computed, defineComponent, nextTick, watch } from 'vue';
 import { useStore } from 'vuex';
 import { useRoute } from 'vue-router';
 import { useAxios } from '@/use/useAxios';
+import { useI18n } from 'vue-i18n';
 
 import Pagination from '@/components/ThePagination.vue';
 import ProductList from '@/components/ProductList.vue';
@@ -30,10 +31,12 @@ export default defineComponent({
     const route = useRoute();
     const page = computed(() => parseInt(route.query.page as string, 10) || 1);
     const offset = computed(() => (page.value - 1) * 6);
+    const { locale } = useI18n();
+    
 
     watch(
-      () => page,
-      async () => {
+      () => [page, locale],
+      async () => {        
         const {
           data: response,
           getData
@@ -45,7 +48,8 @@ export default defineComponent({
             venue_in: '164'
           },
         );
-        await getData();    
+        await nextTick()
+        await getData();
         
         store.dispatch(
         ROOT_STORE.ACTIONS.ITEM_LISTS,

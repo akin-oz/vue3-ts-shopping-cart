@@ -162,3 +162,21 @@ background-color: #358ED7;
   pointer-events: none;
   background-color: #d9d9d9;
 }
+
+.button-group {
+  display: inline-block;
+  .button {
+    width: 50px;
+    &:first-child {
+      border-radius: 100px 0 0 100px;
+    }
+    &:last-child {
+      border-radius: 0 100px 100px 0;
+    }
+    &.selected {
+      border: 1px solid #444A59;
+      color: #ffffff;
+      background-color: #444A59;
+    }
+  }
+}

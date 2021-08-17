@@ -32,7 +32,7 @@
     <hr class="minibag-divider">
     <div class="minibag-item subtotal">
       <div class="minibag-item__content" style="justify-content: space-between; width: 100%;">
-        <div>Cart Subtotal:</div>
+        <div>{{ t('cardSubtotal') }}:</div>
         <div style="margin-left: 1rem;">{{ totalPrice }}</div>
       </div>
     </div>
@@ -44,6 +44,7 @@ import { BAG_STORE } from "@/store/constants";
 import { BagStateTypes, ItemData } from "@/store/interfaces";
 import { computed, defineComponent } from "vue";
 import { useStore } from "vuex";
+import { useI18n } from 'vue-i18n';
 import IconDelete from '@/components/icons/IconDelete.vue'
 
 export default defineComponent({
@@ -52,6 +53,7 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
+    const { t } = useI18n()
     const bagItems = computed(
       () => ((store.state.bagModule as unknown) as BagStateTypes).bagItems
     );
@@ -68,6 +70,7 @@ export default defineComponent({
       bagItems,
       totalPrice,
       handleRemoveItem,
+      t,
     };
   },
 });

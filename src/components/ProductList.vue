@@ -33,13 +33,13 @@
               <button
                 v-if="isInBag(item.uuid)"
                 class="product__add-to-cart button button--primary button--in-cart"
-              >In Cart</button>
+              >{{ t('inCard') }}</button>
               <button
                 v-else
                 class="product__add-to-cart button button--primary"
                 @click="handleAddBagItem(item)"
                 itemprop="add-button"
-              >Add to Cart</button>
+              >{{ t('addToCard') }}</button>
             </div>
           </div>
         </li>
@@ -48,6 +48,7 @@
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
 import { useStore } from 'vuex';
+import { useI18n } from 'vue-i18n';
 import IconWishlist from '@/components/icons/IconWishlist.vue';
 
 import { BAG_STORE, WISHLIST_STORE } from "@/store/constants";
@@ -59,6 +60,7 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
+    const { t } = useI18n();
      const handleAddBagItem = (item: ItemData) => {
       store.dispatch(BAG_STORE.ACTIONS.ADD_BAG_ITEM, item)
     }
@@ -88,6 +90,7 @@ export default defineComponent({
       handleClickStar,
       isInBag,
       isInWishlist,
+      t,
     }
   },
 })
