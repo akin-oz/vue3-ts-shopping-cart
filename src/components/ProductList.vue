@@ -6,23 +6,40 @@
         >
           <div class="product">
             <figure class="product__image-wrapper">
-              <img class="product__image" :src="`${item.cover_image_url}&ar=3:2&fit=crop`" :alt="item.title" itemprop="image"/>
-              <button itemprop="wishlist-button" class="product__wishlist-button button button--round button--wishlist" @click="handleClickStar(item)">
-              <IconWishlist :style="isInWishlist(item.uuid) ? 'fill: orange;' : ''" />
+              <img
+                class="product__image"
+                :src="`${item.cover_image_url}&ar=3:2&fit=crop`"
+                :alt="item.title"
+                itemprop="image"
+              />
+              <button
+                itemprop="wishlist-button"
+                class="product__wishlist-button button button--round button--wishlist"
+                @click="handleClickStar(item)"
+              >
+                <IconWishlist :style="isInWishlist(item.uuid) ? 'fill: orange;' : ''" />
               </button>
             </figure>
             <div class="product__details">
               <h1 class="product__title" itemprop="brand">{{ item.title }}</h1>
               <p class="product__subtitle" itemprop="description">{{ item.description }}</p>
-              <div class="product__price" itemscope itemtype="http://schema.org/Offer" v-if="item.discount > 0">
+              <div class="product__price" v-if="item.discount > 0">
                 <span class="product__price--strike">{{ item.original_retail_price.formatted_value }}</span>
                 <span class="product__price--discounted" itemprop="price">{{ item.retail_price.formatted_value }}</span>
               </div>
-              <div class="product__price" itemscope itemtype="http://schema.org/Offer" v-else>
+              <div class="product__price" v-else>
                 <span class="product__price" itemprop="price">{{ item.retail_price.formatted_value }}</span>
               </div>
-              <button v-if="isInBag(item.uuid)" class="product__add-to-cart button button--primary button--in-cart">In Cart</button>
-              <button v-else class="product__add-to-cart button button--primary" @click="handleAddBagItem(item)" itemprop="add-button">Add to Cart</button>
+              <button
+                v-if="isInBag(item.uuid)"
+                class="product__add-to-cart button button--primary button--in-cart"
+              >In Cart</button>
+              <button
+                v-else
+                class="product__add-to-cart button button--primary"
+                @click="handleAddBagItem(item)"
+                itemprop="add-button"
+              >Add to Cart</button>
             </div>
           </div>
         </li>
