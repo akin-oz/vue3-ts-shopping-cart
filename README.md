@@ -39,6 +39,11 @@ npx nyc report --reporter=text-summary
 npm run lint
 ```
 
+### Build task for production ready output
+```
+npm run build
+```
+
 ## Developing Process
 
 Kanban board of the tasks can be found at [Github Projects](https://github.com/zoztorun/js_challenge_jagaad_zeki-oztorun/projects/1)
