@@ -2,7 +2,12 @@
   <nav class="pagination">
     <ul class="pagination__list">
       <li class="pagination__item">
-        <a v-if="currentPage !== 1" @click="handlePageChange(currentPage - 1)" class="pagination__link">
+        <a
+          v-if="currentPage !== 1"
+          @click="handlePageChange(currentPage - 1)"
+          class="pagination__link"
+          itemprop="page-prev"
+        >
           <IconArrowLeft />
         </a>
       </li>
@@ -11,12 +16,21 @@
         v-for="(p,i) in visiblePages"
         :key="i"
       >
-        <a @click="handlePageChange(p)" :class="`pagination__link${p === '...' ? ' disabled' : ''}${currentPage === p ? ' current' : ''}`">
+        <a
+          @click="handlePageChange(p)"
+          :class="`pagination__link${p === '...' ? ' disabled' : ''}${currentPage === p ? ' current' : ''}`"
+          :itemprop="`page-${p}`"
+        >
           {{ p }}
         </a>
       </li>
       <li class="pagination__item">
-        <a v-if="currentPage < lastPage" @click="handlePageChange(currentPage + 1)" class="pagination__link">
+        <a
+          v-if="currentPage < lastPage"
+          @click="handlePageChange(currentPage + 1)"
+          class="pagination__link"
+          itemprop="page-next"
+        >
           <IconArrowRight />
         </a>
       </li>
@@ -46,7 +60,6 @@ export default defineComponent({
     const store = useStore();
     const router = useRouter();
     const route = useRoute();
-    const total = computed(() => store.state.itemCount);
 
     const {
       lastPage,
@@ -67,7 +80,6 @@ export default defineComponent({
     }
 
     return {
-      total,
       offset,
       handlePageChange,
       currentPage,

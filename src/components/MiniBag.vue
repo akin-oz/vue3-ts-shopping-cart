@@ -1,6 +1,7 @@
 <template>
   <div
     class="minibag-wrapper"
+    itemprop="minibag"
     v-show="bagItems.length"
   >
     <div
@@ -22,6 +23,7 @@
           @click="handleRemoveItem(item)"
           type="button"
           class="minibag-item__button"
+          itemprop="remove-button"
         >
         <IconDelete />
         </button>

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -99,6 +99,14 @@
 <a name='L40'></a><a href='#L40'>40</a>
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -115,24 +123,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,7 +145,7 @@
     &lt;div class="default-header__spacer"&gt;&lt;/div&gt;
     &lt;div class="default-header__actions"&gt;
       &lt;div class="default-header__action-item"&gt;
-        &lt;MiniBagTrigger @mouseenter="toggleMiniBag"&gt;&lt;/MiniBagTrigger&gt;
+        &lt;MiniBagTrigger @mouseenter="toggleMiniBag" itemprop="minibag-trigger"&gt;&lt;/MiniBagTrigger&gt;
       &lt;/div&gt;
       &lt;div class="default-header__action-item"&gt;
         &lt;WishlistTrigger&gt;&lt;/WishlistTrigger&gt;
@@ -156,24 +156,24 @@
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-<span class="cstat-no" title="statement not covered" >import { defineComponent, ref, Ref } from 'vue'</span>
-<span class="cstat-no" title="statement not covered" >import MiniBag from '@/components/MiniBag.vue'</span>
-<span class="cstat-no" title="statement not covered" >import MiniBagTrigger from '@/components/MiniBagTrigger.vue'</span>
-<span class="cstat-no" title="statement not covered" >import WishlistTrigger from '@/components/WishlistTrigger.vue'</span>
+import { defineComponent, ref, Ref } from 'vue'
+import MiniBag from '@/components/MiniBag.vue'
+import MiniBagTrigger from '@/components/MiniBagTrigger.vue'
+import WishlistTrigger from '@/components/WishlistTrigger.vue'
 &nbsp;
-export default <span class="cstat-no" title="statement not covered" >defineComponent({</span>
+export default defineComponent({
   components: {
     MiniBag,
     MiniBagTrigger,
     WishlistTrigger,
   },
-<span class="fstat-no" title="function not covered" >  setup </span>() {
-    const isMiniBagActive: Ref&lt;boolean&gt; = <span class="cstat-no" title="statement not covered" >ref(t</span>rue)
-    const toggleMiniBag = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >      isMiniBagActive.</span>value = !isMiniBagActive.value
+  setup () {
+    const isMiniBagActive: Ref&lt;boolean&gt; = ref(false)
+    const toggleMiniBag = () =&gt; {
+      isMiniBagActive.value = !isMiniBagActive.value
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return {</span>
+    return {
       toggleMiniBag,
       isMiniBagActive,
     }
@@ -187,7 +187,7 @@ export default <span class="cstat-no" title="statement not covered" >defineCompo
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Aug 16 2021 13:25:33 GMT+0300 (GMT+03:00)
+                at Tue Aug 17 2021 14:02:14 GMT+0300 (GMT+03:00)
             </div>
         </div>
         <script src="../../prettify.js"></script>

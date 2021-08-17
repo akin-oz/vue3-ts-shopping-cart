@@ -3,8 +3,6 @@ import { createStore } from 'vuex'
 import { mount } from "@vue/test-utils";
 import Home from '@/views/Home.vue';
 import MiniBag from '@/components/MiniBag.vue';
-// import ProductList from '@/components/ProductList.vue';
-// import Pagination from '@/components/ThePagination.vue';
 import { BAG_STORE } from "@/store/constants";
 import mockItem from '../mocks/productItem.json';
 import { nextTick } from 'vue';

@@ -4,7 +4,7 @@
     <div class="default-header__spacer"></div>
     <div class="default-header__actions">
       <div class="default-header__action-item">
-        <MiniBagTrigger @mouseenter="toggleMiniBag"></MiniBagTrigger>
+        <MiniBagTrigger @mouseenter="toggleMiniBag" itemprop="minibag-trigger"></MiniBagTrigger>
       </div>
       <div class="default-header__action-item">
         <WishlistTrigger></WishlistTrigger>
@@ -27,7 +27,7 @@ export default defineComponent({
     WishlistTrigger,
   },
   setup () {
-    const isMiniBagActive: Ref<boolean> = ref(true)
+    const isMiniBagActive: Ref<boolean> = ref(false)
     const toggleMiniBag = () => {
       isMiniBagActive.value = !isMiniBagActive.value
     }

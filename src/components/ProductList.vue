@@ -7,7 +7,7 @@
           <div class="product">
             <figure class="product__image-wrapper">
               <img class="product__image" :src="`${item.cover_image_url}&ar=3:2&fit=crop`" :alt="item.title" itemprop="image"/>
-              <button class="product__wishlist-button button button--round button--wishlist" @click="handleClickStar(item)">
+              <button itemprop="wishlist-button" class="product__wishlist-button button button--round button--wishlist" @click="handleClickStar(item)">
               <IconWishlist :style="isInWishlist(item.uuid) ? 'fill: orange;' : ''" />
               </button>
             </figure>
@@ -22,7 +22,7 @@
                 <span class="product__price" itemprop="price">{{ item.retail_price.formatted_value }}</span>
               </div>
               <button v-if="isInBag(item.uuid)" class="product__add-to-cart button button--primary button--in-cart">In Cart</button>
-              <button v-else class="product__add-to-cart button button--primary" @click="handleAddBagItem(item)">Add to Cart</button>
+              <button v-else class="product__add-to-cart button button--primary" @click="handleAddBagItem(item)" itemprop="add-button">Add to Cart</button>
             </div>
           </div>
         </li>

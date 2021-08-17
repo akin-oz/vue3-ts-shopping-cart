@@ -1,7 +1,7 @@
 <template>
   <div class="wishlist-trigger__count">
     <IconWishlist class="icon" />
-    <span class="j-badge">{{ itemCount }}</span>
+    <span class="j-badge" itemprop="wishlist-count">{{ itemCount }}</span>
   </div>
 </template>
 

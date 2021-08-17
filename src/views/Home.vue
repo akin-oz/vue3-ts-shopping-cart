@@ -1,7 +1,6 @@
 <template>
   <div class="product-page">
     <div class="container" style="padding: 0">
-      page: {{page}} offset: {{ offset }}
       <ProductList></ProductList>
       <Pagination :page="page" />
     </div>
