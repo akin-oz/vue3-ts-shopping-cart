@@ -14,18 +14,10 @@
 ![Vulnerabilities](/public/sonarqube/vulnerabilities.svg "vulnerabilities") 
 ## Project setup
 ```
-npm install
+docker build . -t js_challenge_jagaard_zeki-oztorun
+docker run -d -p 8080:80 js_challenge_jagaard_zeki-oztorun
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
+Open in browser window on `localhost:8000`
 
 ### Run your unit tests
 ```
@@ -37,10 +29,16 @@ npm run test:unit
 npm run test:e2e
 ```
 
+### Generate overall coverage report
+```
+npx nyc report --reporter=text-summary
+```
+
 ### Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Developing Process
+
+Kanban board of the tasks can be found at [Github Projects](https://github.com/zoztorun/js_challenge_jagaad_zeki-oztorun/projects/1)
