@@ -1,4 +1,7 @@
+
+// eslint-disable-next-line
 const specTitle = require("cypress-sonarqube-reporter/specTitle");
+// eslint-disable-next-line
 const { ItemData } = require("../../../src/store/interfaces")
 describe(specTitle("Home"), () => {
   let page = 1;
@@ -58,6 +61,7 @@ describe(specTitle("Home"), () => {
   })
   it('should have correct price', () => {
     fetchItems(page, offset)
+    // eslint-disable-next-line
     cy.get(`@items-${page}`).its('data').then((products: any) => {
       products.map((item: InstanceType<typeof ItemData>, index: number) => {
         cy.get('[itemprop="price"]').its(index).should('have.text', item.retail_price.formatted_value)
@@ -69,6 +73,7 @@ describe(specTitle("Home"), () => {
   })
   it('should have correct price', () => {
     fetchItems(page, offset)
+    // eslint-disable-next-line
     cy.get(`@items-${page}`).its('data').then((products: any) => {
       products.map((item: InstanceType<typeof ItemData>, index: number) => {
         cy.get('[itemprop="price"]').its(index).should('have.text', item.retail_price.formatted_value)

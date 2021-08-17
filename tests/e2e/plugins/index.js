@@ -1,4 +1,5 @@
 module.exports = (on, config) => {
+  // eslint-disable-next-line
   require('@cypress/code-coverage/task')(on, config)
   return Object.assign({}, config, {
     fixturesFolder: 'tests/e2e/fixtures',

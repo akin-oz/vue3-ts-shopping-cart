@@ -2,6 +2,7 @@ import { usePagination } from "@/use/usePagination";
 import { nextTick, ref } from "vue";
 
 describe("pagination", () => {
+  // eslint-disable-next-line
   let warnSpy: jest.SpyInstance = undefined as any;
   beforeAll(() => {
     warnSpy = jest.spyOn(console, "warn").mockImplementation();

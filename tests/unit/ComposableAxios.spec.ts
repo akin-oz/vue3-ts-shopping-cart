@@ -2,10 +2,12 @@ import { useAxios } from "@/use/useAxios";
 import flushPromises from 'flush-promises';
 import * as api from '@/services';
 
+// eslint-disable-next-line
 let getActivities: jest.SpyInstance = undefined as any;
 getActivities = jest.spyOn(api.default, 'getActivities').mockImplementation(jest.fn());
 
 describe("axios", () => {
+  // eslint-disable-next-line
   let warnSpy: jest.SpyInstance = undefined as any;
   beforeAll(() => {
     warnSpy = jest.spyOn(console, "warn").mockImplementation();
