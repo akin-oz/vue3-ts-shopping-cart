@@ -29,7 +29,7 @@ export default defineComponent({
       script: [{
         type: 'application/ld+json',
         json: {
-          '@context': 'http://schema.org',
+          '@context': 'https://schema.org',
           '@type': 'ItemList',
           numberOfItems: count.value,
           itemListElement: items.value.map(item => {
