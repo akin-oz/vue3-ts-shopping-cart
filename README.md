@@ -1,4 +1,4 @@
-# JS Challenge - Jagaard - Zeki Oztorun
+# JS Challenge - Jagaad - Zeki Oztorun
 
 ![Quality Gate](/public/sonarqube/quality-gate.svg "quality-gate") 
 ![Coverage](/public/sonarqube/coverage.svg "coverage") 
@@ -14,8 +14,8 @@
 ![Vulnerabilities](/public/sonarqube/vulnerabilities.svg "vulnerabilities") 
 ## Project setup
 ```
-docker build . -t js_challenge_jagaard_zeki-oztorun
-docker run -d -p 8080:80 js_challenge_jagaard_zeki-oztorun
+docker build . -t js_challenge_jagaad_zeki-oztorun
+docker run -d -p 8080:80 js_challenge_jagaad_zeki-oztorun
 ```
 Open in browser window on `localhost:8000`
 
