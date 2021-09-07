@@ -1,4 +1,4 @@
-# JS Challenge - Jagaad - Zeki Oztorun
+# Shopping Card
 
 ![Quality Gate](/public/sonarqube/quality-gate.svg "quality-gate") 
 ![Coverage](/public/sonarqube/coverage.svg "coverage") 
@@ -14,8 +14,8 @@
 ![Vulnerabilities](/public/sonarqube/vulnerabilities.svg "vulnerabilities") 
 ## Project setup
 ```
-docker build . -t js_challenge_jagaad_zeki-oztorun
-docker run -d -p 8080:80 js_challenge_jagaad_zeki-oztorun
+docker build . -t vue3-ts-shopping-card
+docker run -d -p 8080:80 vue3-ts-shopping-card
 ```
 Open in browser window on `localhost:8000`
 
@@ -46,4 +46,4 @@ npm run build
 
 ## Developing Process
 
-Kanban board of the tasks can be found at [Github Projects](https://github.com/zoztorun/js_challenge_jagaad_zeki-oztorun/projects/1)
+Kanban board of the tasks can be found at [Github Projects](https://github.com/zoztorun/vue3-ts-shopping-card/projects/1)

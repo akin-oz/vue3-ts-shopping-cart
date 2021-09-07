@@ -21,7 +21,7 @@ export default defineComponent({
     const items = computed(() => store.state.itemLists as ItemData[]);
     const count = computed(() => store.state.itemCount);
     useMeta({
-      title: 'JS Challenge - Jagaad - Zeki Oztorun',
+      title: 'Shopping Card',
       htmlAttrs: {
         lang: 'en',
         amp: true

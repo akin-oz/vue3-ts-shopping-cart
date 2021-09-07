@@ -1,6 +1,6 @@
 {
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/App.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/App.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -312,22 +312,22 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/App.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/App.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/App.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAA;AAC/B,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAA;AAClC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAA;AAClC,OAAO,aAAa,MAAM,4BAA4B,CAAA;AAGtD,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,aAAa;KACd;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAA;QACxB,MAAM,KAAK,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,KAAK,CAAC,SAAuB,CAAC,CAAC;QAClE,MAAM,KAAK,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,KAAK,CAAC,SAAS,CAAC,CAAC;QACpD,OAAO,CAAC;YACN,KAAK,EAAE,uCAAuC;YAC9C,SAAS,EAAE;gBACT,IAAI,EAAE,IAAI;gBACV,GAAG,EAAE,IAAI;aACV;YACD,MAAM,EAAE,CAAC;oBACP,IAAI,EAAE,qBAAqB;oBAC3B,IAAI,EAAE;wBACJ,UAAU,EAAE,mBAAmB;wBAC/B,OAAO,EAAE,UAAU;wBACnB,aAAa,EAAE,KAAK,CAAC,KAAK;wBAC1B,eAAe,EAAE,KAAK,CAAC,KAAK,CAAC,GAAG,CAAC,IAAI,CAAC,EAAE;4BACtC,OAAO;gCACL,OAAO,EAAE,SAAS;gCAClB,KAAK,EAAE,IAAI,CAAC,eAAe;gCAC3B,IAAI,EAAE,IAAI,CAAC,KAAK;gCAChB,WAAW,EAAE,IAAI,CAAC,WAAW;gCAC7B,MAAM,EAAE;oCACN,OAAO,EAAE,OAAO;oCAChB,OAAO,EAAE,IAAI,CAAC,YAAY,EAAE,eAAe;iCAC5C;6BACF,CAAA;wBACH,CAAC,CAAC;qBACH;iBACF,CAAC;SACH,CAAC,CAAA;QAEF,MAAM,MAAM,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,YAAY,CAAC,OAAO,CAAC,QAAQ,CAAC,IAAI,IAAI,CAAC,CAAC;QACtE,MAAM,EAAE,MAAM,EAAE,aAAa,EAAE,GAAG,OAAO,EAAE,CAAC;QAC5C,aAAa,CAAC,KAAK,GAAG,MAAM,CAAC,KAAK,CAAA;QAElC,OAAO,EAAE,CAAA;IACX,CAAC;CACF,CAAC,CAAA",
       "sourcesContent": [
-        "\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from 'vuex'\nimport { useMeta } from 'vue-meta'\nimport { useI18n } from 'vue-i18n'\nimport DefaultLayout from '@/layout/DefaultLayout.vue'\nimport { ItemData } from '@/store/interfaces'\n\nexport default defineComponent({\n  components: {\n    DefaultLayout,\n  },\n  setup() {\n    const store = useStore()\n    const items = computed(() => store.state.itemLists as ItemData[]);\n    const count = computed(() => store.state.itemCount);\n    useMeta({\n      title: 'JS Challenge - Jagaad - Zeki Oztorun',\n      htmlAttrs: {\n        lang: 'en',\n        amp: true\n      },\n      script: [{\n        type: 'application/ld+json',\n        json: {\n          '@context': 'http://schema.org',\n          '@type': 'ItemList',\n          numberOfItems: count.value,\n          itemListElement: items.value.map(item => {\n            return {\n              \"@type\": \"Product\",\n              image: item.cover_image_url,\n              name: item.title,\n              description: item.description,\n              offers: {\n                \"@type\": \"Offer\",\n                \"price\": item.retail_price?.formatted_value\n              }\n            }\n          })\n        }\n      }]\n    })\n\n    const locale = computed(() => localStorage.getItem('locale') ?? 'it');\n    const { locale: currentLocale } = useI18n();\n    currentLocale.value = locale.value\n\n    return {}\n  },\n})\n"
+        "\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from 'vuex'\nimport { useMeta } from 'vue-meta'\nimport { useI18n } from 'vue-i18n'\nimport DefaultLayout from '@/layout/DefaultLayout.vue'\nimport { ItemData } from '@/store/interfaces'\n\nexport default defineComponent({\n  components: {\n    DefaultLayout,\n  },\n  setup() {\n    const store = useStore()\n    const items = computed(() => store.state.itemLists as ItemData[]);\n    const count = computed(() => store.state.itemCount);\n    useMeta({\n      title: 'Shopping Card',\n      htmlAttrs: {\n        lang: 'en',\n        amp: true\n      },\n      script: [{\n        type: 'application/ld+json',\n        json: {\n          '@context': 'http://schema.org',\n          '@type': 'ItemList',\n          numberOfItems: count.value,\n          itemListElement: items.value.map(item => {\n            return {\n              \"@type\": \"Product\",\n              image: item.cover_image_url,\n              name: item.title,\n              description: item.description,\n              offers: {\n                \"@type\": \"Offer\",\n                \"price\": item.retail_price?.formatted_value\n              }\n            }\n          })\n        }\n      }]\n    })\n\n    const locale = computed(() => localStorage.getItem('locale') ?? 'it');\n    const { locale: currentLocale } = useI18n();\n    currentLocale.value = locale.value\n\n    return {}\n  },\n})\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "d5b34e8945e40b594a44ad5ff430fb381ecb92c9"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultLayout.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultLayout.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -376,10 +376,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultLayout.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultLayout.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultLayout.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AACrC,OAAO,aAAa,MAAM,4BAA4B,CAAA;AACtD,OAAO,aAAa,MAAM,4BAA4B,CAAA;AAEtD,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,aAAa;QACb,aAAa;KACd;IACD,KAAK;QAGH,OAAO,EAAE,CAAA;IACX,CAAC;CACF,CAAC,CAAA",
@@ -390,8 +390,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "a086f18c8edf3ecf95b8ace00bc01fa9db850f0d"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultHeader.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultHeader.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -498,10 +498,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultHeader.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultHeader.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultHeader.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,GAAG,EAAO,MAAM,KAAK,CAAA;AAC/C,OAAO,OAAO,MAAM,0BAA0B,CAAA;AAC9C,OAAO,cAAc,MAAM,iCAAiC,CAAA;AAC5D,OAAO,eAAe,MAAM,kCAAkC,CAAA;AAE9D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,OAAO;QACP,cAAc;QACd,eAAe;KAChB;IACD,KAAK;QACH,MAAM,eAAe,GAAiB,GAAG,CAAC,KAAK,CAAC,CAAA;QAChD,MAAM,aAAa,GAAG,GAAG,EAAE;YACzB,eAAe,CAAC,KAAK,GAAG,CAAC,eAAe,CAAC,KAAK,CAAA;QAChD,CAAC,CAAA;QAED,OAAO;YACL,aAAa;YACb,eAAe;SAChB,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
@@ -512,8 +512,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "91674977bfe82f8170f2e05574103b6e7ccbfb47"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBag.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBag.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -778,10 +778,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBag.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBag.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBag.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAE9C,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAC;AAChD,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAC;AAChC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AACnC,OAAO,UAAU,MAAM,mCAAmC,CAAA;AAE1D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,UAAU;KACX;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,EAAE,CAAC,EAAE,GAAG,OAAO,EAAE,CAAA;QACvB,MAAM,QAAQ,GAAG,QAAQ,CACvB,GAAG,EAAE,CAAG,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,QAAQ,CACrE,CAAC;QACF,MAAM,UAAU,GAAG,QAAQ,CACzB,GAAG,EAAE;YACH,MAAM,KAAK,GAAK,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,UAAU,CAAC;YAC/E,OAAO,KAAK,CAAC,CAAC,CAAC,KAAK,KAAK,EAAE,CAAC,CAAC,CAAC,EAAE,CAAA;QAClC,CAAC,CACF,CAAC;QACF,MAAM,gBAAgB,GAAG,CAAC,IAAc,EAAE,EAAE;YAC1C,KAAK,CAAC,QAAQ,CAAC,SAAS,CAAC,OAAO,CAAC,eAAe,EAAE,IAAI,CAAC,CAAA;QACzD,CAAC,CAAC;QACF,OAAO;YACL,QAAQ;YACR,UAAU;YACV,gBAAgB;YAChB,CAAC;SACF,CAAC;IACJ,CAAC;CACF,CAAC,CAAC",
@@ -792,8 +792,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "6cbd6f88d4cadc7f7e93c2ec9e81e2a817136557"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/enums.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/enums.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/enums.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/enums.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -1745,10 +1745,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/enums.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/enums.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/enums.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/enums.ts"
       ],
       "names": [],
       "mappings": "AAAA,MAAM,CAAN,IAAY,WAIX;AAJD,WAAY,WAAW;IACrB,gDAAiC,CAAA;IACjC,sCAAuB,CAAA;IACvB,sDAAuC,CAAA;AACzC,CAAC,EAJW,WAAW,KAAX,WAAW,QAItB;AACD,MAAM,CAAN,IAAY,aAMX;AAND,WAAY,aAAa;IACvB,kDAAiC,CAAA;IACjC,wCAAuB,CAAA;IACvB,wDAAuC,CAAA;IACvC,0CAAyB,CAAA;IACzB,0CAAyB,CAAA;AAC3B,CAAC,EANW,aAAa,KAAb,aAAa,QAMxB;AACD,MAAM,CAAN,IAAY,WAKX;AALD,WAAY,WAAW;IACrB,gDAAiC,CAAA;IACjC,sCAAuB,CAAA;IACvB,wCAAyB,CAAA;IACzB,wCAAyB,CAAA;AAC3B,CAAC,EALW,WAAW,KAAX,WAAW,QAKtB;AACD,MAAM,CAAN,IAAY,YAGX;AAHD,WAAY,YAAY;IACtB,6CAA6B,CAAA;IAC7B,mDAAmC,CAAA;AACrC,CAAC,EAHW,YAAY,KAAZ,YAAY,QAGvB;AACD,MAAM,CAAN,IAAY,UAGX;AAHD,WAAY,UAAU;IACpB,2CAA6B,CAAA;IAC7B,iDAAmC,CAAA;AACrC,CAAC,EAHW,UAAU,KAAV,UAAU,QAGrB;AACD,MAAM,CAAN,IAAY,UAGX;AAHD,WAAY,UAAU;IACpB,yCAA2B,CAAA;IAC3B,+CAAiC,CAAA;AACnC,CAAC,EAHW,UAAU,KAAV,UAAU,QAGrB;AACD,MAAM,CAAN,IAAY,iBAGX;AAHD,WAAY,iBAAiB;IAC3B,4DAAuC,CAAA;IACvC,kEAA6C,CAAA;AAC/C,CAAC,EAHW,iBAAiB,KAAjB,iBAAiB,QAG5B;AACD,MAAM,CAAN,IAAY,eAGX;AAHD,WAAY,eAAe;IACzB,0DAAuC,CAAA;IACvC,gEAA6C,CAAA;AAC/C,CAAC,EAHW,eAAe,KAAf,eAAe,QAG1B;AACD,MAAM,CAAN,IAAY,eAEX;AAFD,WAAY,eAAe;IACzB,8DAA2C,CAAA;AAC7C,CAAC,EAFW,eAAe,KAAf,eAAe,QAE1B",
@@ -1759,8 +1759,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "41e307e7943b89b23b6cd2001a1eaa198e584e96"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/constants.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/constants.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/constants.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/constants.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -1804,10 +1804,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/constants.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/constants.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/constants.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/constants.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EACL,WAAW,EACX,aAAa,EACb,WAAW,EACX,UAAU,EACV,eAAe,EACf,UAAU,EACV,eAAe,EACf,YAAY,EACZ,iBAAiB,GAClB,MAAM,eAAe,CAAC;AAEvB,MAAM,CAAC,MAAM,UAAU,GAAG;IACxB,OAAO,EAAE,WAAW;IACpB,SAAS,EAAE,aAAa;IACxB,OAAO,EAAE,WAAW;CACrB,CAAC;AAEF,MAAM,CAAC,MAAM,SAAS,GAAG;IACvB,OAAO,EAAE,UAAU;IACnB,SAAS,EAAE,YAAY;IACvB,OAAO,EAAE,UAAU;CACpB,CAAC;AAEF,MAAM,CAAC,MAAM,cAAc,GAAG;IAC5B,OAAO,EAAE,eAAe;IACxB,SAAS,EAAE,iBAAiB;IAC5B,OAAO,EAAE,eAAe;CACzB,CAAC",
@@ -1818,8 +1818,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "ccbb80dd76a8a62f7ee79c2a4548e848738a6674"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconDelete.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconDelete.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconDelete.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconDelete.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -1891,11 +1891,11 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconDelete.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconDelete.vue"
       ],
       "names": [],
       "mappings": ";;;EACO,KAA8B,EAA9B,gCAA8B;EAAC,OAAO,EAAC,WAAW;;gCACrD,aAAkH;EAA5G,IAAI,EAAC,cAAc;EAAC,CAAC,EAAC,mFAAmF;;;;wBADjH,aAEM,OAFN,UAEM;IADJ,UAAkH",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconDelete.vue",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconDelete.vue",
       "sourceRoot": "",
       "sourcesContent": [
         "<template>\n  <svg style=\"width:24px;height:24px\" viewBox=\"0 0 24 24\">\n    <path fill=\"currentColor\" d=\"M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z\" />\n  </svg>\n</template>"
@@ -1904,8 +1904,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "84224c334b56cc21a50d3a03bc00c4a8395133d8"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBagTrigger.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBagTrigger.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -2112,10 +2112,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBagTrigger.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/MiniBagTrigger.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/MiniBagTrigger.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAC1C,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAC9C,OAAO,OAAO,MAAM,gCAAgC,CAAA;AAGpD,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,OAAO;KACR;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,SAAS,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC,SAAS,CAAC,OAAO,CAAC,cAAc,CAAC,CAAC,CAAC;QAClF,MAAM,UAAU,GAAG,QAAQ,CACzB,GAAG,EAAE;YACH,MAAM,KAAK,GAAK,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,UAAU,CAAC;YAC/E,OAAO,KAAK,CAAC,CAAC,CAAC,KAAK,KAAK,EAAE,CAAC,CAAC,CAAC,EAAE,CAAA;QAClC,CAAC,CACF,CAAC;QAEF,OAAO;YACL,UAAU;YACV,SAAS;SACV,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
@@ -2126,8 +2126,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "b64b8ddebfe019a384a8b30e00c4d538ec836eed"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useStore.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useStore.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useStore.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useStore.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -2176,10 +2176,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useStore.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useStore.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useStore.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useStore.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,QAAQ,IAAI,SAAS,EAAE,MAAM,MAAM,CAAC;AAC7C;;GAEG;AACH,MAAM,UAAU,QAAQ;IACtB,OAAO,SAAS,EAAW,CAAC;AAC9B,CAAC",
@@ -2190,8 +2190,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "5dcfb23f43ba04131ee8f64ee6e9b63606a0fd5c"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconBag.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconBag.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconBag.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconBag.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -2274,11 +2274,11 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconBag.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconBag.vue"
       ],
       "names": [],
       "mappings": ";;;EACO,KAAK,EAAC,MAAM;EAAC,KAAK,EAAC,MAAM;EAAC,MAAM,EAAC,MAAM;EAAC,OAAO,EAAC,YAAY;EAAC,OAAO,EAAC,KAAK;EAAC,KAAK,EAAC,4BAA4B;EAAC,aAAW,EAAC,8BAA8B;;gCACzJ,aAAuB,eAAhB,UAAQ;gCACf,aAAkV;EAA5U,CAAC,EAAC,kRAAkR;EAAC,EAAE,EAAC,UAAU;EAAC,MAAM,EAAC,MAAM;EAAC,WAAS,EAAC,SAAS;;;;wBAF9U,aAGM,OAHN,UAGM;IAFF,UAAuB;IACvB,UAAkV",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconBag.vue",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconBag.vue",
       "sourceRoot": "",
       "sourcesContent": [
         "<template>\n  <svg class=\"icon\" width=\"17px\" height=\"18px\" viewBox=\"36 8 17 18\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n      <title>Bag Icon</title>\n      <path d=\"M52.997701,12.8571429 L49.3553365,12.8571429 L49.3553365,8 L39.6423645,8 L39.6423645,12.8571429 L36,12.8571429 L36,25 L52.997701,25 L52.997701,12.8571429 Z M42.0706075,10.4285714 L46.9270935,10.4285714 L46.9270935,12.8571429 L42.0706075,12.8571429 L42.0706075,10.4285714 Z\" id=\"Bag-Icon\" stroke=\"none\" fill-rule=\"evenodd\"></path>\n  </svg>\n</template>"
@@ -2287,8 +2287,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "de05146a36e49f1c0b776d3a00714b0fd1773f85"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/WishlistTrigger.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/WishlistTrigger.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -2395,10 +2395,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/WishlistTrigger.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/WishlistTrigger.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/WishlistTrigger.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAC1C,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AACnD,OAAO,YAAY,MAAM,qCAAqC,CAAA;AAE9D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,YAAY;KACb;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,SAAS,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC,cAAc,CAAC,OAAO,CAAC,mBAAmB,CAAC,CAAC,CAAC;QAE5F,OAAO;YACL,SAAS;SACV,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
@@ -2409,8 +2409,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "35a9fcc8c2100428871ff527df4e9de7f50875f1"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconWishlist.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconWishlist.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconWishlist.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconWishlist.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -2493,11 +2493,11 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconWishlist.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconWishlist.vue"
       ],
       "names": [],
       "mappings": ";;;EACO,KAAK,EAAC,MAAM;EAAC,KAAK,EAAC,MAAM;EAAC,MAAM,EAAC,MAAM;EAAC,OAAO,EAAC,WAAW;EAAC,OAAO,EAAC,KAAK;EAAC,KAAK,EAAC,4BAA4B;EAAC,aAAW,EAAC,8BAA8B;;gCACxJ,aAA4B,eAArB,eAAa;gCACpB,aAAmR;EAA1Q,EAAE,EAAC,eAAe;EAAC,MAAM,EAAC,MAAM;EAAC,WAAS,EAAC,SAAS;EAAC,MAAM,EAAC,mMAAmM;;;;wBAF5Q,aAGM,OAHN,UAGM;IAFF,UAA4B;IAC5B,UAAmR",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconWishlist.vue",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconWishlist.vue",
       "sourceRoot": "",
       "sourcesContent": [
         "<template>\n  <svg class=\"icon\" width=\"20px\" height=\"20px\" viewBox=\"0 6 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n      <title>Wishlist Icon</title>\n      <polygon id=\"Wishlist-Icon\" stroke=\"none\" fill-rule=\"evenodd\" points=\"12.3598869 13.2675869 20 13.2675869 13.8200565 17.7545318 16.1782804 25.0221187 9.99833694 20.5318477 3.81839348 25.0221187 6.17994346 17.7545318 0 13.2675869 7.63678696 13.2675869 9.99833694 6\"></polygon>\n  </svg>\n</template>"
@@ -2506,8 +2506,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "27d780d6c1d6ad5e8c908cbf4507703c8938ce7c"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultFooter.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultFooter.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -2625,10 +2625,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultFooter.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/layout/DefaultFooter.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/layout/DefaultFooter.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,MAAM,KAAK,CAAA;AACrC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAA;AAElC,eAAe,eAAe,CAAC;IAC/B,KAAK;QACH,MAAM,EAAE,MAAM,EAAE,aAAa,EAAE,gBAAgB,EAAE,GAAG,OAAO,CAAC,EAAE,QAAQ,EAAE,QAAQ,EAAE,CAAC,CAAA;QAEnF,MAAM,kBAAkB,GAAG,CAAC,MAAc,EAAE,EAAE;YAC5C,aAAa,CAAC,KAAK,GAAG,MAAM,CAAC;YAC7B,YAAY,CAAC,OAAO,CAAC,QAAQ,EAAE,MAAM,CAAC,CAAC;QACzC,CAAC,CAAA;QAED,OAAO;YACL,aAAa;YACb,gBAAgB;YAChB,kBAAkB;SACpB,CAAA;IACF,CAAC;CACA,CAAC,CAAA",
@@ -2639,8 +2639,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "0c0df0e6a745fd74ce197baf8eda84e9fcf75ba4"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/views/Home.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/views/Home.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -3072,10 +3072,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/views/Home.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/views/Home.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/views/Home.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,eAAe,EAAE,QAAQ,EAAE,KAAK,EAAE,MAAM,KAAK,CAAC;AACjE,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAC;AAChC,OAAO,EAAE,QAAQ,EAAE,MAAM,YAAY,CAAC;AACtC,OAAO,EAAE,QAAQ,EAAE,MAAM,gBAAgB,CAAC;AAC1C,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AAEnC,OAAO,UAAU,MAAM,gCAAgC,CAAC;AACxD,OAAO,WAAW,MAAM,8BAA8B,CAAC;AAEvD,OAAO,EAAE,UAAU,EAAC,MAAM,mBAAmB,CAAC;AAG9C,eAAe,eAAe,CAAC;IAC7B,IAAI,EAAE,MAAM;IACZ,UAAU,EAAE;QACV,UAAU;QACV,WAAW;KACZ;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,IAAI,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,QAAQ,CAAC,KAAK,CAAC,KAAK,CAAC,IAAc,EAAE,EAAE,CAAC,IAAI,CAAC,CAAC,CAAC;QAC3E,MAAM,MAAM,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,CAAC,IAAI,CAAC,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC;QACpD,MAAM,EAAE,MAAM,EAAE,GAAG,OAAO,EAAE,CAAC;QAG7B,KAAK,CACH,GAAG,EAAE,CAAC,CAAC,IAAI,EAAE,MAAM,CAAC,EACpB,KAAK,IAAI,EAAE;YACT,MAAM,EACJ,IAAI,EAAE,QAAQ,EACd,OAAO,EACR,GAAG,QAAQ,CACV,eAAe,EACf;gBACE,MAAM,EAAE,MAAM,CAAC,KAAK;gBACpB,KAAK,EAAE,CAAC;gBACR,QAAQ,EAAE,KAAK;aAChB,CACF,CAAC;YACF,MAAM,QAAQ,EAAE,CAAA;YAChB,MAAM,OAAO,EAAE,CAAC;YAEhB,KAAK,CAAC,QAAQ,CACd,UAAU,CAAC,OAAO,CAAC,UAAU,EAC7B,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,IAAc,EAAE,EAAE;gBACzC,MAAM,EACJ,IAAI,EACJ,eAAe,EACf,KAAK,EACL,WAAW,EACX,YAAY,EACZ,qBAAqB,EACrB,QAAQ,GACT,GAAG,IAAI,CAAC;gBAET,OAAO;oBACL,IAAI;oBACJ,eAAe;oBACf,KAAK;oBACL,WAAW;oBACX,YAAY;oBACZ,qBAAqB;oBACrB,QAAQ;iBACT,CAAA;YACH,CAAC,CAAC,CACH,CAAC;YACF,KAAK,CAAC,QAAQ,CAAC,UAAU,CAAC,OAAO,CAAC,UAAU,EAAE,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,KAAK,IAAI,CAAC,CAAC,CAAA;QAC7E,CAAC,EACD;YACE,SAAS,EAAE,IAAI;YACf,IAAI,EAAE,IAAI;SACX,CACF,CAAA;QAED,OAAO;YACL,IAAI;YACJ,MAAM;SACP,CAAA;IACH,CAAC;CACF,CAAC,CAAC",
@@ -3086,8 +3086,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "17a8b02373cf00553504c4d398189a73696f9b12"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/apiClient.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/apiClient.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3109,10 +3109,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/apiClient.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/apiClient.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/apiClient.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,KAAwB,MAAM,OAAO,CAAC;AAG7C,MAAM,SAAS,GAAkB,KAAK,CAAC,MAAM,CAAC;IAC5C,OAAO,EAAE,kCAAkC;IAC3C,OAAO,EAAE;QACP,cAAc,EAAE,kBAAkB;QAClC,oBAAoB,EAAE,OAAO;QAC7B,qBAAqB,EAAE,KAAK;KAC7B;CACF,CAAC,CAAC;AAEH,eAAe,SAAS,CAAC",
@@ -3123,8 +3123,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "cb34659eef563c507b4de11f3b24cfccc028bb31"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/activities.service.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/activities.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3349,10 +3349,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/activities.service.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/activities.service.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/activities.service.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,SAAS,MAAM,sBAAsB,CAAC;AAI7C,MAAM,OAAO,GAAG,GAAG,EAAE;IACnB,MAAM,MAAM,GAAW,YAAY,CAAC,OAAO,CAAC,QAAQ,CAAC,IAAI,IAAI,CAAC;IAC9D,OAAO;QACP,iBAAiB,EAAE,MAAM,KAAK,IAAI,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,OAAO;KACvD,CAAA;AACD,CAAC,CAAA;AAED,eAAe;IACb,kBAAkB,EAAE,CAAC,KAAqB,EAA0B,EAAE;QACpE,OAAO,SAAS,CAAC,GAAG,CAAC,UAAU,KAAK,CAAC,EAAE,aAAa,EAAE,EAAE,MAAM,EAAE,KAAK,CAAC,MAAM,EAAE,OAAO,EAAE,OAAO,EAAE,EAAE,CAAC,CAAC;IACtG,CAAC;IACD,aAAa,EAAE,CAAC,MAAyB,EAA0B,EAAE;QACnE,OAAO,SAAS,CAAC,GAAG,CAAC,YAAY,EAAE,EAAE,MAAM,EAAE,OAAO,EAAE,OAAO,EAAE,EAAE,CAAC,CAAC;IACrE,CAAC;CACF,CAAC",
@@ -3363,8 +3363,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "f81b2dd523f106acef5b9e9e00f5897bfaaf10ea"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/index.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/index.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -3373,10 +3373,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/index.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/services/index.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/services/index.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,iBAAiB,MAAM,+BAA+B,CAAC;AAQ9D,eAAe;IACb,kBAAkB,EAAE,iBAAiB,CAAC,kBAAkB;IACxD,aAAa,EAAE,iBAAiB,CAAC,aAAa;CACnC,CAAA",
@@ -3387,8 +3387,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "81d25e997113b63443e2ac821a5b26a2951aebf6"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useAxios.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useAxios.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useAxios.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useAxios.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3572,10 +3572,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useAxios.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useAxios.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/useAxios.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/useAxios.ts"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,QAAQ,EAAE,MAAM,EAAE,MAAM,KAAK,CAAC;AACvC,OAAO,GAAG,MAAM,YAAY,CAAC;AAI7B,MAAM,UAAU,QAAQ,CAAC,EAAU,EAAE,MAA2C;IAC9E,MAAM,KAAK,GAAG,QAAQ,CAAC;QACrB,IAAI,EAAE,EAAwB;QAC9B,OAAO,EAAE,KAAgB;QACzB,KAAK,EAAE,EAAmB;KAC3B,CAAC,CAAC;IAEH,MAAM,OAAO,GAAG,KAAK,IAAI,EAAE;QACzB,KAAK,CAAC,OAAO,GAAG,IAAI,CAAC;QACrB,KAAK,CAAC,KAAK,GAAG,EAAmB,CAAC;QAClC,KAAK,CAAC,IAAI,GAAG,EAAwB,CAAC;QACtC,IAAI;YACF,MAAM,QAAQ,GAAG,MAAM,GAAG,CAAC,EAAE,CAAC,CAAC,MAAM,CAAC,CAAA;YACtC,KAAK,CAAC,IAAI,GAAG,QAAQ,CAAC,IAAI,CAAC;SAE5B;QAAC,OAAO,GAAG,EAAE;YACZ,KAAK,CAAC,KAAK,GAAG,GAAG,CAAC;SACnB;QACD,KAAK,CAAC,OAAO,GAAG,KAAK,CAAC;IACxB,CAAC,CAAC;IAEF,OAAO;QACL,GAAG,MAAM,CAAC,KAAK,CAAC;QAChB,OAAO;KACR,CAAC;AACJ,CAAC",
@@ -3586,8 +3586,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "dc4f2bb6797474bb365ca27a9062258be8c878db"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ThePagination.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ThePagination.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ThePagination.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ThePagination.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -3775,11 +3775,11 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ThePagination.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ThePagination.vue"
       ],
       "names": [],
       "mappings": ";AAyCA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AAC9C,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAA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",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ThePagination.vue",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ThePagination.vue",
       "sourceRoot": "",
       "sourcesContent": [
         "<template>\n  <nav class=\"pagination\">\n    <ul class=\"pagination__list\">\n      <li class=\"pagination__item\">\n        <a\n          v-if=\"currentPage !== 1\"\n          @click=\"handlePageChange(currentPage - 1)\"\n          class=\"pagination__link\"\n          itemprop=\"page-prev\"\n        >\n          <IconArrowLeft />\n        </a>\n      </li>\n      <li\n        class=\"pagination__item\"\n        v-for=\"(p,i) in visiblePages\"\n        :key=\"i\"\n      >\n        <a\n          @click=\"handlePageChange(p)\"\n          :class=\"`pagination__link${p === '...' ? ' disabled' : ''}${currentPage === p ? ' current' : ''}`\"\n          :itemprop=\"`page-${p}`\"\n        >\n          {{ p }}\n        </a>\n      </li>\n      <li class=\"pagination__item\">\n        <a\n          v-if=\"currentPage < lastPage\"\n          @click=\"handlePageChange(currentPage + 1)\"\n          class=\"pagination__link\"\n          itemprop=\"page-next\"\n        >\n          <IconArrowRight />\n        </a>\n      </li>\n    </ul>\n  </nav>\n</template>\n\n<script>\nimport { computed, defineComponent } from 'vue'\nimport { useStore } from 'vuex'\nimport { useRouter, useRoute } from 'vue-router'\nimport { usePagination } from '@/use/usePagination'\nimport IconArrowRight from '@/components/icons/IconArrowRight.vue'\nimport IconArrowLeft from '@/components/icons/IconArrowLeft.vue'\n\nexport default defineComponent({\n  components: {\n    IconArrowLeft,\n    IconArrowRight,\n  },\n  props: {\n    page: {\n      type: Number,\n    },\n  },\n  setup (props) {\n    const store = useStore();\n    const router = useRouter();\n    const route = useRoute();\n\n    const {\n      lastPage,\n      offset,\n      goTo,\n      visiblePages,\n      currentPage,\n    } = usePagination({\n      pageSize: 6,\n      total: computed(() => store.state.itemCount),\n      currentPage: props.page,\n      offset: ((props.page - 1) * 6),\n    })\n\n    const handlePageChange = (page) => {\n      goTo(page)\n      router.push({...route, query: {...route.query, page}})\n    }\n\n    return {\n      offset,\n      handlePageChange,\n      currentPage,\n      lastPage,\n      visiblePages,\n    }\n  }\n})\n</script>\n"
@@ -3788,8 +3788,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "343b062d9fddb42908f71450450f1c68c04d2143"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/usePagination.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/usePagination.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/usePagination.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/usePagination.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -4855,10 +4855,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/usePagination.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/usePagination.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/use/usePagination.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/use/usePagination.ts"
       ],
       "names": [],
       "mappings": "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",
@@ -4869,8 +4869,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "98a409eaa4b0fc0ad89712ae68eee2b20c601205"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowRight.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowRight.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowRight.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowRight.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -4942,11 +4942,11 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowRight.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowRight.vue"
       ],
       "names": [],
       "mappings": ";;;EACO,KAAK,EAAC,KAAK;EAAC,MAAM,EAAC,MAAM;EAAC,OAAO,EAAC,YAAY;EAAC,OAAO,EAAC,KAAK;EAAC,KAAK,EAAC,4BAA4B;EAAC,aAAW,EAAC,8BAA8B;;gCAC7I,aAAwL;EAA/K,EAAE,EAAC,WAAW;EAAC,MAAM,EAAC,MAAM;EAAC,IAAI,EAAC,SAAS;EAAC,WAAS,EAAC,SAAS;EAAC,MAAM,EAAC,6FAA6F;;;;wBAD/K,aAEM,OAFN,UAEM;IADJ,UAAwL",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowRight.vue",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowRight.vue",
       "sourceRoot": "",
       "sourcesContent": [
         "<template>\n  <svg width=\"7px\" height=\"10px\" viewBox=\"19 18 7 10\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon id=\"Left-Iocn\" stroke=\"none\" fill=\"#444A59\" fill-rule=\"evenodd\" points=\"22.9427745 22.9999999 19 26.9458774 20.0541226 28 25.0541226 23 20.0541226 18 19 19.0541226\"></polygon>\n  </svg>\n</template>"
@@ -4955,8 +4955,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "b2327549afdd3fd21d69668c2d710df1f3633481"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowLeft.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowLeft.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowLeft.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowLeft.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -5028,11 +5028,11 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowLeft.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowLeft.vue"
       ],
       "names": [],
       "mappings": ";;;EACO,KAAK,EAAC,KAAK;EAAC,MAAM,EAAC,MAAM;EAAC,OAAO,EAAC,YAAY;EAAC,OAAO,EAAC,KAAK;EAAC,KAAK,EAAC,4BAA4B;EAAC,aAAW,EAAC,8BAA8B;;gCAC7I,aAAoR;EAA3Q,EAAE,EAAC,WAAW;EAAC,MAAM,EAAC,MAAM;EAAC,IAAI,EAAC,SAAS;EAAC,WAAS,EAAC,SAAS;EAAC,SAAS,EAAC,iFAAiF;EAAC,MAAM,EAAC,6FAA6F;;;;wBAD3Q,aAEM,OAFN,UAEM;IADJ,UAAoR",
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/icons/IconArrowLeft.vue",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/icons/IconArrowLeft.vue",
       "sourceRoot": "",
       "sourcesContent": [
         "<template>\n  <svg width=\"8px\" height=\"10px\" viewBox=\"18 18 8 10\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon id=\"Left-Iocn\" stroke=\"none\" fill=\"#444A59\" fill-rule=\"evenodd\" transform=\"translate(22.027061, 23.000000) scale(-1, 1) translate(-22.027061, -23.000000) \" points=\"22.9427745 22.9999999 19 26.9458774 20.0541226 28 25.0541226 23 20.0541226 18 19 19.0541226\"></polygon>\n  </svg>\n</template>"
@@ -5041,8 +5041,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "4775fee4a5e6511158191d85515758bab4ce1313"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ProductList.vue": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ProductList.vue",
     "statementMap": {
       "0": {
         "start": {
@@ -5578,10 +5578,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ProductList.vue.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/components/ProductList.vue"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/components/ProductList.vue"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,eAAe,EAAE,QAAQ,EAAE,MAAM,KAAK,CAAA;AAC/C,OAAO,EAAE,QAAQ,EAAE,MAAM,MAAM,CAAC;AAChC,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AACnC,OAAO,YAAY,MAAM,qCAAqC,CAAC;AAE/D,OAAO,EAAE,SAAS,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAG9D,eAAe,eAAe,CAAC;IAC7B,UAAU,EAAE;QACV,YAAY;KACb;IACD,KAAK;QACH,MAAM,KAAK,GAAG,QAAQ,EAAE,CAAC;QACzB,MAAM,EAAE,CAAC,EAAE,GAAG,OAAO,EAAE,CAAC;QACvB,MAAM,gBAAgB,GAAG,CAAC,IAAc,EAAE,EAAE;YAC3C,KAAK,CAAC,QAAQ,CAAC,SAAS,CAAC,OAAO,CAAC,YAAY,EAAE,IAAI,CAAC,CAAA;QACtD,CAAC,CAAA;QAED,MAAM,KAAK,GAAG,QAAQ,CAAC,GAAG,EAAE,CAAC,KAAK,CAAC,KAAK,CAAC,SAAuB,CAAC,CAAC;QAElE,MAAM,QAAQ,GAAG,QAAQ,CACvB,GAAG,EAAE,CACD,KAAK,CAAC,KAAK,CAAC,SAAuC,CAAC,QAAQ,CACjE,CAAC;QACF,MAAM,aAAa,GAAG,QAAQ,CAC5B,GAAG,EAAE,CACD,KAAK,CAAC,KAAK,CAAC,cAAiD,CAAC,aAAa,CAChF,CAAC;QACF,MAAM,OAAO,GAAG,CAAC,IAAY,EAAE,EAAE,CAAC,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,IAAI,CAAC,CAAC;QAClF,MAAM,YAAY,GAAG,CAAC,IAAY,EAAE,EAAE,CAAC,aAAa,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,IAAI,CAAC,CAAC;QAC5F,MAAM,eAAe,GAAG,CAAC,IAAc,EAAE,EAAE;YACzC,IAAG,YAAY,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE;gBAC1B,KAAK,CAAC,QAAQ,CAAC,cAAc,CAAC,OAAO,CAAC,oBAAoB,EAAE,IAAI,CAAC,CAAA;aAClE;iBAAM;gBACL,KAAK,CAAC,QAAQ,CAAC,cAAc,CAAC,OAAO,CAAC,iBAAiB,EAAE,IAAI,CAAC,CAAA;aAC/D;QACH,CAAC,CAAA;QACD,OAAO;YACL,KAAK;YACL,gBAAgB;YAChB,eAAe;YACf,OAAO;YACP,YAAY;YACZ,CAAC;SACF,CAAA;IACH,CAAC;CACF,CAAC,CAAA",
@@ -5592,8 +5592,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "0bd2e1f6bf0bbcc3fad0b532d6096f0d261961f8"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/router/index.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/router/index.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/router/index.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/router/index.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5664,10 +5664,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/router/index.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/router/index.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/router/index.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/router/index.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,YAAY,EAAE,gBAAgB,EAAkB,MAAM,YAAY,CAAA;AAC3E,OAAO,IAAI,MAAM,mBAAmB,CAAA;AAEpC,MAAM,MAAM,GAA0B;IACpC;QACE,IAAI,EAAE,GAAG;QACT,IAAI,EAAE,MAAM;QACZ,SAAS,EAAE,IAAI;KAChB;CACF,CAAA;AAED,MAAM,MAAM,GAAG,YAAY,CAAC;IAC1B,OAAO,EAAE,gBAAgB,CAAC,OAAO,CAAC,GAAG,CAAC,QAAQ,CAAC;IAC/C,MAAM;IACN,cAAc;QACZ,OAAO,EAAE,GAAG,EAAE,CAAC,EAAE,CAAA;IACnB,CAAC;CACF,CAAC,CAAA;AAEF,eAAe,MAAM,CAAA",
@@ -5678,8 +5678,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "6e1e96fde0e745e98f39d6e5f2f0e46e7859e3f7"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/getters.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/getters.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/getters.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/getters.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5739,10 +5739,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/getters.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/getters.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/getters.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/getters.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAI/C,MAAM,CAAC,MAAM,OAAO,GAA2D;IAC7E,CAAC,UAAU,CAAC,OAAO,CAAC,cAAc,CAAC,EAAE,CAAC,KAAiB,EAAU,EAAE;QACjE,OAAO,KAAK,CAAC,OAAO,CAAC;IACvB,CAAC;CACF,CAAC",
@@ -5753,8 +5753,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "f3d6a39ada2ac9f92f48c4e0e507159cc606d3a6"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/actions.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/actions.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/actions.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/actions.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5886,10 +5886,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/actions.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/actions.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/actions.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/actions.ts"
       ],
       "names": [],
       "mappings": "AAGA,OAAO,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAE/C,MAAM,CAAC,MAAM,OAAO,GAA0D;IAC5E,CAAC,UAAU,CAAC,OAAO,CAAC,cAAc,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAe;QAC7D,MAAM,CAAC,UAAU,CAAC,SAAS,CAAC,cAAc,EAAE,OAAO,CAAC,CAAC;IACvD,CAAC;IACD,CAAC,UAAU,CAAC,OAAO,CAAC,UAAU,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAmB;QAC7D,MAAM,CAAC,UAAU,CAAC,SAAS,CAAC,UAAU,EAAE,OAAO,CAAC,CAAC;IACnD,CAAC;IACD,CAAC,UAAU,CAAC,OAAO,CAAC,UAAU,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAe;QACzD,MAAM,CAAC,UAAU,CAAC,SAAS,CAAC,UAAU,EAAE,OAAO,CAAC,CAAC;IACnD,CAAC;CACF,CAAC",
@@ -5900,8 +5900,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "c738604c9116f519397e1909085c2253a057a7a4"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/mutations.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/mutations.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/mutations.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/mutations.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6033,10 +6033,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/mutations.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/mutations.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/mutations.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/mutations.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAE/C,MAAM,CAAC,MAAM,SAAS,GAAkD;IACtE,CAAC,UAAU,CAAC,SAAS,CAAC,cAAc,CAAC,CAAC,KAAiB,EAAE,OAAe;QACtE,KAAK,CAAC,OAAO,GAAG,OAAO,CAAC;IAC1B,CAAC;IACD,CAAC,UAAU,CAAC,SAAS,CAAC,UAAU,CAAC,CAAC,KAAiB,EAAE,OAAmB;QACtE,KAAK,CAAC,SAAS,GAAG,OAAO,CAAC;IAC5B,CAAC;IACD,CAAC,UAAU,CAAC,SAAS,CAAC,UAAU,CAAC,CAAC,KAAiB,EAAE,OAAe;QAClE,KAAK,CAAC,SAAS,GAAG,OAAO,CAAC;IAC5B,CAAC;CACF,CAAC",
@@ -6047,8 +6047,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "aef96c6ab974a490b12038d60f6050ec58fde328"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/state.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/state.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/state.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/state.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6070,10 +6070,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/state.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/state.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/state.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/state.ts"
       ],
       "names": [],
       "mappings": "AAEA,MAAM,CAAC,MAAM,KAAK,GAAe;IAC/B,IAAI,EAAE,IAAI;IACV,OAAO,EAAE,OAAO;IAChB,SAAS,EAAE,EAAE;IACb,SAAS,EAAE,CAAC;CACb,CAAC",
@@ -6084,8 +6084,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "4647db27c941b5a91def644a73ea3ece39999c92"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/getters.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/getters.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/getters.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/getters.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6145,10 +6145,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/getters.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/getters.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/getters.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/getters.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAQ9C,MAAM,CAAC,MAAM,OAAO,GACA;IAClB,CAAC,SAAS,CAAC,OAAO,CAAC,cAAc,CAAC,EAAE,CAAC,KAAoB,EAAE,EAAE;QAC3D,OAAO,KAAK,CAAC,QAAQ,CAAC,MAAM,CAAC;IAC/B,CAAC;CACF,CAAC",
@@ -6159,8 +6159,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "a192eb4d8b3e1d76fbcff5234c9262e08f243c0e"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/actions.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/actions.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/actions.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/actions.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6256,10 +6256,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/actions.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/actions.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/actions.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/actions.ts"
       ],
       "names": [],
       "mappings": "AAOA,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAE9C,MAAM,CAAC,MAAM,OAAO,GACA;IAClB,CAAC,SAAS,CAAC,OAAO,CAAC,YAAY,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAiB;QAC5D,MAAM,CAAC,SAAS,CAAC,SAAS,CAAC,YAAY,EAAE,OAAO,CAAC,CAAC;IACpD,CAAC;IACD,CAAC,SAAS,CAAC,OAAO,CAAC,eAAe,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAiB;QAC/D,MAAM,CAAC,SAAS,CAAC,SAAS,CAAC,eAAe,EAAE,OAAO,CAAC,CAAC;IACvD,CAAC;CACF,CAAC",
@@ -6270,8 +6270,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "c89eb8e0ea2667d5e4d530d180a47f0508a29ecb"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/mutations.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/mutations.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/mutations.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/mutations.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6605,10 +6605,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/mutations.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/mutations.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/mutations.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/mutations.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,SAAS,EAAE,MAAM,mBAAmB,CAAC;AAE9C,MAAM,CAAC,MAAM,SAAS,GACA;IACpB,CAAC,SAAS,CAAC,SAAS,CAAC,YAAY,CAAC,CAAC,KAAoB,EAAE,OAAiB;QACxE,MAAM,YAAY,GAAG,KAAK,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,OAAO,CAAC,IAAI,CAAC,CAAC;QAC7E,IAAG,CAAC,YAAY,EAAE;YAChB,KAAK,CAAC,QAAQ,GAAG;gBACf,GAAG,KAAK,CAAC,QAAQ;gBACjB,OAAO;aACR,CAAC;YACF,KAAK,CAAC,UAAU,GAAG,KAAK,CAAC,UAAU,GAAG,CAAC,OAAO,CAAC,YAAY,EAAE,KAAK,IAAI,CAAC,CAAC,CAAC;SAC1E;IACH,CAAC;IACD,CAAC,SAAS,CAAC,SAAS,CAAC,eAAe,CAAC,CAAC,KAAoB,EAAE,OAAO;QACjE,KAAK,CAAC,QAAQ,GAAG,KAAK,CAAC,QAAQ,CAAC,MAAM,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,OAAO,CAAC,IAAI,CAAC,CAAA;QAC1E,KAAK,CAAC,UAAU,GAAG,KAAK,CAAC,UAAU,GAAG,CAAC,OAAO,CAAC,YAAY,EAAE,KAAK,IAAI,CAAC,CAAC,CAAC;IAC3E,CAAC;CACF,CAAC",
@@ -6619,8 +6619,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "3345e4ec48bdc4f7c96fac4933d83519f1ce35f8"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/state.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/state.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/state.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/state.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6642,10 +6642,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/state.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/state.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/state.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/state.ts"
       ],
       "names": [],
       "mappings": "AAEA,MAAM,CAAC,MAAM,KAAK,GAAkB;IAClC,QAAQ,EAAE,EAAE;IACZ,UAAU,EAAE,CAAC;CACd,CAAC",
@@ -6656,8 +6656,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "f83e1ac51d15060546d22a2dc4909ed34056646e"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/index.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/index.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/index.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/index.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6679,10 +6679,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/index.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/index.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/bag/index.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/bag/index.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AACpC,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AACpC,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AACxC,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAEhC,SAAS;AACT,MAAM,GAAG,GAAsC;IAC7C,KAAK;IACL,OAAO;IACP,SAAS;IACT,OAAO;CACR,CAAC;AAEF,eAAe,GAAG,CAAC",
@@ -6693,8 +6693,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "5813df32f295974fba93079f2f5b4d2eda4acccf"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/getters.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/getters.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/getters.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/getters.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6754,10 +6754,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/getters.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/getters.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/getters.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/getters.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAQnD,MAAM,CAAC,MAAM,OAAO,GACK;IACvB,CAAC,cAAc,CAAC,OAAO,CAAC,mBAAmB,CAAC,EAAE,CAAC,KAAyB,EAAE,EAAE;QAC1E,OAAO,KAAK,CAAC,aAAa,CAAC,MAAM,CAAC;IACpC,CAAC;CACF,CAAC",
@@ -6768,8 +6768,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "4aa6ec34da360dc01ac371e0183f28f42b30c12a"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/actions.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/actions.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/actions.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/actions.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -6865,10 +6865,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/actions.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/actions.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/actions.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/actions.ts"
       ],
       "names": [],
       "mappings": "AAOA,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAEnD,MAAM,CAAC,MAAM,OAAO,GACK;IACvB,CAAC,cAAc,CAAC,OAAO,CAAC,iBAAiB,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAiB;QACtE,MAAM,CAAC,cAAc,CAAC,SAAS,CAAC,iBAAiB,EAAE,OAAO,CAAC,CAAC;IAC9D,CAAC;IACD,CAAC,cAAc,CAAC,OAAO,CAAC,oBAAoB,CAAC,CAAC,EAAE,MAAM,EAAE,EAAE,OAAiB;QACzE,MAAM,CAAC,cAAc,CAAC,SAAS,CAAC,oBAAoB,EAAE,OAAO,CAAC,CAAC;IACjE,CAAC;CACF,CAAC",
@@ -6879,8 +6879,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "d9c91f07320a18f2fbfd05740d144ac878dd60c9"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/mutations.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/mutations.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/mutations.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/mutations.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7112,10 +7112,10 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/mutations.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/mutations.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/mutations.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/mutations.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAEnD,MAAM,CAAC,MAAM,SAAS,GACK;IACzB,CAAC,cAAc,CAAC,SAAS,CAAC,iBAAiB,CAAC,CAAC,KAAyB,EAAE,OAAiB;QACvF,MAAM,YAAY,GAAG,KAAK,CAAC,aAAa,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,OAAO,CAAC,IAAI,CAAC,CAAC;QAClF,IAAG,CAAC,YAAY,EAAE;YAChB,KAAK,CAAC,aAAa,GAAG;gBACpB,GAAG,KAAK,CAAC,aAAa;gBACtB,OAAO;aACR,CAAC;SACH;IACH,CAAC;IACD,CAAC,cAAc,CAAC,SAAS,CAAC,oBAAoB,CAAC,CAAC,KAAyB,EAAE,OAAO;QAChF,KAAK,CAAC,aAAa,GAAG,KAAK,CAAC,aAAa,CAAC,MAAM,CAAC,IAAI,CAAC,EAAE,CAAC,IAAI,CAAC,IAAI,KAAK,OAAO,CAAC,IAAI,CAAC,CAAA;IACtF,CAAC;CACF,CAAC",
@@ -7126,8 +7126,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "19021dd8ec5e516b4980973ebb776f08686f02d3"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/state.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/state.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/state.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/state.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7149,10 +7149,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/state.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/state.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/state.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/state.ts"
       ],
       "names": [],
       "mappings": "AAEA,MAAM,CAAC,MAAM,KAAK,GAAuB;IACvC,aAAa,EAAE,EAAE;CAClB,CAAC",
@@ -7163,8 +7163,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "80de698a2eb5a4c82bf423948cf7f0dc5f7ed86f"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/index.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/index.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/index.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/index.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7186,10 +7186,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/index.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/index.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/wishlist/index.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/wishlist/index.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AACpC,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AACpC,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AACxC,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAEhC,SAAS;AACT,MAAM,QAAQ,GAA2C;IACvD,KAAK;IACL,OAAO;IACP,SAAS;IACT,OAAO;CACR,CAAC;AAEF,eAAe,QAAQ,CAAC",
@@ -7200,8 +7200,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "e841dd55aa3a326f0130f47574c6cdc097163663"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/index.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/index.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/index.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/index.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7234,10 +7234,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/index.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/index.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/modules/root/index.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/modules/root/index.ts"
       ],
       "names": [],
       "mappings": "AAEA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AACpC,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AACpC,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AACxC,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAChC,OAAO,SAAS,MAAM,QAAQ,CAAC;AAC/B,OAAO,cAAc,MAAM,aAAa,CAAC;AAEzC,UAAU;AACV,MAAM,OAAO,GAA2B;IACtC,SAAS;IACT,cAAc;CACf,CAAC;AAEF,MAAM,IAAI,GAAmC;IAC3C,KAAK;IACL,OAAO;IACP,SAAS;IACT,OAAO;IACP,OAAO;CACR,CAAC;AAEF,eAAe,IAAI,CAAC",
@@ -7248,8 +7248,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "3c093384def0b828d181f08f08ac87fe4d26572f"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/index.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/index.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/index.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/index.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -7258,10 +7258,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/index.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/index.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/store/index.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/store/index.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,MAAM,CAAC;AAMnC,OAAO,IAAI,MAAM,gBAAgB,CAAC;AAElC,eAAe,WAAW,CAAa,IAAI,CAAC,CAAC",
@@ -7272,8 +7272,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "ddbe5a0b9cba89fa5b6c22e2f546bd51c7a12a7a"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/i18n.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/i18n.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -7282,10 +7282,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/i18n.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/i18n.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/i18n.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,UAAU,CAAC;AACtC,OAAO,EAAE,MAAM,mBAAmB,CAAC;AACnC,OAAO,EAAE,MAAM,mBAAmB,CAAC;AAEnC,eAAe,UAAU,CAAC;IACxB,MAAM,EAAE,KAAK;IACb,MAAM,EAAE,IAAI;IACZ,cAAc,EAAE,IAAI;IACpB,QAAQ,EAAE;QACR,EAAE;QACF,EAAE;KACH;CACF,CAAC,CAAA",
@@ -7296,8 +7296,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "9098ff53d91e8adaf49692bf5f892087dc09c0a3"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/metaManager.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/metaManager.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -7306,10 +7306,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/metaManager.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/plugins/metaManager.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/plugins/metaManager.ts"
       ],
       "names": [],
       "mappings": "AACA,OAAO,EAAE,iBAAiB,EAAE,MAAM,UAAU,CAAA;AAE5C,eAAe,iBAAiB,EAAE,CAAA",
@@ -7320,8 +7320,8 @@
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "a0e4b8f070a2efe9943fda7c37fbad67b6a1043f"
   },
-  "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts": {
-    "path": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts",
+  "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/main.ts": {
+    "path": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/main.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7398,10 +7398,10 @@
     "b": {},
     "inputSourceMap": {
       "version": 3,
-      "file": "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts",
+      "file": "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/main.ts",
       "sourceRoot": "",
       "sources": [
-        "/Users/zeki/Documents/Projects/personal/js_challenge_jagaad_zeki-oztorun/src/main.ts"
+        "/Users/zeki/Documents/Projects/personal/vue3-ts-shopping-card/src/main.ts"
       ],
       "names": [],
       "mappings": "AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,KAAK,CAAA;AAC/B,OAAO,GAAG,MAAM,WAAW,CAAA;AAC3B,OAAO,MAAM,MAAM,UAAU,CAAA;AAC7B,OAAO,KAAK,MAAM,SAAS,CAAA;AAC3B,OAAO,IAAI,MAAM,gBAAgB,CAAA;AACjC,OAAO,WAAW,MAAM,uBAAuB,CAAA;AAC/C,OAAO,oBAAoB,CAAC;AAE5B,MAAM,GAAG,GAAG,SAAS,CAAC,GAAG,CAAC,CAAA;AAC1B,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAA;AACd,GAAG,CAAC,GAAG,CAAC,MAAM,CAAC,CAAA;AACf,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,CAAA;AACb,GAAG,CAAC,GAAG,CAAC,WAAW,CAAC,CAAA;AACpB,GAAG,CAAC,KAAK,CAAC,MAAM,CAAC,CAAA",

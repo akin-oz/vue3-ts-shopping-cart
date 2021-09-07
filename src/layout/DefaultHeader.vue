@@ -1,6 +1,6 @@
 <template>
   <div class="default-header container">
-    <h1 class="default-header__title">JS Challenge - Jagaad - Zeki Oztorun</h1>
+    <h1 class="default-header__title">Shopping Card</h1>
     <div class="default-header__spacer"></div>
     <div class="default-header__actions">
       <div class="default-header__action-item">
