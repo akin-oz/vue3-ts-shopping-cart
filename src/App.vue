@@ -21,7 +21,7 @@ export default defineComponent({
     const items = computed(() => store.state.itemLists as ItemData[]);
     const count = computed(() => store.state.itemCount);
     useMeta({
-      title: 'Shopping Card',
+      title: 'Shopping Cart',
       htmlAttrs: {
         lang: 'en',
         amp: true

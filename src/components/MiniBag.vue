@@ -32,7 +32,7 @@
     <hr class="minibag-divider">
     <div class="minibag-item subtotal">
       <div class="minibag-item__content" style="justify-content: space-between; width: 100%;">
-        <div>{{ t('cardSubtotal') }}:</div>
+        <div>{{ t('cartSubtotal') }}:</div>
         <div style="margin-left: 1rem;">{{ totalPrice }}</div>
       </div>
     </div>

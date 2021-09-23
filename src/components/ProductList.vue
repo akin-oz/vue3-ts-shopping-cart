@@ -33,13 +33,13 @@
               <button
                 v-if="isInBag(item.uuid)"
                 class="product__add-to-cart button button--primary button--in-cart"
-              >{{ t('inCard') }}</button>
+              >{{ t('inCart') }}</button>
               <button
                 v-else
                 class="product__add-to-cart button button--primary"
                 @click="handleAddBagItem(item)"
                 itemprop="add-button"
-              >{{ t('addToCard') }}</button>
+              >{{ t('addToCart') }}</button>
             </div>
           </div>
         </li>

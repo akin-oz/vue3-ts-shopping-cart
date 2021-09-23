@@ -33,7 +33,6 @@ export default defineComponent({
     const offset = computed(() => (page.value - 1) * 6);
     const { locale } = useI18n();
     
-
     watch(
       () => [page, locale],
       async () => {        
